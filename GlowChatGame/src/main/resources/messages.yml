@@ -1,0 +1,59 @@
+# ==========================================================
+#                   GlowChatGame Messages
+#         Supports MiniMessage gradients, HEX, and PAPI
+#               Authors: ejyqyl, Glowdevv
+# ==========================================================
+
+prefix: "<gradient:#00B5FD:#7670E5>ɢʟᴏᴡᴄʜᴀᴛɢᴀᴍᴇ ≫</gradient>"
+
+no-permission: "{prefix} <gradient:#BC00FD:#7670E5>У вас недостаточно прав.</gradient>"
+player-only: "{prefix} &cЭту команду может использовать только игрок."
+player-not-found: "{prefix} &cИгрок &e{TARGET} &cне найден."
+unknown-command: "{prefix} &cНеизвестная подкоманда. Используйте &e/chatgame help&c."
+
+game:
+  # Multi-line or single-line announcement banner
+  start:
+    - ""
+    - "  <gradient:#00B5FD:#7670E5>&l✦ МАТЕМАТИЧЕСКАЯ ИГРА ✦</gradient>"
+    - "  &fРешите пример: &e&l{EXAMPLE} = ?"
+    - "  &fНаграда: &a&l{REWARD}&f!"
+    - "  &7У вас есть &b{TIME} сек.&7, чтобы написать ответ в чат!"
+    - ""
+  correct-answer:
+    - ""
+    - "  <gradient:#00FF88:#00B5FD>&l✔ ПОБЕДИТЕЛЬ НАЙДЕН!</gradient>"
+    - "  &fИгрок &e&l{PLAYER} &fпервым решил пример: &b{EXAMPLE} = &a&l{ANSWER}"
+    - "  &fВремя решения: &d{TIME_TAKEN} сек. &8| &fНаграда: &a{REWARD}"
+    - ""
+  timeout:
+    - ""
+    - "  <gradient:#FD5E53:#BC00FD>&l✖ ВРЕМЯ ВЫШЛО!</gradient>"
+    - "  &cНикто не успел решить пример &e{EXAMPLE}&c!"
+    - "  &7Правильный ответ был: &a&l{ANSWER}"
+    - ""
+  already-running: "{prefix} <gradient:#BC00FD:#7670E5>Игра уже запущена! Дождитесь окончания текущей игры.</gradient>"
+  no-game: "{prefix} &cВ данный момент активной математической игры нет."
+  stopped: "{prefix} &cТекущая игра была принудительно остановлена администратором."
+  force-started: "{prefix} &aМатематическая игра успешно запущена вручную с уровнем &e{DIFFICULTY}&a!"
+  reloaded: "{prefix} &aКонфигурация и локализация успешно перезагружены."
+
+stats:
+  card:
+    - ""
+    - "  <gradient:#00B5FD:#7670E5>&l✦ статистика игр ✦</gradient>"
+    - "  &7Игрок: &f&l{PLAYER}"
+    - "  &7Всего побед: &a&l{WINS}"
+    - "  &7Сыграно игр: &e&l{GAMES}"
+    - "  &7Точность (Винрейт): &b&l{ACCURACY}%"
+    - "  &7Получено наград: &d&l{REWARDS}"
+    - ""
+
+help:
+  - ""
+  - "  <gradient:#00B5FD:#7670E5>&l✦ ɢʟᴏᴡᴄʜᴀᴛɢᴀᴍᴇ ≫ ʜᴇʟᴘ ✦</gradient>"
+  - "  &e/cg start &7[easy|med|hard] &8— &fЗᴀпуск игры"
+  - "  &e/cg stop &8— &fОстᴀновить игру"
+  - "  &e/cg stats &7[ник] &8— &fСтᴀтистикᴀ"
+  - "  &e/cg reload &8— &fПᴇрᴇзᴀгрузкᴀ"
+  - ""

@@ -1,0 +1,75 @@
+# ==============================================================================
+#                      GlowTrade — Локализация сообщений
+#   Фирменный стиль GlowTrade: все цвета в полноценных градиентах!
+#   Основной: #FFA500 -> #FFD700 | Ошибки: #FF5252 -> #FF1744 | Готов: #00E676 -> #1DE9B6
+# ==============================================================================
+
+prefix: "<gradient:#FFA500:#FFD700>GlowTrade >></gradient> "
+
+help:
+  - "<gradient:#FFA500:#FFD700>---=== [ Безопасный обмен GlowTrade ] ===---</gradient>"
+  - "<gradient:#FFA500:#FFD700>/trade <ник></gradient> &7— Отправить запрос на обмен игроку"
+  - "<gradient:#FFA500:#FFD700>/trade accept [ник]</gradient> &7— Принять входящий запрос"
+  - "<gradient:#FFA500:#FFD700>/trade deny [ник]</gradient> &7— Отклонить входящий запрос"
+  - "<gradient:#FFA500:#FFD700>/trade toggle</gradient> &7— Включить/выключить прием предложений"
+  - "<gradient:#FFA500:#FFD700>Подсказка: Вы также можете зажать Shift и нажать ПКМ по игроку!</gradient>"
+
+request-sent: "<prefix><gradient:#FFA500:#FFD700>Вы успешно отправили запрос на обмен игроку %player%!</gradient>"
+request-received:
+  - "<prefix><gradient:#FFA500:#FFD700>Игрок %player% предлагает вам совершить безопасный обмен!</gradient>"
+  - "<prefix><gradient:#FFA500:#FFD700>Нажмите /trade accept %player% чтобы согласиться (30 сек).</gradient>"
+
+request-already-sent: "<prefix><gradient:#FF5252:#FF1744>Вы уже отправили запрос этому игроку! Дождитесь ответа.</gradient>"
+request-expired: "<prefix><gradient:#FF5252:#FF1744>Срок действия запроса на обмен с %player% истек.</gradient>"
+request-denied: "<prefix><gradient:#FF5252:#FF1744>Игрок %player% отклонил ваш запрос на обмен.</gradient>"
+request-denied-target: "<prefix><gradient:#FFA500:#FFD700>Вы отклонили запрос на обмен от игрока %player%.</gradient>"
+no-pending-request: "<prefix><gradient:#FF5252:#FF1744>У вас нет активных входящих запросов на обмен от этого игрока!</gradient>"
+cannot-trade-self: "<prefix><gradient:#FF5252:#FF1744>Вы не можете торговать с самим собой!</gradient>"
+player-offline: "<prefix><gradient:#FF5252:#FF1744>Игрок %player% не найден в сети!</gradient>"
+player-disabled-trades: "<prefix><gradient:#FF5252:#FF1744>Этот игрок отключил прием запросов на обмен!</gradient>"
+you-disabled-trades: "<prefix><gradient:#FF5252:#FF1744>Вы отключили прием обменов! Включите их: /trade toggle</gradient>"
+toggle-on: "<prefix><gradient:#FFA500:#FFD700>Прием запросов на обмен успешно ВКЛЮЧЕН!</gradient>"
+toggle-off: "<prefix><gradient:#FF5252:#FF1744>Прием запросов на обмен успешно ВЫКЛЮЧЕН!</gradient>"
+too-far: "<prefix><gradient:#FF5252:#FF1744>Игрок находится слишком далеко (максимум %distance% блоков)!</gradient>"
+different-world: "<prefix><gradient:#FF5252:#FF1744>Вы и игрок находитесь в разных мирах!</gradient>"
+creative-forbidden: "<prefix><gradient:#FF5252:#FF1744>Обмен запрещен в творческом режиме (Creative)!</gradient>"
+spectator-forbidden: "<prefix><gradient:#FF5252:#FF1744>Обмен запрещен в режиме наблюдателя (Spectator)!</gradient>"
+combat-forbidden: "<prefix><gradient:#FF5252:#FF1744>Вы не можете совершать обмен во время PvP боя!</gradient>"
+target-combat-forbidden: "<prefix><gradient:#FF5252:#FF1744>Игрок %player% находится в бою и не может торговать!</gradient>"
+already-in-trade: "<prefix><gradient:#FF5252:#FF1744>Вы или выбранный игрок уже участвуете в другом обмене!</gradient>"
+anti-scam-triggered: "<prefix><gradient:#FF5252:#FF1744>Внимание! Содержимое обмена изменено, отсчет и готовность сброшены!</gradient>"
+item-blacklisted: "<prefix><gradient:#FF5252:#FF1744>Этот предмет запрещен для передачи через обмен!</gradient>"
+anvil-item-blocked: "<prefix><gradient:#FF5252:#FF1744>Запрещено передавать предметы, переименованные в наковальне!</gradient>"
+trade-success: "<prefix><gradient:#FFA500:#FFD700>Обмен с игроком %player% успешно завершен!</gradient>"
+trade-cancelled: "<prefix><gradient:#FF5252:#FF1744>Обмен отменен! Все выставленные предметы возвращены.</gradient>"
+inventory-full-dropped: "<prefix><gradient:#FFA500:#FFD700>Внимание: Ваш инвентарь переполнен, часть предметов выпала на землю!</gradient>"
+reload-success: "<prefix><gradient:#FFA500:#FFD700>Конфигурация плагина GlowTrade успешно перезагружена!</gradient>"
+no-permission: "<prefix><gradient:#FF5252:#FF1744>У вас нет прав на выполнение этой команды!</gradient>"
+
+gui:
+  title: "<gradient:#FFA500:#FFD700>Безопасный обмен предметами</gradient>"
+  separator-name: "<gradient:#FFA500:#FFD700>⏐</gradient>"
+  filler-name: " "
+  status-not-ready-name: "<gradient:#FF5252:#FF1744>%player%: НЕ ГОТОВ</gradient>"
+  status-not-ready-lore:
+    - "<gradient:#FFA500:#FFD700>Нажмите сюда, чтобы подтвердить</gradient>"
+    - "<gradient:#FFA500:#FFD700>готовность к завершению обмена.</gradient>"
+  status-ready-name: "<gradient:#00E676:#1DE9B6>%player%: ГОТОВ</gradient>"
+  status-ready-lore:
+    - "<gradient:#00E676:#1DE9B6>Вы подтвердили готовность к сделке.</gradient>"
+    - "<gradient:#FF5252:#FF1744>Нажмите повторно для отмены готовности.</gradient>"
+  other-not-ready-name: "<gradient:#FF5252:#FF1744>%player%: НЕ ГОТОВ</gradient>"
+  other-not-ready-lore:
+    - "<gradient:#FFA500:#FFD700>Ожидаем подтверждения от игрока...</gradient>"
+    - "<gradient:#FFA500:#FFD700>выставите предметы и подтвердите готовность.</gradient>"
+  other-ready-name: "<gradient:#00E676:#1DE9B6>%player%: ГОТОВ</gradient>"
+  other-ready-lore:
+    - "<gradient:#00E676:#1DE9B6>Игрок подтвердил свое предложение.</gradient>"
+  timer-waiting-name: "<gradient:#FFA500:#FFD700>Ожидание подтверждения...</gradient>"
+  timer-waiting-lore:
+    - "<gradient:#FFA500:#FFD700>Оба игрока должны нажать кнопку «ГОТОВ»</gradient>"
+    - "<gradient:#FFA500:#FFD700>для запуска безопасного отсчета.</gradient>"
+  timer-countdown-name: "<gradient:#FFA500:#FFD700>Обмен через %seconds% сек...</gradient>"
+  timer-countdown-lore:
+    - "<gradient:#FFA500:#FFD700>Идет финальная проверка сделки.</gradient>"
+    - "<gradient:#FF5252:#FF1744>Любое изменение предметов отменит таймер!</gradient>"

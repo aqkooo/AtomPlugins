@@ -1,0 +1,21 @@
+name: GlowSnakeGame
+version: '1.0.0'
+main: ru.glowdev.glowsnake.GlowSnakePlugin
+api-version: '1.16'
+authors: [Ejyqyl, GlowDev]
+description: Snake mini-game in Minecraft Chest GUI with WASD movement controls.
+
+commands:
+  snake:
+    description: Open the GlowSnakeGame GUI
+    aliases: [sgame, snakegame]
+    permission: glowsnake.play
+    permission-message: "§cУ вас нет прав для использования этой команды!"
+
+permissions:
+  glowsnake.play:
+    description: Allows launching and playing GlowSnakeGame
+    default: true
+  glowsnake.admin:
+    description: Allows administrative actions such as reloading the plugin configuration
+    default: op

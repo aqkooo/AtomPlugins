@@ -1,0 +1,27 @@
+name: "Лесной особняк"
+icon: "DARK_OAK_SAPLING"
+loot_table: "minecraft:chests/woodland_mansion"
+mode: "MERGE"
+rolls:
+  min: 2
+  max: 5
+
+items:
+  "1":
+    provider: "VANILLA"
+    material: "TOTEM_OF_UNDYING"
+    chance: 15.0
+    min_amount: 1
+    max_amount: 1
+  "2":
+    provider: "VANILLA"
+    material: "DIAMOND_BLOCK"
+    chance: 10.0
+    min_amount: 1
+    max_amount: 1
+  "3":
+    provider: "VANILLA"
+    material: "EMERALD"
+    chance: 50.0
+    min_amount: 4
+    max_amount: 16

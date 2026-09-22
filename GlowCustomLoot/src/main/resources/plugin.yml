@@ -1,0 +1,25 @@
+name: GlowCustomLoot
+version: '${project.version}'
+main: ru.glowdevv.glowcustomloot.GlowCustomLootPlugin
+api-version: '1.20'
+author: ejyqyl, glowdevv
+website: https://t.me/glowdevv
+description: Dynamic in-game GUI loot table editor and generator for Paper/Purpur/Folia
+folia-supported: true
+softdepend: [PlaceholderAPI, ItemsAdder, Oraxen, MythicMobs, MMOItems]
+
+commands:
+  editloot:
+    description: Открывает главное меню выбора измерения для настройки лута
+    permission: glowcustomloot.admin
+    usage: /<command>
+  gcl:
+    description: Главная команда управления GlowCustomLoot
+    aliases: [glowcustomloot]
+    permission: glowcustomloot.admin
+    usage: /<command> [reload|add]
+
+permissions:
+  glowcustomloot.admin:
+    description: Полный доступ ко всем функциям и меню плагина GlowCustomLoot
+    default: op

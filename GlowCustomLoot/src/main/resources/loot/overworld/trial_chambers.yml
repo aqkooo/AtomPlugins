@@ -1,0 +1,88 @@
+name: "Испытательные камеры"
+icon: "TRIAL_SPAWNER"
+loot_tables:
+  - "minecraft:chests/trial_chambers/reward"
+  - "minecraft:chests/trial_chambers/reward_ominous"
+  - "minecraft:chests/trial_chambers/corridor"
+  - "minecraft:chests/trial_chambers/entrance"
+  - "minecraft:chests/trial_chambers/supply"
+mode: "MERGE"
+rolls:
+  min: 2
+  max: 5
+
+items:
+  "1":
+    provider: "VANILLA"
+    material: "HEAVY_CORE"
+    chance: 2.2
+    min_amount: 1
+    max_amount: 1
+  "2":
+    provider: "VANILLA"
+    material: "BREEZE_ROD"
+    chance: 40.0
+    min_amount: 1
+    max_amount: 3
+  "3":
+    provider: "VANILLA"
+    material: "FLOW_ARMOR_TRIM_SMITHING_TEMPLATE"
+    chance: 5.0
+    min_amount: 1
+    max_amount: 1
+  "4":
+    provider: "VANILLA"
+    material: "BOLT_ARMOR_TRIM_SMITHING_TEMPLATE"
+    chance: 8.0
+    min_amount: 1
+    max_amount: 1
+  "5":
+    provider: "VANILLA"
+    material: "TRIAL_KEY"
+    chance: 40.0
+    min_amount: 1
+    max_amount: 2
+  "6":
+    provider: "VANILLA"
+    material: "OMINOUS_TRIAL_KEY"
+    chance: 15.0
+    min_amount: 1
+    max_amount: 1
+  "7":
+    provider: "VANILLA"
+    material: "OMINOUS_BOTTLE"
+    chance: 25.0
+    min_amount: 1
+    max_amount: 1
+  "8":
+    provider: "VANILLA"
+    material: "MUSIC_DISC_CREATOR"
+    chance: 6.0
+    min_amount: 1
+    max_amount: 1
+  "9":
+    provider: "VANILLA"
+    material: "MUSIC_DISC_PRECIPICE"
+    chance: 8.0
+    min_amount: 1
+    max_amount: 1
+  "10":
+    provider: "VANILLA"
+    material: "DIAMOND"
+    chance: 30.0
+    min_amount: 1
+    max_amount: 3
+  "11":
+    provider: "VANILLA"
+    material: "COPPER_INGOT"
+    chance: 60.0
+    min_amount: 4
+    max_amount: 12
+  "12":
+    provider: "VANILLA"
+    material: "ENCHANTED_BOOK"
+    enchantments:
+      WIND_BURST: 1
+    chance: 5.5
+    min_amount: 1
+    max_amount: 1

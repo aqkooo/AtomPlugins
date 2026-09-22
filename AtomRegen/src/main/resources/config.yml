@@ -1,0 +1,70 @@
+# ==========================================================
+#                  AtomRegen Configuration
+#                 Paper / Purpur 1.21.x (Java 21)
+#              Authors: ejyqyl, atomicsqd
+# ==========================================================
+
+# Префикс плагина (поддерживает HEX: &#RRGGBB и градиенты MiniMessage: <gradient:#FF8A00:#E52E71>текст</gradient>)
+prefix: "<gradient:#FF5F6D:#FFC371>&lAtomRegen</gradient> &8» "
+
+# Инструмент для выделения первой и второй точки
+wand:
+  material: GOLDEN_AXE
+  name: "<gradient:#FF5F6D:#FFC371>&lПалочка выделения AtomRegen</gradient>"
+  lore:
+    - "&7ЛКМ по блоку &8— &eУстановить Точку 1"
+    - "&7ПКМ по блоку &8— &bУстановить Точку 2"
+    - ""
+    - "&8Команда создания: &e/ar create <имя> [время_сек]"
+
+# Настройки производительности (защита от лагов при массовых взрывах)
+performance:
+  # Максимальное количество восстанавливаемых блоков за один серверный тик (20 тиков = 1 сек)
+  # Позволяет восстанавливать сотни взорванных блоков плавно, без просадки TPS
+  max-blocks-per-tick: 25
+
+# Визуальные и звуковые эффекты регенерации
+effects:
+  particles:
+    enabled: true
+    # Тип партикла при регенерации (например: DUST, HAPPY_VILLAGER, CRIT, FIREWORK)
+    type: "DUST"
+    # Цвет пыли в формате HEX (только если type: DUST)
+    dust-color: "#FF8A00"
+    dust-size: 1.0
+  sounds:
+    enabled: true
+    # Звук при восстановлении сломанного блока
+    restore-sound: "BLOCK_STONE_PLACE"
+    # Звук при исчезновении временно поставленного игроком блока
+    vanish-sound: "BLOCK_LAVA_EXTINGUISH"
+    volume: 0.6
+    pitch: 1.2
+
+# Сообщения плагина
+messages:
+  no-permission: "&cУ вас нет прав на использование этой команды!"
+  only-players: "&cЭта команда доступна только игрокам!"
+  wand-given: "&fВам выдан инструмент выделения &eПалочка AtomRegen&f."
+  pos1-set: "&aТочка 1 &fустановлена на &e%x%, %y%, %z% &7(%world%)"
+  pos2-set: "&bТочка 2 &fустановлена на &e%x%, %y%, %z% &7(%world%)"
+  positions-not-set: "&cСначала выделите обе точки палочкой &e/ar wand &cили командами &e/ar pos1 &cи &e/ar pos2&c!"
+  different-worlds: "&cТочки выделения должны находиться в одном и том же мире!"
+  region-already-exists: "&cРегион с именем &e%region% &cуже существует!"
+  region-not-found: "&cРегион &e%region% &cне найден!"
+  region-created: "&fРегион &e%region% &fуспешно создан! Запомнено &b%blocks% &fблоков. Время регенерации: &a%delay% сек."
+  region-deleted: "&fРегион &e%region% &fуспешно удален."
+  delay-updated: "&fВремя регенерации для региона &e%region% &fизменено на &a%delay% сек."
+  region-reset: "&fРегион &e%region% &fпринудительно восстановлен к исходному состоянию (&b%blocks% &fблоков)."
+  reload-success: "&aКонфигурация и данные регионов успешно перезагружены!"
+  help-header: "<gradient:#FF5F6D:#FFC371>&m               &r <gradient:#FF5F6D:#FFC371>&lAtomRegen Справка</gradient> <gradient:#FF5F6D:#FFC371>&m               </gradient>"
+  help-wand: "&e/ar wand &8— &7Получить палочку выделения точек"
+  help-pos1: "&e/ar pos1 &8— &7Установить точку 1 на текущей позиции"
+  help-pos2: "&e/ar pos2 &8— &7Установить точку 2 на текущей позиции"
+  help-create: "&e/ar create <имя> [время_сек] &8— &7Создать регион со слепком текущих блоков"
+  help-delete: "&e/ar delete <имя> &8— &7Удалить регион"
+  help-setdelay: "&e/ar setdelay <имя> <сек> &8— &7Изменить время восстановления"
+  help-reset: "&e/ar reset <имя> &8— &7Мгновенно вернуть регион к слепку"
+  help-list: "&e/ar list &8— &7Список всех активных регионов"
+  help-info: "&e/ar info <имя> &8— &7Подробная информация о регионе"
+  help-reload: "&e/ar reload &8— &7Перезагрузить плагин"

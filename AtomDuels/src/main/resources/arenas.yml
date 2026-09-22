@@ -1,0 +1,41 @@
+# ==========================================================
+#                   AtomDuels Arenas
+#                     Author: ejyqyl
+#                   GitHub: https://github.com/aqkooo
+# ==========================================================
+
+arenas:
+  colosseum:
+    display-name: "<#00B5FD>Колизей"
+    enabled: true
+    spawn1:
+      world: world
+      x: 0.5
+      y: 100.0
+      z: 15.5
+      yaw: 180.0
+      pitch: 0.0
+    spawn2:
+      world: world
+      x: 0.5
+      y: 100.0
+      z: -15.5
+      yaw: 0.0
+      pitch: 0.0
+    spectator-spawn:
+      world: world
+      x: 0.5
+      y: 105.0
+      z: 0.5
+      yaw: 90.0
+      pitch: 20.0
+    pos1:
+      world: world
+      x: 30.0
+      y: 60.0
+      z: 30.0
+    pos2:
+      world: world
+      x: -30.0
+      y: 150.0
+      z: -30.0

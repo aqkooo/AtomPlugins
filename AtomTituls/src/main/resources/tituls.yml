@@ -1,0 +1,420 @@
+# rarity редактировать в menu.yml
+
+tituls:
+  52:
+    name: "&#FF00005&#FF00002"
+    rarity: "RARE"
+  mode-clown:
+    name: "&#EFEFEF&lm&#E3E2E4&lo&#D7D5DA&ld&#CBC8CF&le&#BFBBC5&l: &#B2AEBA&lc&#A6A1B0&ll&#9A94A5&lo&#8E879B&lw&#827A90&ln"
+    rarity: "DEFAULT"
+  mode-killaura:
+    name: "&#EFEFEF&lm&#E6E5E7&lo&#DDDCDF&ld&#D4D2D7&le&#CBC8CF&l: &#C2BEC7&lK&#B9B5C0&li&#AFABB8&ll&#A6A1B0&ll&#9D97A8&lA&#948EA0&lu&#8B8498&lr&#827A90&la"
+    rarity: "DEFAULT"
+  mode-hitboxes:
+    name: "&#EFEFEF&lm&#E6E5E7&lo&#DDDCDF&ld&#D4D2D7&le&#CBC8CF&l: &#C2BEC7&lH&#B9B5C0&li&#AFABB8&lt&#A6A1B0&lB&#9D97A8&lo&#948EA0&lx&#8B8498&le&#827A90&ls"
+    rarity: "DEFAULT"
+  mode-reach:
+    name: "&#EFEFEF&lm&#E3E2E4&lo&#D7D5DA&ld&#CBC8CF&le&#BFBBC5&l: &#B2AEBA&lR&#A6A1B0&le&#9A94A5&la&#8E879B&lc&#827A90&lh"
+    rarity: "DEFAULT"
+  mode-holyclient:
+    name: "&#EFEFEF&lm&#E7E7E8&lo&#DFDEE1&ld&#D8D6DB&le&#D0CED4&l: &#C8C5CD&lH&#C0BDC6&lo&#B9B5C0&ll&#B1ACB9&ly&#A9A4B2&lC&#A19BAB&ll&#9993A4&li&#928B9E&le&#8A8297&ln&#827A90&lt"
+    rarity: "DEFAULT"
+  mode-chestesp:
+    name: "&#EFEFEF&lm&#E6E5E7&lo&#DDDCDF&ld&#D4D2D7&le&#CBC8CF&l: &#C2BEC7&lC&#B9B5C0&lh&#AFABB8&le&#A6A1B0&ls&#9D97A8&lt&#948EA0&lE&#8B8498&lS&#827A90&lP"
+    rarity: "DEFAULT"
+  mode-mobaura:
+    name: "&#EFEFEF&lm&#E5E4E6&lo&#DBDADE&ld&#D1CFD5&le&#C7C4CC&l: &#BDBAC4&lM&#B4AFBB&lo&#AAA5B3&lb&#A09AAA&lA&#968FA1&lu&#8C8599&lr&#827A90&la"
+    rarity: "DEFAULT"
+  check:
+    name: "&#EFD700&lП&#ECD200&lр&#E9CD00&lо&#E7C800&lв&#E4C300&lе&#E1BE00&lр&#DEB800&lк&#DBB300&lу&#D9AE00&l?&#D6A900&l?&#D3A400&l?"
+    rarity: "RARE"
+  afk:
+    name: "&#EFD700&lА&#E1BE00&lФ&#D3A400&lК"
+    rarity: "RARE"
+  hits-off:
+    name: "&#EFD700&lХ&#EACF00&lи&#E6C600&lт&#E1BE00&lы &#DCB500&lо&#D8AD00&lф&#D3A400&lф"
+    rarity: "RARE"
+  hitbox-user:
+    name: "&#EFD700&lH&#ECD100&li&#E9CC00&lt&#E6C600&lB&#E3C000&lo&#DFBB00&lx &#DCB500&lu&#D9AF00&ls&#D6AA00&le&#D3A400&lr"
+    rarity: "RARE"
+  lowskill-user:
+    name: "&#EFD700&lL&#ECD200&lo&#EACE00&lw&#E7C900&lS&#E5C400&lk&#E2C000&li&#E0BB00&ll&#DDB700&ll &#DBB200&lu&#D8AD00&ls&#D6A900&le&#D3A400&lr"
+    rarity: "RARE"
+  daughter-automine:
+    name: "&#EFD700&lД&#EDD300&lо&#EACF00&lч&#E8CA00&lь &#E6C600&lА&#E3C200&lв&#E1BE00&lт&#DFB900&lо&#DCB500&lш&#DAB100&lа&#D8AD00&lх&#D5A800&lт&#D3A400&lы"
+    rarity: "RARE"
+  emotion-kasha:
+    name: "&#FF0000&lЭ&#F60000&lм&#EE0000&lо&#E50000&lц&#DC0000&lи&#D40000&lя &#CB0000&lК&#C20000&lа&#BA0000&lш&#B10000&lи"
+    rarity: "RARE"
+  boy_nefora:
+    name: "&#FF0000&lП&#F80000&lа&#F10000&lр&#EA0000&lе&#E30000&lн&#DC0000&lь &#D40000&lН&#CD0000&lе&#C60000&lф&#BF0000&lо&#B80000&lр&#B10000&lа"
+    rarity: "RARE"
+  /hack:
+    name: "&#FF0000&l/&#EC0000&lh&#D80000&la&#C50000&lc&#B10000&lk"
+    rarity: "RARE"
+  mimimamamu:
+    name: "&#FF01D6&lM&#F401CC&li&#EA01C2&lM&#DF01B8&li&#D501AE&lM&#CA00A4&la&#C0009A&lM&#B50090&la&#AB0086&lM&#A0007C&lu"
+    rarity: "RARE"
+  buy-dk:
+    name: "&#FF01D6&l<&#F301CB&l- &#E701C0&lК&#DB01B4&lУ&#D001A9&lП&#C4009E&lЛ&#B80093&lЮ &#AC0087&lД&#A0007C&lК"
+    rarity: "RARE"
+  sell-dk:
+    name: "&#FF01D6&l<&#F401CC&l- &#EA01C2&lП&#DF01B8&lР&#D501AE&lО&#CA00A4&lД&#C0009A&lА&#B50090&lМ &#AB0086&lД&#A0007C&lК"
+    rarity: "RARE"
+  322:
+    name: "&#0075FF&l3&#004FFF&l2&#0029FF&l2"
+    rarity: "DEFAULT"
+  zxc:
+    name: "&#000000&lZ&#800000&lX&#FF0000&lC"
+    rarity: "DEFAULT"
+  buffovar:
+    name: "&#FB0000&lБ&#EE0000&lа&#E00000&lф&#D30000&lо&#C50000&lв&#B80000&lа&#AA0000&lр"
+    rarity: "DEFAULT"
+  PvE:
+    name: "&#000000&lP&#800000&lv&#FF0000&lE"
+    rarity: "DEFAULT"
+  nefor:
+    name: "&#0075FF&lН&#0094FF&lе&#00B3FF&lф&#00D1FF&lо&#00F0FF&lр"
+    rarity: "DEFAULT"
+  title:
+    name: "&#14FF00&lТ&#0FF402&lи&#0AE904&lт&#05DE06&lу&#00D308&lл"
+    rarity: "DEFAULT"
+  Ezz:
+    name: "&#000000&lE&#800000&lz&#FF0000&lz"
+    rarity: "DEFAULT"
+  300iq:
+    name: "&#00E0FF&l3&#00C2FF&l0&#00A3FF&l0&#0085FF&li&#0066FF&lq"
+    rarity: "DEFAULT"
+  trapper:
+    name: "&#FF0000&lТ&#F50000&lр&#EB0000&lа&#E20000&lп&#D80000&lе&#CE0000&lр"
+    rarity: "DEFAULT"
+  666:
+    name: "&#000000&l6&#620000&l6&#C30000&l6"
+    rarity: "DEFAULT"
+  heals+pkm:
+    name: "&#FB0000&lХ&#F10000&lИ&#E70000&lЛ&#DD0000&lК&#D30000&lИ&#C80000&l+&#BE0000&lП&#B40000&lК&#AA0000&lМ"
+    rarity: "RARE"
+  son-automine:
+    name: "&#FF9900&lС&#FCA200&lы&#F8AC00&lн &#F5B500&lа&#F2BE00&lв&#EFC700&lт&#EBD100&lо&#E8DA00&lш&#E5E300&lа&#E2EC00&lх&#DEF600&lт&#DBFF00&lы"
+    rarity: "RARE"
+  ❤:
+    name: "&#FB0000❤"
+    rarity: "RARE"
+  5ive:
+    name: "&#0094FF&l5&#0080FF&lI&#006BFF&lV&#0057FF&lE"
+    rarity: "RARE"
+  heply+pkm:
+    name: "&#FB0000&lГ&#F10000&lЕ&#E70000&lП&#DD0000&lЛ&#D30000&lЫ&#C80000&l+&#BE0000&lП&#B40000&lК&#AA0000&lМ"
+    rarity: "RARE"
+  dead-inside:
+    name: "&#6A0000&ld&#5E0000&le&#520000&la&#470000&ld &#3B0000&li&#2F0000&ln&#230000&ls&#180000&li&#0C0000&ld&#000000&le"
+    rarity: "RARE"
+  kfc:
+    name: "&#FF6B00&lK&#FF4500&lF&#FF1F00&lC"
+    rarity: "RARE"
+  grunt:
+    name: "&#FF00E6&lП&#FF00E8&lо&#FF00EA&lх&#FF00EC&lр&#FF00EF&lю&#FF00F1&lк&#FF00F3&lа&#FF00F5&l"
+    rarity: "RARE"
+  dragon:
+    name: "&#0FBB00&lД&#11D600&lр&#13F100&lа&#13F100&lк&#11D600&lо&#0FBB00&lн"
+    rarity: "DEFAULT"
+  snowman-2023:
+    name: "&#FBFBFBС&#F0FAFBн&#E5F9FCе&#DAF8FCг&#CEF6FCо&#C3F5FCв&#B8F4FDи&#ADF3FDк"
+    rarity: "DEFAULT"
+  ❄-2023:
+    name: "&#FBFBFB❄"
+    rarity: "DEFAULT"
+  ☃-2023:
+    name: "&#FBFBFB☃"
+    rarity: "DEFAULT"
+  new-year-2023:
+    name: "&#1CC02DН&#1FD231о&#22E436в&#25F63Aы&#25F63Aй &#22E436г&#1FD231о&#1CC02Dд"
+    rarity: "DEFAULT"
+  2k24:
+    name: "&#1CC02D2&#23EA37k&#23EA372&#1CC02D4"
+    rarity: "DEFAULT"
+  yacht-under-boat-2023:
+    name: "&#C00000Я&#D10707х&#E20E0Eт&#F41414а &#EA281Bп&#AC5620о&#6F8326д &#31B12Bё&#17CA2Fл&#0FD932к&#08E934о&#00F837й"
+    rarity: "RARE"
+  bustle-2023:
+    name: "&#C02FA9С&#A160BFу&#8392D4е&#64C3EAт&#45F4FFа"
+    rarity: "RARE"
+  fireworks-2023:
+    name: "&#CD7B00Ф&#DA8300е&#E68A00й&#F39200е&#FF9900р&#F39200в&#E68A00е&#DA8300р&#CD7B00к"
+    rarity: "RARE"
+  survived-2023:
+    name: "&#0A8000П&#0B8B00е&#0C9500р&#0CA000е&#0DAA00ж&#0EB500и&#0DAA00л &#0CA0002&#0C95000&#0B8B002&#0A80003"
+    rarity: "RARE"
+  best-in-2024:
+    name: "&#0FBB00&lЛ&#10C900&lу&#11D600&lч&#12E400&lш&#13F100&lи&#14FF00&lй &#13F100&lв &#12E400&l2&#11D600&l0&#10C900&l2&#0FBB00&l4"
+    rarity: "RARE"
+  xmas-2023:
+    name: "&#CD7B00Р&#DA8300о&#E68A00ж&#F39200д&#FF9900е&#F39200с&#E68A00т&#DA8300в&#CD7B00о"
+    rarity: "RARE"
+  premium-year-2023:
+    name: "&#C86C00ᴘ&#D37200ʀ&#DE7800ᴇ&#E97E00ᴍ&#F48400ɪ&#FF8A00ᴜ&#F48400ᴍ &#E97E00ʏ&#DE7800ᴇ&#D37200ᴀ&#C86C00ʀ"
+    rarity: "RARE"
+  new-year-2023-2:
+    name: "&#C80000ɴ&#DA3D00ᴇ&#ED7B00ᴡ &#FFB800ʏ&#AABD0Bᴇ&#55C315ᴀ&#00C820ʀ"
+    rarity: "RARE"
+  legendary-year-2023:
+    name: "&#009DE1ʟ&#00A1E6ᴇ&#00A4EBɢ&#00A8F0ᴇ&#00ACF5ɴ&#00AFFAᴅ&#00B3FFᴀ&#00AFFAʀ&#00ACF5ʏ &#00A8F0ʏ&#00A4EBᴇ&#00A1E6ᴀ&#009DE1ʀ"
+    rarity: "RARE"
+  dad-under-the-tree:
+    name: "&#006B9AБ&#006FA0а&#0073A6т&#0078ABя &#007CB1п&#0080B7о&#0080B7д &#007CB1ё&#0078ABл&#0073A6к&#006FA0о&#006B9Aй"
+    rarity: "RARE"
+  Shailushai:
+    name: "&#084CFBШ&#2064FBа&#377CFCй&#4F94FCл&#66ABFCу&#7EC3FCш&#95DBFDа&#ADF3FDй"
+    rarity: "DEFAULT"
+  fanat:
+    name: "&#084CFBF&#3176FCa&#5BA0FCn&#84C9FDa&#ADF3FDt"
+    rarity: "DEFAULT"
+  freak:
+    name: "&#084CFBФ&#FDF300р&#ED9D1Cи&#D80000к"
+    rarity: "DEFAULT"
+  farmila:
+    name: "&#FBA600Ф&#FBB300а&#FCC000р&#FCCD00м&#FCD900и&#FDE600л&#FDF300а"
+    rarity: "DEFAULT"
+  son-of-anarchy:
+    name: "&#0055FB&lС&#0063FB&lы&#0070FB&lн &#007EFC&lА&#008BFC&lн&#0099FC&lа&#00A6FC&lр&#00B4FD&lх&#00C1FD&lи&#00CFFD&lи"
+    rarity: "DEFAULT"
+  daughter-of-anarchy:
+    name: "&#FB00F1&lД&#F300EA&lо&#EA00E3&lч&#E200DC&lь &#D900D5&lА&#D100CE&lн&#C800C6&lа&#C000BF&lр&#B700B8&lх&#AF00B1&lи&#A600AA&lи"
+    rarity: "DEFAULT"
+  ))0):
+    name: "&#FB0000&l)&#D80000&l)&#6358EE&l0&#9B4AEE&l)"
+    rarity: "DEFAULT"
+  18+:
+    name: "&#930000&l1&#C90000&l8&#FF0000&l+"
+    rarity: "DEFAULT"
+  angel:
+    name: "&#4E0000&lА&#7A0000&lн&#A70000&lг&#D30000&lе&#FF0000&lл"
+    rarity: "DEFAULT"
+  dead:
+    name: "&#4E0000&lС&#710000&lм&#950000&lе&#B80000&lр&#DC0000&lт&#FF0000&lь"
+    rarity: "DEFAULT"
+  /near:
+    name: "&#33FF00&l/&#2DF000&ln&#27E100&le&#21D200&la&#1BC300&lr"
+    rarity: "RARE"
+  mather-of-anarchy:
+    name: "&#FF0000&lМ&#F90013&lа&#F30026&lт&#ED0038&lь &#E7004B&lА&#E1005E&lн&#DB0071&lа&#D50084&lр&#CF0096&lх&#C900A9&lи&#C300BC&lи"
+    rarity: "RARE"
+  4cb:
+    name: "&#FF0000&l4&#C20000&lС&#840000&lВ"
+    rarity: "RARE"
+  in-fear:
+    name: "&#9E00FF&lВ &#AE05F4&lс&#BE09EA&lт&#CF0EDF&lр&#DF12D4&lа&#EF17CA&lх&#FF1BBF&lе"
+    rarity: "RARE"
+  b-ax%e:
+    name: "&#FA00FF&lB &#E200F3&lA&#C900E7&lx&#B100DA&l%&#9800CE&le"
+    rarity: "RARE"
+  eggdragon:
+    name: "&#FA00FF&lЯ&#F000FA&lй&#E600F5&lц&#DD00F0&lо &#D300EB&lД&#C900E7&lр&#BF00E2&lа&#B500DD&lк&#AC00D8&lо&#A200D3&lн&#9800CE&lа"
+    rarity: "RARE"
+  father-of-anarchy:
+    name: "&#FF0000&lО&#FA0000&lт&#F50000&lе&#F00000&lц &#EB0000&lА&#E70000&lн&#E20000&lа&#DD0000&lр&#D80000&lх&#D30000&lи&#CE0000&lи"
+    rarity: "RARE"
+  what-are-you-offended-at:
+    name: "&#BD27B9н&#BC45C5а &#BA80DCч&#B99DE7т&#B8BBF3о &#9FD0FDо&#86C8FCб&#6EC1FBи&#55B9FAж&#3DB1F9е&#24A9F8н"
+    rarity: "DEFAULT"
+  guitar:
+    name: "&#CD2C8Aг&#BD3292и&#AE3899т&#9E3EA1р&#565D94а&#0D7C87а"
+    rarity: "DEFAULT"
+  sh-sociable:
+    name: "&#F62FC1ш&#F23BC1-&#EF46C2о&#EB52C2б&#E75DC2щ&#E469C3и&#E074C3т&#E469C3е&#E75DC2л&#EB52C2ь&#EF46C2н&#F23BC1а&#F62FC1я"
+    rarity: "DEFAULT"
+  peach:
+    name: "&#FADD36п&#F6DC41е&#F3DA4Bр&#EFD956с&#F5DB46и&#FADD36к"
+    rarity: "DEFAULT"
+  shell:
+    name: "&#F8E46Dр&#EEDD79а&#E5D785к&#DBD091у&#E5D785ш&#EEDD79к&#F8E46Dа"
+    rarity: "DEFAULT"
+  adidas-pro:
+    name: "&#F86D78а&#F2727Cд&#EC7780и&#E77B84д&#E18088а&#DB858Cс &#EA7982п&#F1737Dр&#F86D78о"
+    rarity: "DEFAULT"
+  palette:
+    name: "&#029399п&#25AE83а&#48CA6Eл&#6BE558и&#8CB67Fт&#AE88A7р&#CF59CEа"
+    rarity: "DEFAULT"
+  pick-me:
+    name: "&#BE61F6п&#AE6CE4и&#9D77D1к&#A552A8м&#AC2D7Eи"
+    rarity: "DEFAULT"
+  nike-pro:
+    name: "&#5A2FF6н&#4F43F6а&#4556F6й&#3A6AF6к &#3D63F6п&#4C49F6р&#5A2FF6о"
+    rarity: "RARE"
+  sorrel:
+    name: "&#2EC11Fщ&#3ECC2Fа&#4ED840в&#5EE350е&#46D238л&#2EC11Fь"
+    rarity: "RARE"
+  normis:
+    name: "&#1FADC1н&#29B8CCо&#34C4D8р&#3ECFE3м&#2FBED2и&#1FADC1с"
+    rarity: "RARE"
+  whats-in-the-bag:
+    name: "&#FFE300ч&#F8D705т&#F0CA09о &#E1B212в &#D2991Bм&#DAA517е&#E1B212ш&#E9BE0Eо&#F0CA09ч&#F8D705к&#FFE300е"
+    rarity: "RARE"
+  art-boss:
+    name: "&#CF1FC3б&#D71ACDо&#DE15D7с&#E611E1с &#F507F5х&#FC02FFу&#F308F3д&#EA0EE7о&#E113DBж&#D819CFк&#CF1FC3и"
+    rarity: "RARE"
+  boss-eshkere:
+    name: "&#E9FF00б&#DFDA01о&#D6B602с&#CC9103с &#B94805е&#C75904щ&#D56903к&#E37A02е&#F18A01р&#FF9B00е"
+    rarity: "RARE"
+  ate-all-the-Big-Macs:
+    name: "&#FF9B00с&#FCA800ъ&#FAB400е&#F7C100л &#F1DA00в&#EFE600с&#ECF300е &#ECF100б&#EFE200и&#F2D400г&#F6C600м&#F9B800а&#FCA900к&#FF9B00и"
+    rarity: "RARE"
+  boss-kfc:
+    name: "&#FF0000б&#FF1818о&#FF2F2Fс&#FF4747с &#FF3F3Fк&#FF1F1Fф&#FF0000с"
+    rarity: "RARE"
+  shelter:
+    name: "&#08008Cу&#0A00ADб&#0C00CEе&#0E00EFж&#0C00CEи&#0A00ADщ&#08008Cе"
+    rarity: "RARE"
+  :d:
+    name: "&#B74B4B:&#B74B4BD"
+    rarity: "DEFAULT"
+  sigma:
+    name: "&#0192B9с&#01AEDCи&#00C9FFг&#01AEDCм&#0192B9а"
+    rarity: "DEFAULT"
+  0_o:
+    name: "&#B74B4BO&#950000_&#C37171o"
+    rarity: "DEFAULT"
+  sigma-creeper:
+    name: "&#4FC300с&#55CE02и&#5AD903г&#60E505м&#65F006а &#6BFB08к&#65F006р&#60E505и&#5AD903п&#55CE02е&#4FC300р"
+    rarity: "DEFAULT"
+  sigma-piggy:
+    name: "&#AD277Cс&#BD2C88и&#CE3094г&#DE35A1м&#EF39ADа &#FF3EB9с&#EF39ADв&#DE35A1и&#CE3094н&#BD2C88к&#AD277Cа"
+    rarity: "DEFAULT"
+  skuf:
+    name: "&#535353с&#828282к&#828282у&#535353ф"
+    rarity: "DEFAULT"
+  plaki-plaki:
+    name: "&#0192B9п&#019DC7л&#01A8D5а&#00B3E3к&#00BEF1и&#00C9FF-&#00BEF1п&#00B3E3л&#01A8D5а&#019DC7к&#0192B9и"
+    rarity: "DEFAULT"
+  triple-trap:
+    name: "&#630000t&#6F0000r&#7A0000i&#860000p&#910000l&#910000e &#860000t&#7A0000r&#6F0000a&#630000p"
+    rarity: "RARE"
+  double-cup:
+    name: "&#63003Bд&#7D004Bа&#97005Aб&#B1006Aл &#CB0079ч&#B1006Aа&#97005Aр&#7D004Bк&#63003Bа"
+    rarity: "RARE"
+  hard:
+    name: "&#630000h&#860000a&#860000r&#630000d"
+    rarity: "RARE"
+  fifty-two:
+    name: "&#B70000п&#C40000и&#D10000д&#DE0000и&#EB0000с&#F80000я&#F80000т &#EB0000д&#DE0000в&#D10000а&#C40000а&#B70000а"
+    rarity: "RARE"
+  destroyed:
+    name: "&#240087d&#2A009Ce&#2F00B0s&#3500C5t&#3A00D9r&#3500C5o&#2F00B0y&#2A009Ce&#240087d"
+    rarity: "RARE"
+  banned-by-zxc:
+    name: "&#3D0000b&#510000a&#640000nn&#780000e&#8B0000d &#8B0000b&#780000y &#640000z&#510000x&#3D0000c"
+    rarity: "RARE"
+  banned-for-1-2:
+    name: "&#3D0000b&#4F0000a&#600000nn&#720000e&#830000d &#950000f&#830000o&#720000r &#6000001&#4F0000.&#3D00002"
+    rarity: "RARE"
+  /donate:
+    name: "&#3D0000/&#5A0000d&#780000o&#950000n&#780000a&#5A0000t&#3D0000e"
+    rarity: "RARE"
+  snake:
+    name: "&#2CCB00З&#32E500м&#37FF00е&#2CCB00я"
+    rarity: "DEFAULT"
+  snowman-2024:
+    name: "&#FBFBFBС&#F0FAFBн&#E5F9FCе&#DAF8FCг&#CEF6FCо&#C3F5FCв&#B8F4FDи&#ADF3FDк"
+    rarity: "DEFAULT"
+  ❄-2024:
+    name: "&#FBFBFB❄"
+    rarity: "DEFAULT"
+  ☃-2024:
+    name: "&#FBFBFB☃"
+    rarity: "DEFAULT"
+  new-year-2024:
+    name: "&#1CC02DН&#1FD231о&#22E436в&#25F63Aы&#25F63Aй &#22E436г&#1FD231о&#1CC02Dд"
+    rarity: "DEFAULT"
+  2k25:
+    name: "&#1CC02D2&#23EA37k&#23EA372&#1CC02D5"
+    rarity: "DEFAULT"
+  yacht-under-boat-2024:
+    name: "&#C00000Я&#D10707х&#E20E0Eт&#F41414а &#EA281Bп&#AC5620о&#6F8326д &#31B12Bё&#17CA2Fл&#0FD932к&#08E934о&#00F837й"
+    rarity: "RARE"
+  bustle-2024:
+    name: "&#C02FA9С&#A160BFу&#8392D4е&#64C3EAт&#45F4FFа"
+    rarity: "RARE"
+  fireworks-2024:
+    name: "&#CD7B00Ф&#DA8300е&#E68A00й&#F39200е&#FF9900р&#F39200в&#E68A00е&#DA8300р&#CD7B00к"
+    rarity: "RARE"
+  survived-2024:
+    name: "&#0A8000П&#0B8B00е&#0C9500р&#0CA000е&#0DAA00ж&#0EB500и&#0DAA00л &#0CA0002&#0C95000&#0B8B002&#0A80004"
+    rarity: "RARE"
+  best-in-2025:
+    name: "&#0FBB00&lЛ&#10C900&lу&#11D600&lч&#12E400&lш&#13F100&lи&#14FF00&lй &#13F100&lв &#12E400&l2&#11D600&l0&#10C900&l2&#0FBB00&l5"
+    rarity: "RARE"
+  xmas-2024:
+    name: "&#CD7B00Р&#DA8300о&#E68A00ж&#F39200д&#FF9900е&#F39200с&#E68A00т&#DA8300в&#CD7B00о"
+    rarity: "RARE"
+  premium-year-2024:
+    name: "&#C86C00ᴘ&#D37200ʀ&#DE7800ᴇ&#E97E00ᴍ&#F48400ɪ&#FF8A00ᴜ&#F48400ᴍ &#E97E00ʏ&#DE7800ᴇ&#D37200ᴀ&#C86C00ʀ"
+    rarity: "RARE"
+  new-year-2024-2:
+    name: "&#C80000ɴ&#DA3D00ᴇ&#ED7B00ᴡ &#FFB800ʏ&#AABD0Bᴇ&#55C315ᴀ&#00C820ʀ"
+    rarity: "RARE"
+  legendary-year-2024:
+    name: "&#009DE1ʟ&#00A1E6ᴇ&#00A4EBɢ&#00A8F0ᴇ&#00ACF5ɴ&#00AFFAᴅ&#00B3FFᴀ&#00AFFAʀ&#00ACF5ʏ &#00A8F0ʏ&#00A4EBᴇ&#00A1E6ᴀ&#009DE1ʀ"
+    rarity: "RARE"
+  2025-ww:
+    name: "&#9700CB2&#A400DC0&#B100EE2&#BE00FF5 &#A400DCᴡ&#9700CBᴡ"
+    rarity: "RARE"
+  da-vinci:
+    name: "&#8C3E00D&#9B4500a &#B85200V&#C65800i&#B34F00n&#9F4700c&#8C3E00i"
+    rarity: "DEFAULT"
+  phoenix:
+    name: "&#8C0088P&#B100ACh&#D700D0o&#FC00F4e&#D700D0n&#B100ACi&#8C0088x"
+    rarity: "DEFAULT"
+  lmfao:
+    name: "&#FD0540L&#FA602CM&#F7BA18F&#B4CB58A&#70DB97O"
+    rarity: "DEFAULT"
+  2017:
+    name: "&#DC3F862&#C962510&#B6851C1&#F404BA7"
+    rarity: "DEFAULT"
+  /cheatreport:
+    name: "&#2356A4/&#1D59B3c&#175BC2h&#125ED2e&#0C60E1a&#0663F0t&#0065FFr&#0663F0e&#0C60E1p&#125ED2o&#175BC2r&#1D59B3t"
+    rarity: "DEFAULT"
+  tim+:
+    name: "&#2356A4Т&#125ED2и&#0065FFм&#2356A4+"
+    rarity: "DEFAULT"
+  immortal:
+    name: "&#A46C23Б&#B5731Cе&#C67915с&#D8800Eс&#E98607м&#FA8D00е&#E98607р&#D8800Eт&#C67915н&#B5731Cы&#A46C23й"
+    rarity: "DEFAULT"
+  money-lover:
+    name: "&#41B529Л&#3DBD23ю&#3AC51Dб&#36CD17и&#33D412т&#2FDC0Cе&#2CE406л&#28EC00ь &#30DA0Eд&#35D115е&#39C71Bн&#3DBE22е&#41B529г"
+    rarity: "DEFAULT"
+  sigmaboy:
+    name: "&#8A8A8As&#9B9B9Bi&#ACACACg&#BCBCBCm&#CDCDCDa&#B7B7B7b&#A0A0A0o&#8A8A8Ay"
+    rarity: "DEFAULT"
+  ice+alabaster:
+    name: "&#00158DI&#002295c&#002F9Ee &#0048AF+ &#0062C0a&#006FC8l&#0062C0a&#0055B7b&#0048AFa&#003CA6s&#002F9Et&#002295e&#00158Dr"
+    rarity: "RARE"
+  time-to-kill:
+    name: "&#1A0000t&#280000i&#370000m&#450000e &#620000t&#700000o &#4E0000k&#3C0000i&#2B0000l&#1A0000l"
+    rarity: "RARE"
+  worship-me:
+    name: "&#670000w&#790000o&#8C0000r&#9E0000s&#B10000h&#C30000i&#AC0000p &#7E0000m&#670000e"
+    rarity: "RARE"
+  now-or-never:
+    name: "&#510067n&#5C0076o&#680084w &#7E00A1o&#8A00B0r &#8700ADn&#7A009Be&#6C008Av&#5F0078e&#510067r"
+    rarity: "RARE"
+  9mice:
+    name: "&#000F679&#001485M&#0018A2i&#001485c&#000F67e"
+    rarity: "RARE"
+  kai-angel:
+    name: "&#00158DK&#002C9Ca&#0042ABi &#006FC8A&#0059B9n&#0042ABg&#002C9Ce&#00158Dl"
+    rarity: "RARE"
+  heavy-metal-2:
+    name: "&#9F0404H&#AD0303e&#BA0303a&#C80202v&#D60202y &#F10101M&#FF0000e&#EF0101t&#DF0101a&#CF0202l &#AF03032"
+    rarity: "RARE"
+  $coins$:
+    name: "&#FBB908$&#FACF08ᴄ&#F9E508ᴏ&#F8FB08ɪ&#F9E508ɴ&#FACF08s&#FBB908$"
+    rarity: "RARE"
+  /suicide-pls:
+    name: "&#8D2800/&#972B00s&#A12E00u&#AC3100i&#B63300c&#C03600i&#CA3900d&#BE3600e &#A52F00p&#992B00l&#8D2800s"
+    rarity: "RARE"
+  /hub-pls:
+    name: "&#8D003F/&#9A0045h&#A6004Au&#B30050b &#AE004Ep&#9E0046l&#8D003Fs"
+    rarity: "RARE"
+  alt+f4-pls:
+    name: "&#8D000Ba&#9C000Cl&#AB000Dt&#B9000F+&#C80010f&#D700114 &#B2000Ep&#A0000Dl&#8D000Bs"
+    rarity: "RARE"

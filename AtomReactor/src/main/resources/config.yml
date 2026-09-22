@@ -1,0 +1,116 @@
+# ==========================================================
+#                  AtomReactor Configuration
+#                 Paper / Purpur 1.21.x (Java 21)
+#              Authors: ejyqyl, atomicsqd
+# ==========================================================
+
+# Префикс плагина (только читаемые градиенты!)
+prefix: "<gradient:#FF5F6D:#FFC371>&lAtomReactor</gradient> &8» "
+
+# Материал блока реактора (любой валидный блок Minecraft: CRYING_OBSIDIAN, BEACON, RESPRAWN_ANCHOR, COPPER_BULB, LODESTONE и т.д.)
+reactor-block: "CRYING_OBSIDIAN"
+
+# Экономическая система
+economy:
+  # Провайдер валюты:
+  # - VAULT (Стандартный баланс)
+  # - PLAYERPOINTS (Донат-поинты)
+  # - COINSENGINE (Мультивалюта CoinsEngine)
+  # - INTERNAL (Внутренний накопительный банк реактора)
+  provider: "VAULT"
+
+  # Название валюты для CoinsEngine (если используется COINSENGINE)
+  coinsengine-currency: "coins"
+
+  # Название/символ валюты в сообщениях
+  currency-symbol: "$"
+  currency-name: "монет"
+
+# Настройки распределения дохода
+farming:
+  # Кому и где начисляется доход:
+  # - OWNER_GLOBAL: Владелец получает доход везде, пока находится онлайн на сервере
+  # - OWNER_IN_RADIUS: Владелец получает доход ТОЛЬКО если находится в радиусе от реактора
+  # - ALL_IN_RADIUS: Все игроки, находящиеся в радиусе реактора, получают указанную сумму
+  # - INTERNAL_VAULT: Доход накапливается в банк реактора, забирается через клик в меню
+  target: "OWNER_GLOBAL"
+
+  # Обязательно ли владельцу быть онлайн для работы реактора
+  owner-must-be-online: true
+
+# Уровни и параметры прокачки реактора
+levels:
+  1:
+    name: "<gradient:#56CCF2:#2F80ED>Реактор Ур. I</gradient>"
+    income: 25.0
+    interval-seconds: 30
+    radius: 10
+    upgrade-cost: 5000.0
+    max-storage: 10000.0
+    particle: "DUST"
+    particle-color: "#56CCF2"
+  2:
+    name: "<gradient:#00C0FF:#42E695>Реактор Ур. II</gradient>"
+    income: 75.0
+    interval-seconds: 25
+    radius: 15
+    upgrade-cost: 15000.0
+    max-storage: 30000.0
+    particle: "DUST"
+    particle-color: "#42E695"
+  3:
+    name: "<gradient:#FCE38A:#F38181>Реактор Ур. III</gradient>"
+    income: 200.0
+    interval-seconds: 20
+    radius: 20
+    upgrade-cost: 50000.0
+    max-storage: 100000.0
+    particle: "DUST"
+    particle-color: "#F38181"
+  4:
+    name: "<gradient:#FF8A00:#E52E71>Реактор Ур. IV</gradient>"
+    income: 500.0
+    interval-seconds: 15
+    radius: 25
+    upgrade-cost: 150000.0
+    max-storage: 300000.0
+    particle: "TRIAL_SPAWNER_DETECTION"
+    particle-color: "#E52E71"
+  5:
+    name: "<gradient:#FF512F:#DD2476>Реактор Ур. V [MAX]</gradient>"
+    income: 1200.0
+    interval-seconds: 10
+    radius: 30
+    upgrade-cost: 0.0
+    max-storage: 1000000.0
+    particle: "TRIAL_SPAWNER_DETECTION"
+    particle-color: "#DD2476"
+
+# Настройки голограммы над реактором (нативный TextDisplay)
+hologram:
+  enabled: true
+  y-offset: 1.7
+  lines:
+    - "<gradient:#FF5F6D:#FFC371>&l⚡ АТОМНЫЙ РЕАКТОР ⚡</gradient>"
+    - "<gradient:#56CCF2:#2F80ED>Уровень:</gradient> &f%level_name%"
+    - "<gradient:#FCE38A:#F38181>Владелец:</gradient> &f%owner%"
+    - "<gradient:#42E695:#3BB78F>Генерация:</gradient> &f+&a%income%%currency% &7/ %interval%с"
+    - "%status%"
+
+# Сообщения плагина
+messages:
+  no-permission: "&cУ вас нет прав на это действие!"
+  only-players: "&cЭта команда доступна только игрокам!"
+  not-owner: "<gradient:#FF512F:#DD2476>Вы не являетесь владельцем этого реактора!</gradient>"
+  reactor-placed: "<gradient:#42E695:#3BB78F>Реактор успешно установлен! Уровень:</gradient> %level_name%"
+  reactor-broken: "<gradient:#FF5F6D:#FFC371>Реактор демонтирован и возвращен в инвентарь.</gradient>"
+  reactor-given: "<gradient:#42E695:#3BB78F>Игроку</gradient> &f%player% <gradient:#42E695:#3BB78F>выдан Реактор Ур.</gradient> &b%level%"
+  income-received: "<gradient:#42E695:#3BB78F>+&a%amount%%currency%</gradient> <gradient:#56CCF2:#2F80ED>от Реактора (%level_name%)</gradient>"
+  upgraded: "<gradient:#42E695:#3BB78F>Реактор успешно улучшен до уровня</gradient> %level_name%<gradient:#42E695:#3BB78F>!</gradient>"
+  not-enough-money: "<gradient:#FF512F:#DD2476>Недостаточно средств для улучшения! Требуется:</gradient> &e%cost%%currency%"
+  max-level-reached: "<gradient:#FCE38A:#F38181>Реактор уже достиг максимального уровня!</gradient>"
+  funds-collected: "<gradient:#42E695:#3BB78F>Вы собрали накопленные средства:</gradient> &a+%amount%%currency%"
+  no-funds-to-collect: "<gradient:#FCE38A:#F38181>В банке реактора нет средств для сбора.</gradient>"
+  toggled-on: "<gradient:#42E695:#3BB78F>Реактор запущен!</gradient>"
+  toggled-off: "<gradient:#FF512F:#DD2476>Реактор приостановлен.</gradient>"
+  reload-success: "<gradient:#42E695:#3BB78F>Конфигурация плагина успешно перезагружена!</gradient>"

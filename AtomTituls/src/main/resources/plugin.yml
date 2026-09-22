@@ -1,0 +1,35 @@
+name: AtomTituls
+version: '${project.version}'
+main: me.ejyqyl.tituls.AtomTitulsPlugin
+api-version: '1.20'
+author: ejyqyl
+description: Modern, asynchronous, lag-free titles plugin for Paper 1.20-1.21.x
+softdepend: [PlaceholderAPI]
+
+commands:
+  tituls:
+    description: "Управление титулами и открытие меню"
+    aliases: [titles, atomtituls, stickhwtituls]
+  atomtituls:
+    description: "Главная команда плагина AtomTituls"
+    aliases: [tituls]
+
+permissions:
+  atomtituls.give:
+    description: "Право на выдачу титулов"
+    default: op
+  atomtituls.take:
+    description: "Право на снятие/забирание титулов"
+    default: op
+  atomtituls.reload:
+    description: "Право на перезагрузку конфигураций"
+    default: op
+  stickhwtituls.give:
+    description: "Совместимость с legacy правом на выдачу"
+    default: op
+  stickhwtituls.take:
+    description: "Совместимость с legacy правом на забирание"
+    default: op
+  stickhwtituls.reload:
+    description: "Совместимость с legacy правом на перезагрузку"
+    default: op

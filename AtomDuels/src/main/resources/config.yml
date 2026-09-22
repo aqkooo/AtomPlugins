@@ -1,0 +1,88 @@
+# ==========================================================
+#                   AtomDuels Configuration
+#                     Author: ejyqyl
+#                   Platform: Paper 1.21+
+# ==========================================================
+
+# Escrow Betting & Economy
+economy:
+  enabled: true
+  fee-percent: 5.0
+  min-bet: 100.0
+  max-bet: 10000000.0
+
+# Crash Recovery Strategy for in-flight duels after unexpected server shutdown
+# Options: DRAW, PLAYER_1, PLAYER_2, CANCEL
+crash-resolution: "DRAW"
+
+# Match Timing
+match:
+  countdown: 5
+  round-time: 300
+  open-challenge-expire: 120
+
+# Zero-Sum Elo Rating System
+elo:
+  default-rating: 1000
+  calibration-games: 10
+  k-factor: 32
+
+# Anti-Abuse Command Whitelist during active matches
+allowed-commands:
+  - "/duels"
+  - "/duel"
+  - "/msg"
+  - "/r"
+  - "/tell"
+
+# PvP Bot Intelligent Parameters per Difficulty
+bot:
+  rewards:
+    enabled: true
+    money: 250.0
+    xp: 50
+  difficulties:
+    easy:
+      reaction-time: 250
+      aim-error: 0.35
+      attack-delay: 14
+      combo-chance: 0.2
+      block-chance: 0.15
+      pearl-chance: 0.05
+      potion-chance: 0.2
+    normal:
+      reaction-time: 160
+      aim-error: 0.20
+      attack-delay: 10
+      combo-chance: 0.45
+      block-chance: 0.35
+      pearl-chance: 0.15
+      potion-chance: 0.4
+    hard:
+      reaction-time: 110
+      aim-error: 0.10
+      attack-delay: 8
+      combo-chance: 0.70
+      block-chance: 0.55
+      pearl-chance: 0.30
+      potion-chance: 0.65
+    expert:
+      reaction-time: 60
+      aim-error: 0.03
+      attack-delay: 6
+      combo-chance: 0.90
+      block-chance: 0.75
+      pearl-chance: 0.50
+      potion-chance: 0.85
+    custom:
+      reaction-time: 120
+      aim-error: 0.15
+      attack-delay: 8
+      combo-chance: 0.70
+      block-chance: 0.40
+      pearl-chance: 0.20
+      potion-chance: 0.50
+
+database:
+  type: "sqlite"
+  file: "data/atomduels.db"

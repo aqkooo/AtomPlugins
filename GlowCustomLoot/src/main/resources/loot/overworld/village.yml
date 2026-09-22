@@ -1,0 +1,53 @@
+name: "Деревня"
+icon: "EMERALD"
+loot_tables:
+  # Маска для перехвата любых сундуков деревни
+  - "minecraft:chests/village/*"
+  # 1. Рабочие места и профессии
+  - "minecraft:chests/village/village_weaponsmith"    # Оружейная кузница (оружие, железо, обсидиан)
+  - "minecraft:chests/village/village_toolsmith"      # Кузница инструментов
+  - "minecraft:chests/village/village_armorer"        # Бронник
+  - "minecraft:chests/village/village_fletcher"       # Лучник / стрелодел
+  - "minecraft:chests/village/village_shepherd"       # Пастух
+  - "minecraft:chests/village/village_butcher"        # Мясник
+  - "minecraft:chests/village/village_tannery"        # Кожевник
+  - "minecraft:chests/village/village_fisher"         # Рыбак (бочки у пристани)
+  - "minecraft:chests/village/village_temple"         # Церковь / храм клирика
+  - "minecraft:chests/village/village_cartographer"   # Картограф (карты, компасы)
+  - "minecraft:chests/village/village_mason"          # Каменщик
+  # 2. Жилые дома по стилям биомов
+  - "minecraft:chests/village/village_plains_house"   # Жилые дома равнин
+  - "minecraft:chests/village/village_desert_house"   # Жилые дома пустыни
+  - "minecraft:chests/village/village_savanna_house"  # Жилые дома саванны
+  - "minecraft:chests/village/village_taiga_house"    # Жилые дома тайги
+  - "minecraft:chests/village/village_snowy_house"    # Жилые дома тундры/снежного биома
+mode: "MERGE"
+rolls:
+  min: 2
+  max: 4
+
+items:
+  "1":
+    provider: "VANILLA"
+    material: "EMERALD"
+    chance: 65.0
+    min_amount: 1
+    max_amount: 6
+  "2":
+    provider: "VANILLA"
+    material: "BREAD"
+    chance: 80.0
+    min_amount: 2
+    max_amount: 6
+  "3":
+    provider: "VANILLA"
+    material: "IRON_INGOT"
+    chance: 45.0
+    min_amount: 1
+    max_amount: 4
+  "4":
+    provider: "VANILLA"
+    material: "APPLE"
+    chance: 50.0
+    min_amount: 1
+    max_amount: 3

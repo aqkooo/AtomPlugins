@@ -1,0 +1,37 @@
+# Build outputs and dependencies
+**/target/
+**/build/
+**/.gradle/
+**/out/
+
+# Archives and binaries
+*.jar
+*.war
+*.ear
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# IDE and editor files
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.classpath
+.project
+.settings/
+*.log
+
+# Third-party decompile / anti-cheat / archives
+LPX-3.8.4/
+AtomTituls/original_source/
+AtomTituls/StickHWTituls-main.zip
+
+# Empty template folder
+AtomExample/
+
+# OS specific
+.DS_Store
+Thumbs.db

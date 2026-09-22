@@ -1,0 +1,16 @@
+# Тип базы данных: sqlite или mysql
+type: sqlite
+
+sqlite:
+  file: database.db
+  busy-timeout: 10000
+
+mysql:
+  host: localhost
+  port: 3306
+  database: tituls
+  user: root
+  password: ""
+  maximum-pool-size: 10
+  minimum-idle: 2
+  connection-timeout: 5000

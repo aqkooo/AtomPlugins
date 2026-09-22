@@ -1,0 +1,23 @@
+messages:
+  using-tag: "&#FC7000▶ &fТитул &#FC7000успешно активирован&f, вы можете им воспользоваться по команде &#FC7000/tituls"
+  already-have-tag: "&#FC0000▶ &fВы уже владеете этим титулом"
+  no-permission: "&#FC0000▶ &fУ вас нет прав"
+  only-players: "&#FC0000▶ &fДоступно только игрокам"
+  command-failed: "&#FC0000▶ &fНе удалось выполнить команду, попробуйте позже"
+  reload: "&#FC7000▶ &fПлагин перезагружен"
+  reload-failed: "&#FC0000▶ &fНе удалось перезагрузить плагин"
+
+  player-not-found: "&#FC0000▶ &fИгрок &#FC0000{player} &fне найден или не в сети"
+  custom-id-exists: "&#FC0000▶ &fКастомный титул с id &#FC0000{id} &fуже существует, выберите другой id"
+  titul-not-found: "&#FC0000▶ &fТитул с id &#FC0000{id} &fне найден"
+  already-have: "&#FC0000▶ &fИгрок &#FC0000{player} &fуже имеет данный титул"
+  not-have: "&#FC0000▶ &fУ игрока &#FC0000{player} &fнет данного титула"
+
+  titul-give-sender: "&#FC7000▶ &fВы выдали титул {titul} &fигроку &#FC7000{player}"
+  titul-give-player: "&#FC7000▶ &fВы получили титул {titul}&f, вы можете им воспользоваться по команде &#FC7000/tituls"
+  tag-give-sender: "&#FC7000▶ &fВы выдали тэг титула {titul} &fигроку &#FC7000{player}"
+  tag-give-player: "&#FC7000▶ &fВы получили тэг титула {titul}"
+
+  titul-take-sender: "&#FC7000▶ &fВы забрали титул &#FC7000{titul} &fу игрока &#FC7000{player}"
+
+  error: "&#FC0000▶ &fНе удалось активировать титул, сообщите администрации об ошибке!"

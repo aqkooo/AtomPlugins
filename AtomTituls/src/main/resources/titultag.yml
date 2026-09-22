@@ -1,0 +1,20 @@
+placeholders:
+  yes:
+    tab: "{titul}"
+    board: "{titul}"
+  no:
+    tab: ""
+    board: "&7Нет"
+
+item:
+  material: name_tag
+  name: "{titul}"
+  lore:
+    - " &f"
+    - " &#FC7000Титул"
+    - " &#FC7000&n▍&f Редкость: {type}"
+    - " &#FC7000▍&f Дата появления: &#FC7000{time}"
+    - " &f"
+    - "&8Особенности:"
+    - " &f- можно активировать, чтобы получить этот"
+    - " &f  титул себе в &#FC7000/tituls&f, при нажатии на ПКМ."

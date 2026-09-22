@@ -1,0 +1,28 @@
+name: "Разрушенный портал (Незер)"
+icon: "CRYING_OBSIDIAN"
+dimension: "nether"
+loot_table: "minecraft:chests/ruined_portal"
+mode: "MERGE"
+rolls:
+  min: 2
+  max: 4
+
+items:
+  "1":
+    provider: "VANILLA"
+    material: "GOLDEN_AXE"
+    chance: 40.0
+    min_amount: 1
+    max_amount: 1
+  "2":
+    provider: "VANILLA"
+    material: "GLOWSTONE"
+    chance: 60.0
+    min_amount: 2
+    max_amount: 6
+  "3":
+    provider: "VANILLA"
+    material: "FIRE_CHARGE"
+    chance: 50.0
+    min_amount: 1
+    max_amount: 3

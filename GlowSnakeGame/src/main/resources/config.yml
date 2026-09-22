@@ -1,0 +1,60 @@
+# =========================================================
+# GlowSnakeGame - Мини-игра «Змейка» в сундучном меню
+# Автор: Ejyqyl, GlowDev
+# Совместимость: Paper / Purpur / Spigot 1.16.5 - 1.20+
+# =========================================================
+
+game-settings:
+  tick-delay: 18 # Скорость змейки (на 10% быстрее: 18 тиков = ~0.9 сек на шаг)
+  start-direction: "RIGHT"
+  initial-length: 3
+
+# Автор: Ejyqyl, GlowDev
+materials:
+  separator: "GRAY_STAINED_GLASS_PANE"
+  snake-head: "LIME_CONCRETE"
+  snake-body: "GREEN_CONCRETE"
+  apple: "APPLE"
+  joystick-button: "LIME_CONCRETE"
+
+messages:
+  game-over: "&cИгра окончена! &7Ваш счет: &e{SCORE}"
+  new-record: "&aНовый рекорд! &7Вы набрали: &e{SCORE}"
+  game-started: "&aЗмейка запущена! &7Управление: &fджойстик слева&7, &fW, A, S, D &7или &f1-4"
+  prefix: "&2[&aGlowSnake&2] &r"
+  reload-success: "&aКонфигурация успешно перезагружена!"
+  no-permission: "&cУ вас нет прав для выполнения этой команды!"
+  only-players: "&cЭту команду могут использовать только игроки!"
+  game-already-running: "&cУ вас уже открыта сессия игры!"
+  top-header: "&6=== &eТоп игроков GlowSnake &6==="
+  top-entry: "&e{POS}. &f{PLAYER} &7— &a{SCORE} &7очков"
+  top-empty: "&7Таблица рекордов пока пуста."
+
+sounds:
+  eat: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  game-over: "ENTITY_VILLAGER_NO"
+  game-over-secondary: "BLOCK_ANVIL_LAND"
+  click: "UI_BUTTON_CLICK"
+  volume: 1.0
+  pitch-eat: 1.2
+  pitch-game-over: 0.8
+
+controls:
+  enable-wasd: true
+  sensitivity: 0.01
+  enable-gui-clicks: true
+  enable-number-keys: true
+
+gui:
+  title: "&2Змейка &8| &7Счет: &e{SCORE}"
+  game-over-title: "&cИгра окончена"
+  restart-button: "&aИграть снова"
+  restart-lore:
+    - "&7Нажмите, чтобы начать новую игру!"
+  exit-button: "&cВыйти"
+  exit-lore:
+    - "&7Нажмите, чтобы закрыть меню."
+  score-item: "&eИтоговый счет"
+  score-lore:
+    - "&7Ваш результат: &e{SCORE} &7очков"
+    - "&7Лучший рекорд: &a{BEST_SCORE} &7очков"

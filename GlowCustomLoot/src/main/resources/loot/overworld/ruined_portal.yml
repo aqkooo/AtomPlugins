@@ -1,0 +1,28 @@
+name: "Разрушенный портал"
+icon: "CRYING_OBSIDIAN"
+dimension: "overworld"
+loot_table: "minecraft:chests/ruined_portal"
+mode: "MERGE"
+rolls:
+  min: 2
+  max: 4
+
+items:
+  "1":
+    provider: "VANILLA"
+    material: "OBSIDIAN"
+    chance: 50.0
+    min_amount: 1
+    max_amount: 4
+  "2":
+    provider: "VANILLA"
+    material: "GOLDEN_SWORD"
+    chance: 35.0
+    min_amount: 1
+    max_amount: 1
+  "3":
+    provider: "VANILLA"
+    material: "FLINT_AND_STEEL"
+    chance: 40.0
+    min_amount: 1
+    max_amount: 1

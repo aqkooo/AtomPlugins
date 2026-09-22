@@ -1,0 +1,61 @@
+name: AtomDuels
+version: '${project.version}'
+main: com.ejyqyl.atomduels.AtomDuels
+api-version: '1.21'
+author: ejyqyl
+website: https://github.com/aqkooo
+description: Enterprise-grade PvP duels, escrow betting, zero-sum Elo rating, crash recovery, and intelligent PvP bots
+softdepend: [Vault, PlaceholderAPI, ProtocolLib]
+
+commands:
+  duels:
+    description: Main command for AtomDuels.
+    aliases: [duel, atomduels, aduels]
+    usage: /<command> [duel|queue|open|spectate|top|stats|claim|loot|rematch|bot|arena|kit|mode|bets|refund|elo]
+    permission: atomduels.use
+
+permissions:
+  atomduels.admin:
+    description: Full administrative access to AtomDuels
+    default: op
+    children:
+      atomduels.arena: true
+      atomduels.kit: true
+      atomduels.mode: true
+      atomduels.bets: true
+      atomduels.refund: true
+      atomduels.elo: true
+      atomduels.reload: true
+  atomduels.use:
+    description: Basic access to duels menu and functions
+    default: true
+  atomduels.duel:
+    description: Permission to challenge players
+    default: true
+  atomduels.queue:
+    description: Permission to join matchmaking queue
+    default: true
+  atomduels.board:
+    description: Permission to view and create open challenges
+    default: true
+  atomduels.spectate:
+    description: Permission to spectate active matches
+    default: true
+  atomduels.top:
+    description: Permission to view leaderboard
+    default: true
+  atomduels.claim:
+    description: Permission to claim recovered items
+    default: true
+  atomduels.bot:
+    description: Permission to fight PvP bots
+    default: true
+  atomduels.arena:
+    description: Permission to manage arenas
+    default: op
+  atomduels.kit:
+    description: Permission to manage kits
+    default: op
+  atomduels.reload:
+    description: Permission to reload plugin
+    default: op

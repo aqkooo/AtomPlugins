@@ -1,0 +1,78 @@
+# ==========================================================
+#                   AtomMessage Configuration
+#       Автоматические сообщения в TAB для Paper 1.20-1.21.x
+#             Авторы: ejyqyl, atomicsqd (t.me/atomicsqd)
+# ==========================================================
+
+settings:
+  # Интервал смены сообщений по умолчанию (в секундах)
+  interval: 15
+
+  # Порядок ротации: SEQUENTIAL (по очереди) или RANDOM (случайно)
+  rotation-order: SEQUENTIAL
+
+  # Использовать ли прямой режим управления заголовком и подвалом таба.
+  # Если true: AtomMessage напрямую отправляет TabList Header/Footer игрокам.
+  # Если false: вы можете вставить плейсхолдер %atommessage_tab% в конфиг
+  # вашего плагина таба (например TAB от NEZNALY в раздел footer).
+  direct-tablist:
+    enabled: false
+    # Частота обновления плейсхолдеров таба (в тиках, 20 тиков = 1 сек)
+    update-ticks: 20
+    header:
+      - ' '
+      - '<gradient:#FDBF5F:#FF5D00><b>ᴀᴛᴏᴍɪᴄsᴍᴘ</b></gradient>'
+      - '<gradient:#FDBF5F:#FF5D00><shadow:#736855:1>Vanilla Anarchy</shadow></gradient>'
+      - ' '
+    footer:
+      - ' '
+      - '<gradient:#FDBF5F:#FF5D00>онлайн:</gradient> &f%server_online% &8| <gradient:#FDBF5F:#FF5D00>пинг:</gradient> &f%player_ping%ms'
+      - ' '
+      - '{atommessage}'
+      - ' '
+
+  # Звук при смене сообщения для всех игроков (оставьте пустым или NONE для отключения)
+  # Примеры: UI_BUTTON_CLICK, ENTITY_EXPERIENCE_ORB_PICKUP, NONE
+  global-sound: "NONE"
+  sound-volume: 0.5
+  sound-pitch: 1.0
+
+# Список сообщений для ротации в табе.
+# Поддерживаются:
+# - MiniMessage теги: <gradient:#HEX1:#HEX2>текст</gradient>, <rainbow>радуга</rainbow>, <b>, <i>, <underlined>
+# - Hex RGB цвета: &#RRGGBB
+# - Классические цвета: &a, &e, &c, &f, &l и т.д.
+# - PlaceholderAPI плейсхолдеры: %player_name%, %server_online% и любые другие.
+# - Многострочные сообщения (через список lines или \n).
+messages:
+  donate:
+    # Длительность показа конкретного сообщения в секундах (необязательно, по умолчанию берётся из settings.interval)
+    duration: 15
+    lines:
+      - "<gradient:#FF512F:#DD2476><b>СКИДКИ НА ДОНАТ 20%</b></gradient> &7— промокод: &eATOMIC"
+      - "&7Наш сайт: <gradient:#FDBF5F:#FF5D00><b>atomicsmp.fun</b></gradient>"
+
+  telegram:
+    duration: 15
+    lines:
+      - "<gradient:#0088CC:#00C6FF><b>Наш Telegram:</b></gradient> &f@atomicsqd &7(новости и промокоды)"
+
+  rules:
+    duration: 12
+    lines:
+      - "&#00d2ffПравила сервера: &#3a7bd5<b>/rules</b> &8| &#00d2ffПомощь новичкам: &#3a7bd5<b>/help</b>"
+
+  report:
+    duration: 12
+    lines:
+      - "<gradient:#ED213A:#93291E>Заметили читера или баг?</gradient> &7Используйте &c/report"
+
+  clans:
+    duration: 15
+    lines:
+      - "<gradient:#8A2387:#E94057:#F27121>Вступайте в кланы и захватывайте аванпосты!</gradient> &7(&f/clan help&7)"
+
+  tituls:
+    duration: 15
+    lines:
+      - "<gradient:#FDBF5F:#FF5D00>Уникальные титулы и кастомизация:</gradient> &e/tituls"

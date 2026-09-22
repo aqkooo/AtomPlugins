@@ -1,0 +1,90 @@
+# ==========================================================
+#                  GlowChatGame Configuration
+#               Authors: ejyqyl, Glowdevv
+# ==========================================================
+
+game:
+  # Whether automatic chat games are scheduled periodically
+  enabled: true
+  # Interval between games in seconds (default: 300 seconds = 5 minutes)
+  interval: 300
+  # Maximum time players have to submit the correct answer (in seconds)
+  answer-time: 30
+  # Minimum number of online players required to automatically start a game
+  min-players: 1
+  # Default difficulty when auto-starting games: easy, medium, hard, or random
+  default-difficulty: "random"
+  # Play sounds on game events
+  sounds:
+    enabled: true
+    start: "ENTITY_PLAYER_LEVELUP"
+    win: "UI_TOAST_CHALLENGE_COMPLETE"
+    timeout: "BLOCK_NOTE_BLOCK_BASS"
+
+operations:
+  # Enable or disable individual math operations globally
+  addition: true
+  subtraction: true
+  multiplication: true
+  division: true
+  # If true, division problems always yield whole integers (e.g. 48 ÷ 6 = 8)
+  division-integer-only: true
+
+difficulty:
+  easy:
+    min-number: 1
+    max-number: 20
+    multi-step: false
+    operations:
+      - ADD
+      - SUBTRACT
+      - MULTIPLY
+      - DIVIDE
+  medium:
+    min-number: 1
+    max-number: 100
+    multi-step: false
+    multi-step-chance: 30
+    operations:
+      - ADD
+      - SUBTRACT
+      - MULTIPLY
+      - DIVIDE
+  hard:
+    min-number: 10
+    max-number: 500
+    multi-step: true
+    multi-step-chance: 60
+    operations:
+      - ADD
+      - SUBTRACT
+      - MULTIPLY
+      - DIVIDE
+
+rewards:
+  enabled: true
+  # Reward tiers with custom chances. If none rolls, the first available tier is used.
+  list:
+    common:
+      chance: 70
+      display-name: "$500"
+      commands:
+        - "eco give %player% 500"
+    rare:
+      chance: 25
+      display-name: "$1,000 + 3 Алмаза"
+      commands:
+        - "eco give %player% 1000"
+        - "give %player% diamond 3"
+    legendary:
+      chance: 5
+      display-name: "$5,000 + 1 Незеритовый слиток"
+      commands:
+        - "eco give %player% 5000"
+        - "give %player% netherite_ingot 1"
+
+stats:
+  # Enable or disable persistent SQLite stats tracking
+  enabled: true
+  database:
+    file: "data/stats.db"

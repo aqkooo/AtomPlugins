@@ -1,0 +1,46 @@
+package ru.atomicsqd.atommessage;
+
+import net.kyori.adventure.text.Component;
+import org.junit.jupiter.api.Test;
+import ru.atomicsqd.atommessage.util.ColorUtil;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class ColorUtilTest {
+
+    @Test
+    public void testMiniMessageGradient() {
+        String input = "<gradient:#FF512F:#DD2476><b>СКИДКА НА ДОНАТ 20%</b></gradient>";
+        Component component = ColorUtil.parseComponent(input, null);
+        assertNotNull(component);
+        assertEquals("СКИДКА НА ДОНАТ 20%", ColorUtil.stripColor(input));
+    }
+
+    @Test
+    public void testLegacyAndHexMixed() {
+        String input = "<gradient:#0088CC:#00C6FF>Telegram:</gradient> &#FDBF5F@atomicsqd &7(&eновости&7)";
+        Component component = ColorUtil.parseComponent(input, null);
+        assertNotNull(component);
+        assertEquals("Telegram: @atomicsqd (новости)", ColorUtil.stripColor(input));
+
+        String legacy = ColorUtil.toLegacyString(input, null);
+        assertNotNull(legacy);
+        assertTrue(legacy.contains("@atomicsqd"));
+    }
+
+    @Test
+    public void testRainbow() {
+        String input = "<rainbow>Радужный текст</rainbow>";
+        Component component = ColorUtil.parseComponent(input, null);
+        assertNotNull(component);
+        assertEquals("Радужный текст", ColorUtil.stripColor(input));
+    }
+
+    @Test
+    public void testLegacySectionCodes() {
+        String input = "§aЗелёный §lжирный §eжёлтый";
+        Component component = ColorUtil.parseComponent(input, null);
+        assertNotNull(component);
+        assertEquals("Зелёный жирный жёлтый", ColorUtil.stripColor(input));
+    }
+}

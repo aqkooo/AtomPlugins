@@ -1,0 +1,68 @@
+name: "Крепость Края"
+icon: "STONE_BRICKS"
+loot_tables:
+  - "minecraft:chests/stronghold_corridor"
+  - "minecraft:chests/stronghold_crossing"
+  - "minecraft:chests/stronghold_library"
+mode: "MERGE"
+rolls:
+  min: 2
+  max: 5
+
+items:
+  "1":
+    provider: "VANILLA"
+    material: "ENDER_EYE"
+    chance: 20.0
+    min_amount: 1
+    max_amount: 2
+  "2":
+    provider: "VANILLA"
+    material: "ENDER_PEARL"
+    chance: 35.0
+    min_amount: 1
+    max_amount: 3
+  "3":
+    provider: "VANILLA"
+    material: "GOLDEN_APPLE"
+    chance: 15.0
+    min_amount: 1
+    max_amount: 1
+  "4":
+    provider: "VANILLA"
+    material: "ENCHANTED_GOLDEN_APPLE"
+    chance: 2.5
+    min_amount: 1
+    max_amount: 1
+  "5":
+    provider: "VANILLA"
+    material: "DIAMOND"
+    chance: 25.0
+    min_amount: 1
+    max_amount: 3
+  "6":
+    provider: "VANILLA"
+    material: "COMPASS"
+    chance: 30.0
+    min_amount: 1
+    max_amount: 1
+  "7":
+    provider: "VANILLA"
+    material: "CLOCK"
+    chance: 20.0
+    min_amount: 1
+    max_amount: 1
+  "8":
+    provider: "VANILLA"
+    material: "IRON_INGOT"
+    chance: 50.0
+    min_amount: 2
+    max_amount: 8
+  "9":
+    provider: "VANILLA"
+    material: "ENCHANTED_BOOK"
+    enchantments:
+      SILK_TOUCH: 1
+    chance: 20.0
+    min_amount: 1
+    max_amount: 1

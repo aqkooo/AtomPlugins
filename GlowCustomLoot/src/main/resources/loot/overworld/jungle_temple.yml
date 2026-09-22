@@ -1,0 +1,57 @@
+name: "Храм в джунглях"
+icon: "MOSSY_COBBLESTONE"
+loot_table: "minecraft:chests/jungle_temple"
+mode: "MERGE"
+rolls:
+  min: 2
+  max: 4
+
+items:
+  "1":
+    provider: "VANILLA"
+    material: "WILD_ARMOR_TRIM_SMITHING_TEMPLATE"
+    chance: 20.0
+    min_amount: 1
+    max_amount: 2
+  "2":
+    provider: "VANILLA"
+    material: "DIAMOND"
+    chance: 20.0
+    min_amount: 1
+    max_amount: 3
+  "3":
+    provider: "VANILLA"
+    material: "EMERALD"
+    chance: 40.0
+    min_amount: 1
+    max_amount: 5
+  "4":
+    provider: "VANILLA"
+    material: "GOLD_INGOT"
+    chance: 50.0
+    min_amount: 2
+    max_amount: 7
+  "5":
+    provider: "VANILLA"
+    material: "BAMBOO"
+    chance: 45.0
+    min_amount: 1
+    max_amount: 6
+  "6":
+    provider: "VANILLA"
+    material: "STICKY_PISTON"
+    chance: 25.0
+    min_amount: 1
+    max_amount: 2
+  "7":
+    provider: "VANILLA"
+    material: "REDSTONE"
+    chance: 60.0
+    min_amount: 4
+    max_amount: 15
+  "8":
+    provider: "VANILLA"
+    material: "ARROW"
+    chance: 55.0
+    min_amount: 4
+    max_amount: 14

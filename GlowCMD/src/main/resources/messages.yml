@@ -1,0 +1,162 @@
+# ==============================================================================
+# GlowCMD Messages Configuration
+# Author: ejyqyl
+#
+# Supported formats:
+#   MiniMessage: <gradient:#00B5FD:#7670E5>Текст</gradient>, <#00B5FD>, <bold>, etc.
+#   Legacy:      &0 - &f, &l, &m, &n, &o, &r
+#   Hex:         &#RRGGBB
+#
+# Available placeholders:
+#   {prefix}      - The prefix defined below
+#   {PLAYER}      - Player name
+#   {USERNAME}    - Player username
+#   {DISPLAYNAME} - Player display name
+#   {TARGET}      - Target player name
+#   {WORLD}       - World name
+#   {X}, {Y}, {Z} - Coordinates
+#   {HOME}, {WARP}, {MODE}, {SPEED}, {TIME}, {WEATHER}, {PING}, {COUNT}, {HOMES}, {WARPS}, {MAX}
+#
+# Setting any message to "" (empty string) disables sending it completely.
+# ==============================================================================
+
+prefix: "<gradient:#00B5FD:#7670E5>ɢʟᴏᴡᴄᴍᴅ ≫</gradient>"
+
+no-permission: "{prefix} <gradient:#BC00FD:#7670E5>У вас недостаточно прав.</gradient>"
+player-not-found: "{prefix} <gradient:#BC00FD:#7670E5>Игрок</gradient> <#FFE259>{TARGET}</#FFE259> <gradient:#BC00FD:#7670E5>не найден.</gradient>"
+player-only: "{prefix} <gradient:#BC00FD:#7670E5>Эту команду может использовать только игрок.</gradient>"
+unknown-command: "{prefix} <gradient:#BC00FD:#7670E5>Неизвестная команда.</gradient>"
+
+spawn:
+  set: "{prefix} <gradient:#00B5FD:#7670E5>Спавн успешно установлен.</gradient>"
+  teleport: "{prefix} <gradient:#00B5FD:#7670E5>Вы телепортированы на спавн.</gradient>"
+  not-set: "{prefix} <gradient:#BC00FD:#7670E5>Спавн ещё не установлен.</gradient>"
+  world-not-found: "{prefix} <gradient:#BC00FD:#7670E5>Мир точки назначения не найден.</gradient>"
+
+first-spawn:
+  set: "{prefix} <gradient:#00B5FD:#7670E5>Точка первого появления установлена.</gradient>"
+  teleport: "{prefix} <gradient:#00B5FD:#7670E5>Вы появились на первом спавне.</gradient>"
+  not-set: "{prefix} <gradient:#BC00FD:#7670E5>Точка первого спавна ещё не установлена.</gradient>"
+
+reload:
+  success: "{prefix} <gradient:#00B5FD:#7670E5>Конфигурация успешно перезагружена.</gradient>"
+  error: "{prefix} <gradient:#BC00FD:#7670E5>Не удалось перезагрузить конфигурацию.</gradient>"
+
+# --- Player Utilities ---
+heal:
+  self: "{prefix} <gradient:#00B5FD:#7670E5>Ваше здоровье и сытость полностью восстановлены.</gradient>"
+  other: "{prefix} <gradient:#00B5FD:#7670E5>Вы исцелили игрока</gradient> <#FFE259>{TARGET}</#FFE259><gradient:#00B5FD:#7670E5>.</gradient>"
+  by-other: "{prefix} <gradient:#00B5FD:#7670E5>Игрок</gradient> <#FFE259>{SENDER}</#FFE259> <gradient:#00B5FD:#7670E5>исцелил вас.</gradient>"
+
+feed:
+  self: "{prefix} <gradient:#00B5FD:#7670E5>Ваш голод полностью утолен.</gradient>"
+  other: "{prefix} <gradient:#00B5FD:#7670E5>Вы утолили голод игрока</gradient> <#FFE259>{TARGET}</#FFE259><gradient:#00B5FD:#7670E5>.</gradient>"
+  by-other: "{prefix} <gradient:#00B5FD:#7670E5>Игрок</gradient> <#FFE259>{SENDER}</#FFE259> <gradient:#00B5FD:#7670E5>утолил ваш голод.</gradient>"
+
+fly:
+  enabled: "{prefix} <gradient:#00B5FD:#7670E5>Режим полёта</gradient> <#00FFAA>включён</#00FFAA><gradient:#00B5FD:#7670E5>.</gradient>"
+  disabled: "{prefix} <gradient:#BC00FD:#7670E5>Режим полёта</gradient> <#FF5555>отключён</#FF5555><gradient:#BC00FD:#7670E5>.</gradient>"
+  enabled-other: "{prefix} <gradient:#00B5FD:#7670E5>Режим полёта для</gradient> <#FFE259>{TARGET}</#FFE259> <#00FFAA>включён</#00FFAA><gradient:#00B5FD:#7670E5>.</gradient>"
+  disabled-other: "{prefix} <gradient:#BC00FD:#7670E5>Режим полёта для</gradient> <#FFE259>{TARGET}</#FFE259> <#FF5555>отключён</#FF5555><gradient:#BC00FD:#7670E5>.</gradient>"
+
+god:
+  enabled: "{prefix} <gradient:#00B5FD:#7670E5>Режим бессмертия</gradient> <#00FFAA>включён</#00FFAA><gradient:#00B5FD:#7670E5>.</gradient>"
+  disabled: "{prefix} <gradient:#BC00FD:#7670E5>Режим бессмертия</gradient> <#FF5555>отключён</#FF5555><gradient:#BC00FD:#7670E5>.</gradient>"
+  enabled-other: "{prefix} <gradient:#00B5FD:#7670E5>Режим бессмертия для</gradient> <#FFE259>{TARGET}</#FFE259> <#00FFAA>включён</#00FFAA><gradient:#00B5FD:#7670E5>.</gradient>"
+  disabled-other: "{prefix} <gradient:#BC00FD:#7670E5>Режим бессмертия для</gradient> <#FFE259>{TARGET}</#FFE259> <#FF5555>отключён</#FF5555><gradient:#BC00FD:#7670E5>.</gradient>"
+
+speed:
+  set-walk: "{prefix} <gradient:#00B5FD:#7670E5>Скорость ходьбы для</gradient> <#FFE259>{TARGET}</#FFE259> <gradient:#00B5FD:#7670E5>установлена на</gradient> <#00FFFF>{SPEED}</#00FFFF><gradient:#00B5FD:#7670E5>.</gradient>"
+  set-fly: "{prefix} <gradient:#00B5FD:#7670E5>Скорость полёта для</gradient> <#FFE259>{TARGET}</#FFE259> <gradient:#00B5FD:#7670E5>установлена на</gradient> <#00FFFF>{SPEED}</#00FFFF><gradient:#00B5FD:#7670E5>.</gradient>"
+  invalid: "{prefix} <gradient:#BC00FD:#7670E5>Значение скорости должно быть числом от 1 до 10.</gradient>"
+
+gamemode:
+  changed: "{prefix} <gradient:#00B5FD:#7670E5>Ваш игровой режим изменён на</gradient> <#00FFFF>{MODE}</#00FFFF><gradient:#00B5FD:#7670E5>.</gradient>"
+  changed-other: "{prefix} <gradient:#00B5FD:#7670E5>Игровой режим для</gradient> <#FFE259>{TARGET}</#FFE259> <gradient:#00B5FD:#7670E5>изменён на</gradient> <#00FFFF>{MODE}</#00FFFF><gradient:#00B5FD:#7670E5>.</gradient>"
+  invalid: "{prefix} <gradient:#BC00FD:#7670E5>Неизвестный игровой режим:</gradient> <#FFE259>{MODE}</#FFE259><gradient:#BC00FD:#7670E5>.</gradient>"
+
+clear:
+  self: "{prefix} <gradient:#00B5FD:#7670E5>Ваш инвентарь очищен.</gradient>"
+  other: "{prefix} <gradient:#00B5FD:#7670E5>Инвентарь игрока</gradient> <#FFE259>{TARGET}</#FFE259> <gradient:#00B5FD:#7670E5>очищен.</gradient>"
+
+hat:
+  set: "{prefix} <gradient:#00B5FD:#7670E5>Предмет успешно надет на голову!</gradient>"
+  empty: "{prefix} <gradient:#BC00FD:#7670E5>Возьмите предмет в основную руку, чтобы надеть его на голову.</gradient>"
+
+top:
+  teleported: "{prefix} <gradient:#00B5FD:#7670E5>Вы телепортированы на самый верхний блок.</gradient>"
+
+suicide:
+  message: "{prefix} <gradient:#BC00FD:#7670E5>Вы покончили жизнь самоубийством.</gradient>"
+
+extinguish:
+  self: "{prefix} <gradient:#00B5FD:#7670E5>Огонь с вас успешно потушен.</gradient>"
+  other: "{prefix} <gradient:#00B5FD:#7670E5>Вы потушили огонь с игрока</gradient> <#FFE259>{TARGET}</#FFE259><gradient:#00B5FD:#7670E5>.</gradient>"
+
+# --- Teleportation & TPA ---
+tp:
+  success: "{prefix} <gradient:#00B5FD:#7670E5>Вы телепортированы к</gradient> <#FFE259>{TARGET}</#FFE259><gradient:#00B5FD:#7670E5>.</gradient>"
+  other-success: "{prefix} <gradient:#00B5FD:#7670E5>Игрок</gradient> <#FFE259>{PLAYER}</#FFE259> <gradient:#00B5FD:#7670E5>телепортирован к</gradient> <#FFE259>{TARGET}</#FFE259><gradient:#00B5FD:#7670E5>.</gradient>"
+  tphere-success: "{prefix} <gradient:#00B5FD:#7670E5>Игрок</gradient> <#FFE259>{TARGET}</#FFE259> <gradient:#00B5FD:#7670E5>телепортирован к вам.</gradient>"
+  teleported-to-sender: "{prefix} <gradient:#00B5FD:#7670E5>Вы телепортированы к</gradient> <#FFE259>{SENDER}</#FFE259><gradient:#00B5FD:#7670E5>.</gradient>"
+
+tpa:
+  sent: "{prefix} <gradient:#00B5FD:#7670E5>Запрос на телепортацию отправлен игроку</gradient> <#FFE259>{TARGET}</#FFE259><gradient:#00B5FD:#7670E5>.</gradient>"
+  received: "{prefix} <#FFE259>{PLAYER}</#FFE259> <gradient:#00B5FD:#7670E5>просит телепортироваться к вам. Напишите</gradient> <#00FFAA>/tpaccept</#00FFAA> <gradient:#00B5FD:#7670E5>или</gradient> <#FF5555>/tpdeny</#FF5555><gradient:#00B5FD:#7670E5>.</gradient>"
+  received-here: "{prefix} <#FFE259>{PLAYER}</#FFE259> <gradient:#00B5FD:#7670E5>просит вас телепортироваться к нему. Напишите</gradient> <#00FFAA>/tpaccept</#00FFAA> <gradient:#00B5FD:#7670E5>или</gradient> <#FF5555>/tpdeny</#FF5555><gradient:#00B5FD:#7670E5>.</gradient>"
+  self: "{prefix} <gradient:#BC00FD:#7670E5>Вы не можете отправить запрос самому себе.</gradient>"
+  no-request: "{prefix} <gradient:#BC00FD:#7670E5>У вас нет активных входящих запросов на телепортацию.</gradient>"
+  accepted-self: "{prefix} <gradient:#00B5FD:#7670E5>Вы телепортировались к</gradient> <#FFE259>{TARGET}</#FFE259><gradient:#00B5FD:#7670E5>.</gradient>"
+  accepted-other: "{prefix} <gradient:#00B5FD:#7670E5>Игрок</gradient> <#FFE259>{PLAYER}</#FFE259> <gradient:#00B5FD:#7670E5>принял ваш запрос на телепортацию.</gradient>"
+  denied-self: "{prefix} <gradient:#BC00FD:#7670E5>Запрос на телепортацию отклонён.</gradient>"
+  denied-other: "{prefix} <gradient:#BC00FD:#7670E5>Игрок</gradient> <#FFE259>{PLAYER}</#FFE259> <gradient:#BC00FD:#7670E5>отклонил ваш запрос на телепортацию.</gradient>"
+  no-outgoing: "{prefix} <gradient:#BC00FD:#7670E5>У вас нет активных исходящих запросов.</gradient>"
+  cancelled: "{prefix} <gradient:#00B5FD:#7670E5>Исходящий запрос на телепортацию отменён.</gradient>"
+
+back:
+  no-location: "{prefix} <gradient:#BC00FD:#7670E5>Предыдущая локация не найдена.</gradient>"
+  success: "{prefix} <gradient:#00B5FD:#7670E5>Вы возвращены на предыдущую локацию.</gradient>"
+
+rtp:
+  success: "{prefix} <gradient:#00B5FD:#7670E5>Вы случайно телепортированы на координаты:</gradient> <#00FFFF>X: {X}, Y: {Y}, Z: {Z}</#00FFFF><gradient:#00B5FD:#7670E5>!</gradient>"
+
+# --- Homes & Warps ---
+home:
+  set: "{prefix} <gradient:#00B5FD:#7670E5>Точка дома</gradient> <#FFE259>{HOME}</#FFE259> <gradient:#00B5FD:#7670E5>успешно установлена.</gradient>"
+  teleport: "{prefix} <gradient:#00B5FD:#7670E5>Вы телепортированы в дом</gradient> <#FFE259>{HOME}</#FFE259><gradient:#00B5FD:#7670E5>.</gradient>"
+  deleted: "{prefix} <gradient:#00B5FD:#7670E5>Дом</gradient> <#FFE259>{HOME}</#FFE259> <gradient:#00B5FD:#7670E5>удалён.</gradient>"
+  not-found: "{prefix} <gradient:#BC00FD:#7670E5>Дом</gradient> <#FFE259>{HOME}</#FFE259> <gradient:#BC00FD:#7670E5>не найден.</gradient>"
+  limit-reached: "{prefix} <gradient:#BC00FD:#7670E5>Вы достигли лимита домов (</gradient><#FFE259>{MAX}</#FFE259><gradient:#BC00FD:#7670E5>).</gradient>"
+  none: "{prefix} <gradient:#BC00FD:#7670E5>У вас пока нет установленных домов.</gradient>"
+  list: "{prefix} <gradient:#00B5FD:#7670E5>Ваши дома (</gradient><#FFE259>{COUNT}</#FFE259><gradient:#00B5FD:#7670E5>):</gradient> <#FFFFFF>{HOMES}</#FFFFFF>"
+
+warp:
+  set: "{prefix} <gradient:#00B5FD:#7670E5>Варп</gradient> <#FFE259>{WARP}</#FFE259> <gradient:#00B5FD:#7670E5>успешно создан.</gradient>"
+  teleport: "{prefix} <gradient:#00B5FD:#7670E5>Вы телепортированы на варп</gradient> <#FFE259>{WARP}</#FFE259><gradient:#00B5FD:#7670E5>.</gradient>"
+  deleted: "{prefix} <gradient:#00B5FD:#7670E5>Варп</gradient> <#FFE259>{WARP}</#FFE259> <gradient:#00B5FD:#7670E5>удалён.</gradient>"
+  not-found: "{prefix} <gradient:#BC00FD:#7670E5>Варп</gradient> <#FFE259>{WARP}</#FFE259> <gradient:#BC00FD:#7670E5>не найден.</gradient>"
+  none: "{prefix} <gradient:#BC00FD:#7670E5>На сервере нет доступных варпов.</gradient>"
+  list: "{prefix} <gradient:#00B5FD:#7670E5>Список варпов (</gradient><#FFE259>{COUNT}</#FFE259><gradient:#00B5FD:#7670E5>):</gradient> <#FFFFFF>{WARPS}</#FFFFFF>"
+
+# --- Admin & Moderation ---
+vanish:
+  enabled: "{prefix} <gradient:#00B5FD:#7670E5>Режим невидимости</gradient> <#00FFAA>включён</#00FFAA><gradient:#00B5FD:#7670E5>. Другие игроки вас не видят.</gradient>"
+  disabled: "{prefix} <gradient:#BC00FD:#7670E5>Режим невидимости</gradient> <#FF5555>отключён</#FF5555><gradient:#BC00FD:#7670E5>.</gradient>"
+
+ping:
+  self: "{prefix} <gradient:#00B5FD:#7670E5>Ваш пинг:</gradient> <#00FFFF>{PING} мс</#00FFFF><gradient:#00B5FD:#7670E5>.</gradient>"
+  other: "{prefix} <gradient:#00B5FD:#7670E5>Пинг игрока</gradient> <#FFE259>{TARGET}</#FFE259><gradient:#00B5FD:#7670E5>:</gradient> <#00FFFF>{PING} мс</#00FFFF><gradient:#00B5FD:#7670E5>.</gradient>"
+
+# --- World & Environment ---
+time:
+  set: "{prefix} <gradient:#00B5FD:#7670E5>Время в мире</gradient> <#FFE259>{WORLD}</#FFE259> <gradient:#00B5FD:#7670E5>установлено на</gradient> <#00FFFF>{TIME}</#00FFFF> <gradient:#00B5FD:#7670E5>тиков.</gradient>"
+
+weather:
+  set: "{prefix} <gradient:#00B5FD:#7670E5>Погода в мире</gradient> <#FFE259>{WORLD}</#FFE259> <gradient:#00B5FD:#7670E5>изменена на</gradient> <#00FFFF>{WEATHER}</#00FFFF><gradient:#00B5FD:#7670E5>.</gradient>"
+
+# --- Private Messages ---
+msg:
+  format-sender: "<gradient:#00B5FD:#7670E5>[Я ➔ {TARGET}]</gradient> <#FFFFFF>{MESSAGE}</#FFFFFF>"
+  format-receiver: "<gradient:#BC00FD:#7670E5>[{SENDER} ➔ Мне]</gradient> <#FFFFFF>{MESSAGE}</#FFFFFF>"
+  no-reply-target: "{prefix} <gradient:#BC00FD:#7670E5>Вам некому ответить.</gradient>"
+  reply-offline: "{prefix} <gradient:#BC00FD:#7670E5>Собеседник вышел из игры.</gradient>"

@@ -1,0 +1,26 @@
+name: GlowTrade
+version: 1.0.0
+main: ru.atomicsqd.glowtrade.GlowTrade
+api-version: '1.16'
+authors: [ejyqyl, atomicsqd]
+description: Modern dupe-proof safe trade plugin in ReallyWorld style.
+softdepend: [CombatLogX, PvPManager]
+
+commands:
+  trade:
+    description: Основная команда безопасного обмена
+    usage: /trade <игрок|accept|deny|toggle>
+    aliases: [obmen]
+    permission: glowtrade.use
+  glowtrade:
+    description: Административная команда плагина GlowTrade
+    usage: /glowtrade reload
+    permission: glowtrade.admin
+
+permissions:
+  glowtrade.use:
+    description: Разрешает отправлять и принимать запросы на трейд
+    default: true
+  glowtrade.admin:
+    description: Доступ к перезагрузке конфигурации плагина
+    default: op

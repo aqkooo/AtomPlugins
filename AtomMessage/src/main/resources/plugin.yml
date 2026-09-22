@@ -1,0 +1,19 @@
+name: AtomMessage
+version: '${project.version}'
+main: ru.atomicsqd.atommessage.AtomMessage
+api-version: '1.20'
+author: ejyqyl, atomicsqd
+website: https://t.me/atomicsqd
+description: Automatic rotating messages in TAB with full gradient and color support for Paper 1.20-1.21.x
+softdepend: [PlaceholderAPI]
+
+commands:
+  atommessage:
+    description: Главная команда плагина AtomMessage
+    aliases: [am, atommsg]
+    permission: atommessage.admin
+
+permissions:
+  atommessage.admin:
+    description: Доступ к управлению AtomMessage
+    default: op

@@ -1,0 +1,97 @@
+menu:
+  settings:
+    displayName: "&0Титулы {player}"
+    size: 54
+    type:
+      case: "&#00ADCCК&#00B8D9е&#00C3E6й&#00CDF2с&#00D8FFо&#00CAEEв&#00BBDDы&#00ADCCй"
+      custom: "&#C90CA9Уникальный"
+  items:
+    orange_pane:
+      material: orange_stained_glass_pane
+      name: "&f"
+      lore: []
+      slots:
+        - 9
+        - 18
+        - 27
+        - 36
+        - 17
+        - 26
+        - 35
+        - 44
+    black_pane:
+      material: gray_stained_glass_pane
+      name: "&f"
+      lore: []
+      slots:
+        - 0
+        - 8
+        - 45
+        - 53
+    previous_page:
+      name: " &#00D8FF◀ Предыдущая страница"
+      lore: [ ]
+      material: arrow
+      slot: 48
+    next_page:
+      name: " &#FF7000Следующая страница ▶"
+      lore: [ ]
+      material: arrow
+      slot: 50
+    sorting:
+      material: hopper
+      name: " &#00D8FFСортировка"
+      lore:
+        - " &f"
+      count-line:
+        - " &f"
+        - " &#00D8FF● &fДоступно титулов: &#00D8FF{count}"
+      slot: 49
+    clear:
+      material: red_dye
+      name: " &#FF2222✘ Снять активный титул"
+      lore:
+        - ""
+        - " &#00D8FF&l&n▍&f Если у вас был активен титул,"
+        - " &#00D8FF&l▍&f то он не будет отображаться."
+        - ""
+        - " &#00D8FF▶ &fНажмите, чтобы снять титул"
+      slot: 46
+    view_titul: # НАСТРОЙКИ ТИТУЛА КОТОРЫЙ БУДЕТ ПОКАЗАН ПРИ /tituls ник
+      material: name_tag
+      name: " {titul}"
+      lore:
+        - " &f"
+        - " &#00D8FF&l&n▍&f Редкость: {type}"
+        - " &#00D8FF&l▍&f Дата появления: &b{time}"
+    titul: # НАСТРОЙКИ ТИТУЛА КОТОРЫЙ БУДЕТ ПОКАЗАН ПРИ /tituls
+      material: name_tag
+      name: " {titul}"
+      lore:
+        - " &f"
+        - " &#00D8FF&l&n▍&f Редкость: {type}"
+        - " &#00D8FF&l▍&f Дата появления: &#00D8FF{time}"
+        - " &f"
+        - "&#00D8FF▶ &fНажмите &#00D8FFЛКМ&f, чтобы &#00D8FFустановить&f титул"
+        - "&#00D8FF▶ &fНажмите &#00D8FFПКМ&f, чтобы &#00D8FFпревратить&f в бирку"
+      slots:
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42

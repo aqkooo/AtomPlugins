@@ -1,0 +1,24 @@
+sorting:
+  sorting-1:
+    name: sorting-1
+    type: MAX
+    value: '{time}'
+    selected-name: ' &#FF7000✔ Сначала новые'
+    unselected-name: ' &#9CF9FF● &fСначала новые'
+    priority: 1
+
+  sorting-2:
+    name: sorting-2
+    type: MIN
+    value: '{time}'
+    selected-name: ' &#FF7000✔ Сначала старые'
+    unselected-name: ' &#9CF9FF● &fСначала старые'
+    priority: 2
+
+  sorting-3:
+    name: sorting-3
+    type: MAX
+    value: '{custom}'
+    selected-name: ' &#FF7000✔ Кастомные'
+    unselected-name: ' &#9CF9FF● &fКастомные'
+    priority: 3

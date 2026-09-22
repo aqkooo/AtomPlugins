@@ -1,0 +1,263 @@
+name: GlowCMD
+version: '${project.version}'
+main: com.ejyqyl.glowcmd.GlowCMD
+api-version: '1.16'
+author: ejyqyl
+description: Ultra-optimized, lightweight EssentialsX and CMI fork for modern Minecraft servers
+softdepend: [PlaceholderAPI]
+
+commands:
+  glowcmd:
+    description: Main administrative command for GlowCMD.
+    aliases: [gcmd]
+    usage: /<command> reload
+    permission: glowcmd.reload
+  spawn:
+    description: Teleports to server spawn point.
+    permission: glowcmd.spawn
+  setspawn:
+    description: Sets the server spawn point.
+    permission: glowcmd.setspawn
+  setfirstspawn:
+    description: Sets the first-join spawn point.
+    permission: glowcmd.setfirstspawn
+
+  heal:
+    description: Heals player health, hunger, and status effects.
+    permission: glowcmd.heal
+  feed:
+    description: Restores hunger and saturation.
+    permission: glowcmd.feed
+  fly:
+    description: Toggles flight mode.
+    permission: glowcmd.fly
+  god:
+    description: Toggles invulnerability.
+    permission: glowcmd.god
+  speed:
+    description: Adjusts walking or flying speed.
+    permission: glowcmd.speed
+  gamemode:
+    description: Changes game mode.
+    aliases: [gm, gmc, gms, gma, gmsp]
+    permission: glowcmd.gamemode
+  clear:
+    description: Clears player inventory.
+    aliases: [ci, clearinventory]
+    permission: glowcmd.clearinventory
+  hat:
+    description: Equips item in hand as a helmet.
+    permission: glowcmd.hat
+  workbench:
+    description: Opens a portable crafting table.
+    aliases: [craft, wb]
+    permission: glowcmd.workbench
+  enderchest:
+    description: Opens your ender chest.
+    aliases: [ec]
+    permission: glowcmd.enderchest
+  anvil:
+    description: Opens a portable anvil (CMI feature).
+    permission: glowcmd.anvil
+  top:
+    description: Teleports to the highest block above you.
+    permission: glowcmd.top
+  suicide:
+    description: Commits suicide.
+    permission: glowcmd.suicide
+  extinguish:
+    description: Extinguishes fire.
+    aliases: [ext]
+    permission: glowcmd.extinguish
+
+  tp:
+    description: Teleports to player or teleport one player to another.
+    permission: glowcmd.tp
+  tphere:
+    description: Teleports player to you.
+    permission: glowcmd.tphere
+  tpa:
+    description: Sends teleport request to a player.
+    permission: glowcmd.tpa
+  tpahere:
+    description: Requests a player to teleport to you.
+    permission: glowcmd.tpahere
+  tpaccept:
+    description: Accepts incoming teleport request.
+    permission: glowcmd.tpaccept
+  tpdeny:
+    description: Denies incoming teleport request.
+    permission: glowcmd.tpdeny
+  tpcancel:
+    description: Cancels your outgoing teleport request.
+    permission: glowcmd.tpcancel
+  back:
+    description: Returns to your previous location or death point.
+    permission: glowcmd.back
+  rtp:
+    description: Teleports to a safe random location (CMI feature).
+    aliases: [tpr]
+    permission: glowcmd.rtp
+
+  sethome:
+    description: Sets a home location.
+    permission: glowcmd.sethome
+  home:
+    description: Teleports to a home.
+    permission: glowcmd.home
+  delhome:
+    description: Deletes a home.
+    permission: glowcmd.delhome
+  homes:
+    description: Lists your homes.
+    permission: glowcmd.homes
+
+  setwarp:
+    description: Creates a server warp.
+    permission: glowcmd.setwarp
+  warp:
+    description: Teleports to a server warp.
+    permission: glowcmd.warp
+  delwarp:
+    description: Deletes a server warp.
+    permission: glowcmd.delwarp
+  warps:
+    description: Lists all available warps.
+    permission: glowcmd.warps
+
+  vanish:
+    description: Toggles vanish mode.
+    aliases: [v]
+    permission: glowcmd.vanish
+  invsee:
+    description: Views another player's inventory.
+    permission: glowcmd.invsee
+  broadcast:
+    description: Broadcasts a message server-wide.
+    aliases: [bc]
+    permission: glowcmd.broadcast
+  sudo:
+    description: Runs a command or message on behalf of another player.
+    permission: glowcmd.sudo
+  ping:
+    description: Checks player latency.
+    permission: glowcmd.ping
+  seen:
+    description: Inspects player status, last seen, and IP.
+    permission: glowcmd.seen
+
+  time:
+    description: Sets world time.
+    aliases: [day, night]
+    permission: glowcmd.time
+  weather:
+    description: Changes world weather.
+    aliases: [sun, rain]
+    permission: glowcmd.weather
+
+  msg:
+    description: Sends private message to player.
+    aliases: [tell, w, m]
+    permission: glowcmd.msg
+  reply:
+    description: Replies to the last private message.
+    aliases: [r]
+    permission: glowcmd.msg
+
+permissions:
+  glowcmd.*:
+    description: Wildcard administrative permission
+    default: op
+    children:
+      glowcmd.spawn: true
+      glowcmd.setspawn: true
+      glowcmd.setfirstspawn: true
+      glowcmd.reload: true
+      glowcmd.heal: true
+      glowcmd.heal.others: true
+      glowcmd.feed: true
+      glowcmd.feed.others: true
+      glowcmd.fly: true
+      glowcmd.fly.others: true
+      glowcmd.god: true
+      glowcmd.god.others: true
+      glowcmd.speed: true
+      glowcmd.speed.others: true
+      glowcmd.gamemode: true
+      glowcmd.gamemode.others: true
+      glowcmd.clearinventory: true
+      glowcmd.clearinventory.others: true
+      glowcmd.hat: true
+      glowcmd.workbench: true
+      glowcmd.enderchest: true
+      glowcmd.enderchest.others: true
+      glowcmd.anvil: true
+      glowcmd.top: true
+      glowcmd.suicide: true
+      glowcmd.extinguish: true
+      glowcmd.extinguish.others: true
+      glowcmd.tp: true
+      glowcmd.tp.others: true
+      glowcmd.tphere: true
+      glowcmd.tpa: true
+      glowcmd.tpahere: true
+      glowcmd.tpaccept: true
+      glowcmd.tpdeny: true
+      glowcmd.tpcancel: true
+      glowcmd.back: true
+      glowcmd.rtp: true
+      glowcmd.sethome: true
+      glowcmd.home: true
+      glowcmd.delhome: true
+      glowcmd.homes: true
+      glowcmd.homes.unlimited: true
+      glowcmd.setwarp: true
+      glowcmd.warp: true
+      glowcmd.delwarp: true
+      glowcmd.warps: true
+      glowcmd.vanish: true
+      glowcmd.vanish.see: true
+      glowcmd.invsee: true
+      glowcmd.broadcast: true
+      glowcmd.sudo: true
+      glowcmd.ping: true
+      glowcmd.seen: true
+      glowcmd.seen.ip: true
+      glowcmd.time: true
+      glowcmd.weather: true
+      glowcmd.msg: true
+
+  glowcmd.spawn:
+    default: true
+  glowcmd.tpa:
+    default: true
+  glowcmd.tpahere:
+    default: true
+  glowcmd.tpaccept:
+    default: true
+  glowcmd.tpdeny:
+    default: true
+  glowcmd.tpcancel:
+    default: true
+  glowcmd.back:
+    default: true
+  glowcmd.rtp:
+    default: true
+  glowcmd.home:
+    default: true
+  glowcmd.sethome:
+    default: true
+  glowcmd.delhome:
+    default: true
+  glowcmd.homes:
+    default: true
+  glowcmd.warp:
+    default: true
+  glowcmd.warps:
+    default: true
+  glowcmd.ping:
+    default: true
+  glowcmd.suicide:
+    default: true
+  glowcmd.msg:
+    default: true

@@ -1,0 +1,19 @@
+name: AtomRegen
+version: 1.0.0
+main: ru.atomicsqd.atomregen.AtomRegen
+api-version: '1.21'
+author: ejyqyl, atomicsqd
+description: Dynamic snapshot and auto-regenerating regions for Paper 1.21.x
+website: https://t.me/atomicsqd
+
+commands:
+  atomregen:
+    description: Главная команда плагина AtomRegen
+    aliases: [aregen, atomreg, areg]
+    permission: atomregen.admin
+    usage: /<command> [wand|pos1|pos2|create|delete|setdelay|reset|list|info|reload]
+
+permissions:
+  atomregen.admin:
+    description: Полный доступ ко всем функциям плагина AtomRegen
+    default: op

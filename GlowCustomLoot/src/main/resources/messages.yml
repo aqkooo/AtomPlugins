@@ -1,0 +1,39 @@
+# ==========================================================
+#                  GlowCustomLoot Messages
+# ==========================================================
+
+prefix: "<!italic><gradient:#ffaa00:#ff5500><b>GlowCustomLoot</b></gradient> &8» &f"
+
+no-permission: "<red>У вас нет прав для выполнения этой команды!</red>"
+only-players: "<red>Эта команда доступна только игрокам в игре!</red>"
+reload-success: "<green>Конфигурация, меню и <yellow>{count}</yellow> лут-таблиц успешно перезагружены!</green>"
+reload-fail: "<red>Ошибка при перезагрузке конфигурации! Проверьте консоль сервера.</red>"
+
+item-added: "<green>Предмет успешно добавлен в таблицу данжа <gold>{structure}</gold> с шансом <yellow>{chance}%</yellow>!</green>"
+item-add-air: "<red>Возьмите предмет в основную руку перед добавлением!</red>"
+structure-not-found: "<red>Структура <gold>{structure}</gold> не найдена в измерении <yellow>{dimension}</yellow>!</red>"
+dimension-not-found: "<red>Измерение <yellow>{dimension}</yellow> не найдено! Доступные: overworld, nether, the_end</red>"
+invalid-chance: "<red>Неверно указан шанс! Укажите число от 0.1 до 100.0</red>"
+saved-table: "<green>Лут-таблица <gold>{structure}</gold> сохранена на диск!</green>"
+structure-not-found-simple: "<red>Структура <gold>{structure}</gold> не найдена!</red>"
+test-header: "<gold>Тестовый ролл для <yellow>{structure}</yellow> (режим: <white>{mode}</white>, роллы: <white>{min_rolls}-{max_rolls}</white>):</gold>"
+test-item: " <gray>•</gray> <white>{item}</white> <yellow>x{amount}</yellow>"
+test-empty: " <gray>•</gray> <italic><gray>(Шансы не сыграли, ничего не выпало)</gray></italic>"
+test-footer: "<gray>Всего выпало предметов: <yellow>{count}</yellow></gray>"
+
+fill-no-target: "<red>Вы должны смотреть на контейнер (сундук, бочка и т.д.) на расстоянии до 5 блоков!</red>"
+fill-success: "<green>Контейнер заполнен лутом из <gold>{structure}</gold> (добавлено <yellow>{count}</yellow> предм., режим: <white>{mode}</white>)!</green>"
+
+spawnchest-success: "<green>Заспавнен сундук с ванильной лут-таблицей <gold>{table_key}</gold>! Откройте его для генерации лута.</green>"
+spawnchest-fail: "<red>Не удалось создать сундук с лут-таблицей на выбранном блоке!</red>"
+
+help:
+  - " "
+  - "<!italic><gradient:#ffaa00:#ff5500><b>Команды GlowCustomLoot:</b></gradient>"
+  - " <yellow>/editloot</yellow> <gray>— Открыть главное меню выбора измерений и данжей</gray>"
+  - " <yellow>/gcl reload</yellow> <gray>— Перезагрузить конфиги и кэш лута</gray>"
+  - " <yellow>/gcl test <данж></yellow> <gray>— Протестировать ролл лута в чат</gray>"
+  - " <yellow>/gcl fill <данж></yellow> <gray>— Заполнить сундук перед вами лутом структуры</gray>"
+  - " <yellow>/gcl spawnchest <данж></yellow> <gray>— Создать тестовый сундук с LootTable</gray>"
+  - " <yellow>/gcl add <измерение> <данж> <шанс></yellow> <gray>— Быстро добавить предмет из руки</gray>"
+  - " "

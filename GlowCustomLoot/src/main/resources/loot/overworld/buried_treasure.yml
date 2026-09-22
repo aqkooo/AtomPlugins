@@ -1,0 +1,27 @@
+name: "Зарытый клад"
+icon: "HEART_OF_THE_SEA"
+loot_table: "minecraft:chests/buried_treasure"
+mode: "MERGE"
+rolls:
+  min: 3
+  max: 6
+
+items:
+  "1":
+    provider: "VANILLA"
+    material: "HEART_OF_THE_SEA"
+    chance: 100.0
+    min_amount: 1
+    max_amount: 1
+  "2":
+    provider: "VANILLA"
+    material: "DIAMOND"
+    chance: 55.0
+    min_amount: 1
+    max_amount: 4
+  "3":
+    provider: "VANILLA"
+    material: "GOLD_INGOT"
+    chance: 70.0
+    min_amount: 4
+    max_amount: 12

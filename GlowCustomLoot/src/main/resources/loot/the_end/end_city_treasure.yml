@@ -1,0 +1,71 @@
+name: "Город / Корабль Энда"
+icon: "PURPUR_BLOCK"
+loot_table: "minecraft:chests/end_city_treasure"
+mode: "MERGE"
+rolls:
+  min: 2
+  max: 5
+
+items:
+  "1":
+    provider: "VANILLA"
+    material: "SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE"
+    chance: 15.0
+    min_amount: 1
+    max_amount: 2
+  "2":
+    provider: "VANILLA"
+    material: "ELYTRA"
+    chance: 10.0
+    min_amount: 1
+    max_amount: 1
+  "3":
+    provider: "VANILLA"
+    material: "DRAGON_HEAD"
+    chance: 8.0
+    min_amount: 1
+    max_amount: 1
+  "4":
+    provider: "VANILLA"
+    material: "SHULKER_SHELL"
+    chance: 40.0
+    min_amount: 2
+    max_amount: 6
+  "5":
+    provider: "VANILLA"
+    material: "CHORUS_FRUIT"
+    chance: 60.0
+    min_amount: 4
+    max_amount: 12
+  "6":
+    provider: "VANILLA"
+    material: "DIAMOND"
+    chance: 45.0
+    min_amount: 2
+    max_amount: 6
+  "7":
+    provider: "VANILLA"
+    material: "DIAMOND_SWORD"
+    chance: 25.0
+    min_amount: 1
+    max_amount: 1
+  "8":
+    provider: "VANILLA"
+    material: "DIAMOND_PICKAXE"
+    chance: 25.0
+    min_amount: 1
+    max_amount: 1
+  "9":
+    provider: "VANILLA"
+    material: "DIAMOND_CHESTPLATE"
+    chance: 20.0
+    min_amount: 1
+    max_amount: 1
+  "10":
+    provider: "VANILLA"
+    material: "ENCHANTED_BOOK"
+    enchantments:
+      MENDING: 1
+    chance: 15.0
+    min_amount: 1
+    max_amount: 1

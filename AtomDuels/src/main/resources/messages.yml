@@ -1,0 +1,56 @@
+# ==========================================================
+#                   AtomDuels Messages
+#         Supports MiniMessage gradients, HEX, and PAPI
+#                     Author: ejyqyl
+# ==========================================================
+
+prefix: "<gradient:#00B5FD:#7670E5>ᴀᴛᴏᴍᴅᴜᴇʟs ≫</gradient>"
+
+no-permission: "{prefix} <gradient:#BC00FD:#7670E5>У вас недостаточно прав.</gradient>"
+player-only: "{prefix} &cЭту команду может использовать только игрок."
+player-not-found: "{prefix} &cИгрок &e{TARGET} &cне найден или оффлайн."
+unknown-command: "{prefix} &cНеизвестная подкоманда. Используйте &e/duels help&c."
+
+challenge:
+  sent: "{prefix} &fВы бросили вызов игроку &e{TARGET}&f! Ожидание ответа..."
+  received:
+    - ""
+    - "  <gradient:#00B5FD:#7670E5>✦ ВАМ БРОШЕН ВЫЗОВ НА ДУЭЛЬ! ✦</gradient>"
+    - "  &7От кого: &e{SENDER} &8| &7Режим: &b{MODE} &8| &7Кит: &a{KIT}"
+    - "  &7Ставка: &6{BET}$ &8| &7Раундов: &d{ROUNDS}"
+    - "  &7Нажмите здесь или введите &a/duels accept {SENDER}&7, чтобы посмотреть условия!"
+    - ""
+  accepted: "{prefix} &aВы приняли вызов от &e{SENDER}&a!"
+  declined: "{prefix} &cВы отклонили вызов."
+  expired: "{prefix} &cСрок действия вызова истёк."
+  cannot-challenge-self: "{prefix} &cВы не можете вызвать самого себя!"
+  already-in-duel: "{prefix} &cИгрок уже находится в бою или в очереди!"
+  insufficient-funds: "{prefix} &cУ вас недостаточно средств для ставки &e{BET}$&c!"
+
+match:
+  countdown: "<gradient:#00B5FD:#7670E5>БОЙ НАЧНЁТСЯ ЧЕРЕЗ {SECONDS}... </gradient>"
+  start: "<gradient:#00FF88:#00B5FD>✦ БОЙ НАЧАЛСЯ! В БОЙ! ✦</gradient>"
+  round-win: "{prefix} &fРаунд &e#{ROUND} &fвыиграл &a{WINNER}&f! Счёт: &b{SCORE}"
+  winner-banner:
+    - ""
+    - "  <gradient:#00FF88:#00B5FD>✔ ПОБЕДА В ДУЭЛИ!</gradient>"
+    - "  &fПобедитель: &e{WINNER} &7(HP: &c{HP}&7)"
+    - "  &fВыигрыш: &a{PRIZE}$ &8(Комиссия 5%: &c{FEE}$&8)"
+    - "  &fИзменение Elo: &b{ELO_CHANGE}"
+    - ""
+  draw-banner:
+    - ""
+    - "  <gradient:#FD5E53:#BC00FD>✖ НИЧЬЯ!</gradient>"
+    - "  &7Время боя истекло или произошла отмена. Ставки возвращены."
+    - ""
+  combat-log: "{prefix} &cИгрок &e{PLAYER} &cпокинул игру во время дуэли! Техническое поражение."
+  command-blocked: "{prefix} <gradient:#BC00FD:#7670E5>Команды заблокированы во время дуэли!</gradient>"
+
+queue:
+  joined: "{prefix} &aВы встали в очередь &b{MODE} &7(Кит: &e{KIT}&7). Поиск соперника..."
+  left: "{prefix} &cВы покинули очередь поиска дуэли."
+  already-in-queue: "{prefix} &cВы уже находитесь в очереди!"
+
+claim:
+  claimed: "{prefix} &aПредметы успешно возвращены в ваш инвентарь!"
+  empty: "{prefix} &7У вас нет сохранённых или незабранных предметов."

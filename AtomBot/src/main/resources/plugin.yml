@@ -1,0 +1,22 @@
+name: AtomBot
+version: 1.0.0
+main: com.ejyqyl.atombot.AtomBot
+api-version: '1.21'
+author: ejyqyl
+website: https://github.com/aqkooo
+description: Highly customizable training NPC combat bot for Paper 1.21+
+
+commands:
+  bot:
+    description: Open the Training Bot settings menu or spawn/remove bot
+    aliases: [atombot, trainingbot, npcbot]
+    permission: atombot.use
+    permission-message: "<gradient:#BC00FD:#7670E5>У вас нет прав на использование этой команды.</gradient>"
+
+permissions:
+  atombot.use:
+    description: Allows opening bot settings and summoning a training NPC
+    default: true
+  atombot.admin:
+    description: Allows reloading AtomBot configuration
+    default: op

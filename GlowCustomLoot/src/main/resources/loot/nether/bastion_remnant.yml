@@ -1,0 +1,75 @@
+name: "Бастион пиглинов"
+icon: "GILDED_BLACKSTONE"
+loot_tables:
+  - "minecraft:chests/bastion_treasure"
+  - "minecraft:chests/bastion_other"
+  - "minecraft:chests/bastion_bridge"
+  - "minecraft:chests/bastion_hoglin_stable"
+mode: "MERGE"
+rolls:
+  min: 2
+  max: 6
+
+items:
+  "1":
+    provider: "VANILLA"
+    material: "NETHERITE_UPGRADE_SMITHING_TEMPLATE"
+    chance: 100.0
+    min_amount: 1
+    max_amount: 1
+  "2":
+    provider: "VANILLA"
+    material: "SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE"
+    chance: 15.0
+    min_amount: 1
+    max_amount: 2
+  "3":
+    provider: "VANILLA"
+    material: "MUSIC_DISC_PIGSTEP"
+    chance: 8.0
+    min_amount: 1
+    max_amount: 1
+  "4":
+    provider: "VANILLA"
+    material: "NETHERITE_INGOT"
+    chance: 12.0
+    min_amount: 1
+    max_amount: 1
+  "5":
+    provider: "VANILLA"
+    material: "NETHERITE_SCRAP"
+    chance: 20.0
+    min_amount: 1
+    max_amount: 2
+  "6":
+    provider: "VANILLA"
+    material: "ANCIENT_DEBRIS"
+    chance: 25.0
+    min_amount: 1
+    max_amount: 2
+  "7":
+    provider: "VANILLA"
+    material: "GOLD_BLOCK"
+    chance: 40.0
+    min_amount: 1
+    max_amount: 4
+  "8":
+    provider: "VANILLA"
+    material: "CRYING_OBSIDIAN"
+    chance: 45.0
+    min_amount: 2
+    max_amount: 6
+  "9":
+    provider: "VANILLA"
+    material: "SPECTRAL_ARROW"
+    chance: 55.0
+    min_amount: 8
+    max_amount: 24
+  "10":
+    provider: "VANILLA"
+    material: "ENCHANTED_BOOK"
+    enchantments:
+      SOUL_SPEED: 2
+    chance: 18.0
+    min_amount: 1
+    max_amount: 1

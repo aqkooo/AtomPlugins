@@ -1,0 +1,23 @@
+name: AtomReactor
+version: 1.0.0
+main: ru.atomicsqd.atomreactor.AtomReactor
+api-version: '1.21'
+author: ejyqyl, atomicsqd
+description: Upgradeable reactor block generating Vault, PlayerPoints, or CoinsEngine currency
+website: https://t.me/atomicsqd
+softdepend: [Vault, PlayerPoints, CoinsEngine, DecentHolograms]
+
+commands:
+  atomreactor:
+    description: Главная команда плагина AtomReactor
+    aliases: [areactor, reactor]
+    permission: atomreactor.admin
+    usage: /<command> [give|reload|list|info]
+
+permissions:
+  atomreactor.use:
+    description: Право на установку и открытие своего реактора
+    default: true
+  atomreactor.admin:
+    description: Полный доступ ко всем функциям плагина AtomReactor
+    default: op

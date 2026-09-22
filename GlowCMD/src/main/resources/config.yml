@@ -1,0 +1,21 @@
+# ==============================================================================
+# GlowCMD Configuration File
+# Author: ejyqyl
+# ==============================================================================
+
+spawn:
+  # Enable or disable the spawn system entirely
+  enabled: true
+
+  first-spawn:
+    # Enable or disable separate first-spawn point for new players
+    enabled: true
+
+  # Teleport new players to first-spawn when they join the server for the first time
+  teleport-on-first-join: true
+
+  # Teleport players to spawn upon death (true = respawn at /spawn, false = standard vanilla respawn)
+  teleport-on-death: true
+
+  # If true and teleport-on-death is true, players with a bed/anchor will respawn at their bed instead of /spawn
+  respect-bed-spawn: false

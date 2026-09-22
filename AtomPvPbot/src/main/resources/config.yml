@@ -1,0 +1,108 @@
+# ==========================================================
+#                   AtomPvPbot Configuration
+#                     Author: ejyqyl
+#                   GitHub: https://github.com/aqkooo
+# ==========================================================
+
+plugin:
+  language: ru
+
+bot:
+  default-difficulty: NORMAL
+  default-behavior: BALANCED
+  max-active-bots: 10
+  infinite-totem: true
+
+combat:
+  attack-range: 3.2
+  critical-hits: true
+  combos: true
+  combo-chance: 0.75
+  max-combo-length: 5
+
+movement:
+  strafing: true
+  jumping: true
+  pathfinding: true
+  optimal-distance: 2.8
+
+rotation:
+  smooth: true
+  speed: 25
+  accuracy: 0.90
+  random-error: 0.05
+
+healing:
+  enabled: true
+  health-percent: 40
+  regen-percent: 60
+
+potions:
+  enabled: true
+  splash-cooldown: 8
+
+pearls:
+  enabled: true
+  clutch-distance: 12.0
+  cooldown: 15
+
+shield:
+  enabled: true
+  block-chance: 0.65
+  axe-stun-duration: 5
+
+respawn:
+  enabled: true
+  delay: 3
+
+training-mode:
+  enabled: true
+  countdown: 3
+
+allowed-commands:
+  - /pvpbot
+  - /msg
+  - /r
+  - /tell
+
+database:
+  type: SQLITE
+  file: "database.db"
+
+custom-ai-bounds:
+  reaction-time:
+    min: 40
+    max: 1500
+    default: 200
+  attack-delay:
+    min: 2
+    max: 30
+    default: 12
+  aim-accuracy:
+    min: 0.20
+    max: 1.00
+    default: 0.85
+  movement-speed:
+    min: 0.10
+    max: 0.50
+    default: 0.28
+  strafe-chance:
+    min: 0.00
+    max: 1.00
+    default: 0.60
+  block-chance:
+    min: 0.00
+    max: 1.00
+    default: 0.65
+  combo-chance:
+    min: 0.00
+    max: 1.00
+    default: 0.70
+  pearl-chance:
+    min: 0.00
+    max: 1.00
+    default: 0.40
+  potion-chance:
+    min: 0.00
+    max: 1.00
+    default: 0.60

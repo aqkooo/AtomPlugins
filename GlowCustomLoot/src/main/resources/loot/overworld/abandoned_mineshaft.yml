@@ -1,0 +1,81 @@
+name: "Заброшенная шахта"
+icon: "CHEST_MINECART"
+loot_table: "minecraft:chests/abandoned_mineshaft"
+mode: "MERGE"
+rolls:
+  min: 1
+  max: 4
+
+items:
+  "1":
+    provider: "VANILLA"
+    material: "NAME_TAG"
+    chance: 30.0
+    min_amount: 1
+    max_amount: 1
+  "2":
+    provider: "VANILLA"
+    material: "GOLDEN_APPLE"
+    chance: 15.0
+    min_amount: 1
+    max_amount: 1
+  "3":
+    provider: "VANILLA"
+    material: "ENCHANTED_GOLDEN_APPLE"
+    chance: 2.0
+    min_amount: 1
+    max_amount: 1
+  "4":
+    provider: "VANILLA"
+    material: "DIAMOND"
+    chance: 12.0
+    min_amount: 1
+    max_amount: 2
+  "5":
+    provider: "VANILLA"
+    material: "IRON_INGOT"
+    chance: 45.0
+    min_amount: 2
+    max_amount: 6
+  "6":
+    provider: "VANILLA"
+    material: "GOLD_INGOT"
+    chance: 35.0
+    min_amount: 1
+    max_amount: 4
+  "7":
+    provider: "VANILLA"
+    material: "LAPIS_LAZULI"
+    chance: 40.0
+    min_amount: 4
+    max_amount: 10
+  "8":
+    provider: "VANILLA"
+    material: "REDSTONE"
+    chance: 40.0
+    min_amount: 4
+    max_amount: 9
+  "9":
+    provider: "VANILLA"
+    material: "PUMPKIN_SEEDS"
+    chance: 28.0
+    min_amount: 2
+    max_amount: 5
+  "10":
+    provider: "VANILLA"
+    material: "MELON_SEEDS"
+    chance: 28.0
+    min_amount: 2
+    max_amount: 5
+  "11":
+    provider: "VANILLA"
+    material: "GLOW_BERRIES"
+    chance: 32.0
+    min_amount: 3
+    max_amount: 6
+  "12":
+    provider: "VANILLA"
+    material: "TORCH"
+    chance: 60.0
+    min_amount: 4
+    max_amount: 16

@@ -1,0 +1,22 @@
+name: GlowChatGame
+version: '${project.version}'
+main: com.ejyqyl.glowchatgame.GlowChatGame
+api-version: '1.16'
+authors: [ejyqyl, Glowdevv]
+description: Ultra-optimized, highly configurable math chat mini-game with SQLite statistics and MiniMessage support
+softdepend: [PlaceholderAPI]
+
+commands:
+  chatgame:
+    description: Main command for GlowChatGame.
+    aliases: [cg, mathgame]
+    usage: /<command> [start|stop|reload|stats]
+    permission: glowchatgame.use
+
+permissions:
+  glowchatgame.admin:
+    description: Full administrative access to GlowChatGame (start, stop, reload, other players stats)
+    default: op
+  glowchatgame.use:
+    description: Permission to use basic chatgame commands (e.g. self stats)
+    default: true

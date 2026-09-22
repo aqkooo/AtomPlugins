@@ -1,0 +1,213 @@
+# ==========================================================
+#                   GlowCustomLoot Menus
+#             Настройка интерфейсов без хардкода
+# ==========================================================
+
+# 1. Главное меню: Выбор мира (/editloot)
+main_menu:
+  title: "<!italic><gradient:#ffaa00:#ff5500>Выбор измерения</gradient>"
+  size: 27
+  filler:
+    material: "BLACK_STAINED_GLASS_PANE"
+    name: " "
+  items:
+    overworld:
+      slot: 11
+      material: "GRASS_BLOCK"
+      name: "<!italic><green><bold>Верхний мир</bold></green>"
+      lore:
+        - "<!italic><gray>Нажмите для настройки данжей"
+        - "<!italic><gray>обычного мира."
+    nether:
+      slot: 13
+      material: "NETHERRACK"
+      name: "<!italic><red><bold>Нижний мир</bold></red>"
+      lore:
+        - "<!italic><gray>Крепости, Бастионы и руины."
+    the_end:
+      slot: 15
+      material: "END_STONE"
+      name: "<!italic><yellow><bold>Эндер-мир</bold></yellow>"
+      lore:
+        - "<!italic><gray>Города Энда и корабли."
+
+# 2. Меню выбора структуры (Данжа)
+structure_menu:
+  title: "<!italic><dark_gray>Данжи: <gold>{dimension}</gold></dark_gray>"
+  size: 54
+  filler:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
+  structure_slots:
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+  item_format:
+    name: "<!italic><gold><b>{name}</b></gold>"
+    lore:
+      - "<!italic><dark_gray>------------------------</dark_gray>"
+      - "<!italic><gray>Ключ: <white>{loot_table}</white>"
+      - "<!italic><gray>Режим: <yellow>{mode}</yellow>"
+      - "<!italic><gray>Роллы: <white>{min_rolls} - {max_rolls}</white>"
+      - "<!italic><gray>Кастомных предметов: <green>{items_count}</green>"
+      - "<!italic><dark_gray>------------------------</dark_gray>"
+      - "<!italic><yellow>▶ Нажмите для редактирования</yellow>"
+  buttons:
+    back:
+      slot: 45
+      material: "ARROW"
+      name: "<!italic><red><b>◀ Назад к измерениям</b></red>"
+      lore:
+        - "<!italic><gray>Вернуться в меню выбора мира"
+    previous_page:
+      slot: 48
+      material: "SPECTRAL_ARROW"
+      name: "<!italic><yellow><b>◀ Предыдущая страница</b></yellow>"
+      lore:
+        - "<!italic><gray>Страница {prev_page} из {total_pages}"
+    next_page:
+      slot: 50
+      material: "SPECTRAL_ARROW"
+      name: "<!italic><yellow><b>Следующая страница ▶</b></yellow>"
+      lore:
+        - "<!italic><gray>Страница {next_page} из {total_pages}"
+
+# 3. Редактор лут-таблицы данжа
+loot_editor:
+  title: "<!italic><dark_gray>Редактор: <gold>{structure}</gold></dark_gray>"
+  size: 54
+  click_sound: "UI_BUTTON_CLICK"
+  value_change_sound: "BLOCK_NOTE_BLOCK_PLING"
+  remove_sound: "ENTITY_ITEM_BREAK"
+  loot_slots_max: 45
+  lore_format:
+    header:
+      - "<!italic><dark_gray>------------------------</dark_gray>"
+      - "<!italic><gray>Текущий шанс: <yellow>{chance}%</yellow>"
+      - "<!italic><gray>Количество: <white>{min} - {max} шт.</white>"
+      - "<!italic><dark_gray>------------------------</dark_gray>"
+    controls:
+      - "<!italic><green>ЛКМ:</green> <gray>+1%</gray>  <dark_gray>|</dark_gray>  <green>ПКМ:</green> <gray>+10%</gray>"
+      - "<!italic><red>Shift + ЛКМ:</red> <gray>-1%</gray>  <dark_gray>|</dark_gray>  <red>Shift + ПКМ:</red> <gray>-10%</gray>"
+      - "<!italic><yellow>СКМ:</yellow> <gray>Изменить количество</gray>"
+  bottom_bar:
+    filler:
+      material: "BLACK_STAINED_GLASS_PANE"
+      name: " "
+    back:
+      slot: 45
+      material: "ARROW"
+      name: "<!italic><red><b>◀ Назад к списку данжей</b></red>"
+      lore:
+        - "<!italic><gray>Вернуться к выбору структур"
+    mode_toggle:
+      slot: 48
+      material: "HOPPER"
+      name: "<!italic><gold><b>Режим генерации:</b> <yellow>{mode}</yellow></gold>"
+      lore:
+        - "<!italic><dark_gray>------------------------</dark_gray>"
+        - "<!italic><gray>Текущий: <yellow>{mode}</yellow>"
+        - "<!italic><gray>MERGE: добавляет к ванильному"
+        - "<!italic><gray>REPLACE: полностью заменяет ванильный"
+        - "<!italic><dark_gray>------------------------</dark_gray>"
+        - "<!italic><yellow>▶ Нажмите для переключения</yellow>"
+    rolls:
+      slot: 49
+      material: "DISPENSER"
+      name: "<!italic><gold><b>Количество роллов:</b> <white>{min_rolls} - {max_rolls}</white></gold>"
+      lore:
+        - "<!italic><dark_gray>------------------------</dark_gray>"
+        - "<!italic><gray>ЛКМ: <green>+1 к мин</green> | ПКМ: <green>+1 к макс</green>"
+        - "<!italic><gray>Shift+ЛКМ: <red>-1 от мин</red> | Shift+ПКМ: <red>-1 от макс</red>"
+        - "<!italic><dark_gray>------------------------</dark_gray>"
+    quick_add_info:
+      slot: 52
+      material: "BOOK"
+      name: "<!italic><green><b>Добавление предмета</b></green>"
+      lore:
+        - "<!italic><dark_gray>------------------------</dark_gray>"
+        - "<!italic><gray>Кликните по любому предмету"
+        - "<!italic><gray>в вашем инвентаре снизу,"
+        - "<!italic><gray>чтобы добавить его в таблицу."
+        - "<!italic><dark_gray>------------------------</dark_gray>"
+    save:
+      slot: 53
+      material: "EMERALD"
+      name: "<!italic><green><b>Сохранить</b></green>"
+      lore:
+        - "<!italic><gray>Нажмите для принудительного"
+        - "<!italic><gray>сохранения изменений на диск."
+
+# 4. Меню настройки количества (min/max amount)
+amount_editor:
+  title: "<!italic><dark_gray>Количество: <gold>{item}</gold></dark_gray>"
+  size: 27
+  filler:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
+  item_display_slot: 4
+  buttons:
+    min_minus_5:
+      slot: 10
+      material: "RED_STAINED_GLASS_PANE"
+      name: "<!italic><red><b>-5 к Мин</b></red>"
+    min_minus_1:
+      slot: 11
+      material: "RED_CONCRETE"
+      name: "<!italic><red><b>-1 к Мин</b></red>"
+    min_current:
+      slot: 12
+      material: "PAPER"
+      name: "<!italic><gray>Минимум: <yellow><b>{min}</b></yellow></gray>"
+    min_plus_1:
+      slot: 13
+      material: "LIME_CONCRETE"
+      name: "<!italic><green><b>+1 к Мин</b></green>"
+    min_plus_5:
+      slot: 14
+      material: "LIME_STAINED_GLASS_PANE"
+      name: "<!italic><green><b>+5 к Мин</b></green>"
+
+    max_minus_5:
+      slot: 19
+      material: "RED_STAINED_GLASS_PANE"
+      name: "<!italic><red><b>-5 к Макс</b></red>"
+    max_minus_1:
+      slot: 20
+      material: "RED_CONCRETE"
+      name: "<!italic><red><b>-1 к Макс</b></red>"
+    max_current:
+      slot: 21
+      material: "PAPER"
+      name: "<!italic><gray>Максимум: <yellow><b>{max}</b></yellow></gray>"
+    max_plus_1:
+      slot: 22
+      material: "LIME_CONCRETE"
+      name: "<!italic><green><b>+1 к Макс</b></green>"
+    max_plus_5:
+      slot: 23
+      material: "LIME_STAINED_GLASS_PANE"
+      name: "<!italic><green><b>+5 к Макс</b></green>"
+
+    back:
+      slot: 18
+      material: "ARROW"
+      name: "<!italic><red><b>Готово / Назад</b></red>"

@@ -1,0 +1,52 @@
+# ==========================================================
+#                   AtomPvPbot Messages
+#         Supports MiniMessage gradients, HEX, and PAPI
+#                     Author: ejyqyl
+# ==========================================================
+
+prefix: "<gradient:#00B5FD:#7670E5>ᴀᴛᴏᴍᴘᴠᴘʙᴏᴛ ≫</gradient>"
+
+no-permission: "{prefix} <gradient:#BC00FD:#7670E5>У вас недостаточно прав.</gradient>"
+player-only: "{prefix} &cЭту команду может использовать только игрок."
+player-not-found: "{prefix} &cИгрок &e{TARGET} &cне найден или оффлайн."
+unknown-command: "{prefix} &cНеизвестная команда. Введите &e/pvpbot&c."
+
+fight:
+  starting: "{prefix} &fПодготовка к тренировочному бою... Арена: &e{ARENA}"
+  countdown: "<gradient:#00B5FD:#7670E5>БОЙ НАЧНЁТСЯ ЧЕРЕЗ {SECONDS}... </gradient>"
+  start: "<gradient:#00FF88:#00B5FD>✦ БОЙ НАЧАЛСЯ! В БОЙ! ✦</gradient>"
+  win:
+    - ""
+    - "  <gradient:#00FF88:#00B5FD>✔ ПОБЕДА НАД БОТОМ!</gradient>"
+    - "  &fСложность: &e{DIFFICULTY} &8| &fКит: &a{KIT}"
+    - "  &fВремя боя: &b{DURATION} сек."
+    - ""
+  loss:
+    - ""
+    - "  <gradient:#FD5E53:#BC00FD>✖ ПОРАЖЕНИЕ В БОЮ С БОТОМ</gradient>"
+    - "  &7Тренируйтесь усерднее и попробуйте снова!"
+    - ""
+  totem-pop: "{prefix} &eБот использовал Тотем бессмертия! Продолжайте бой!"
+  command-blocked: "{prefix} <gradient:#BC00FD:#7670E5>Команды заблокированы во время боя!</gradient>"
+  already-in-fight: "{prefix} &cВы уже находитесь в бою!"
+  not-in-fight: "{prefix} &cВы не находитесь в бою."
+  cancelled: "{prefix} &cБой был отменён."
+
+bot:
+  spawned: "{prefix} &aБот успешно призван! Сложность: &e{DIFFICULTY}"
+  removed: "{prefix} &cБот успешно удалён."
+  no-active: "{prefix} &7У вас нет активного бота."
+
+arena:
+  created: "{prefix} &aАрена &e{ARENA} &aсоздана!"
+  deleted: "{prefix} &aАрена &e{ARENA} &aудалена."
+  not-found: "{prefix} &cАрена не найдена."
+  spawn1-set: "{prefix} &aSpawn 1 установлен для &e{ARENA}"
+  spawn2-set: "{prefix} &aSpawn 2 установлен для &e{ARENA}"
+  no-free: "{prefix} &cВсе арены сейчас заняты! Подождите завершения других боев."
+
+kit:
+  saved: "{prefix} &aКит &e{KIT} &aуспешно сохранён из вашего инвентаря!"
+  deleted: "{prefix} &aКит &e{KIT} &aудалён."
+  given: "{prefix} &aВам выдан кит &e{KIT}"
+  not-found: "{prefix} &cКит не найден."

@@ -1,0 +1,22 @@
+# Системные сообщения плагина AtomMessage
+prefix: "<gradient:#FDBF5F:#FF5D00><b>AtomMessage</b></gradient> &8» &f"
+
+no-permission: "&cУ вас нет прав для выполнения этой команды!"
+only-players: "&cЭта команда доступна только игрокам!"
+reload-success: "&aКонфигурация успешно перезагружена! Загружено сообщений: &e{count}&a."
+reload-error: "&cОшибка при перезагрузке конфигурации! Проверьте консоль."
+next-message: "&fПереключено на следующее сообщение: &e{id}&f."
+prev-message: "&fПереключено на предыдущее сообщение: &e{id}&f."
+no-messages: "&cСписок сообщений пуст!"
+list-header: "<gradient:#FDBF5F:#FF5D00><b>Список сообщений в TAB ({count}):</b></gradient>"
+list-format: "&8- &e{id} &7(длительность: &f{duration}с&7): &r{preview}"
+current-status: "&7Текущее сообщение: &e{id} &7(осталось: &f{left}с&7)"
+help:
+  - " "
+  - "<gradient:#FDBF5F:#FF5D00><b>Команды плагина AtomMessage:</b></gradient>"
+  - " &e/atommessage reload &7— Перезагрузить конфигурацию"
+  - " &e/atommessage next &7— Переключить на следующее сообщение"
+  - " &e/atommessage prev &7— Переключить на предыдущее сообщение"
+  - " &e/atommessage list &7— Список всех сообщений таба"
+  - " &e/atommessage status &7— Текущий статус ротации"
+  - " "

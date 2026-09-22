@@ -1,0 +1,28 @@
+# ==========================================================
+#                  GlowCustomLoot Configuration
+#       Динамическое редактирование лут-таблиц данжей
+#             Авторы: ejyqyl, glowdevv (t.me/glowdevv)
+# ==========================================================
+
+settings:
+  language: "ru_RU"
+  check_updates: true
+  debug_mode: false
+  # Автоматическое сохранение изменений при закрытии редактора GUI
+  auto_save_on_close: true
+
+# Интеграции с кастомными предметами (soft-depend)
+integrations:
+  itemsadder: true
+  oraxen: true
+  mmoitems: true
+  mythicmobs: true
+
+# Глобальные настройки генерации лута
+loot_generation:
+  # Режим по умолчанию при создании новых таблиц (MERGE или REPLACE)
+  default_mode: "MERGE"
+  # Максимальное количество предметов в сундуке (ограничитель, по умолчанию размер сундука - 27)
+  max_items_per_chest: 27
+  # Минимальный шанс для сохранения предмета
+  min_chance: 0.1
