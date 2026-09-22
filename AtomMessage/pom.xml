@@ -6,11 +6,11 @@
 
     <groupId>ru.atomicsqd</groupId>
     <artifactId>AtomMessage</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <packaging>jar</packaging>
 
     <name>AtomMessage</name>
-    <description>Automatic rotating messages in TAB with full gradient and color support for Paper 1.20-1.21.x</description>
+    <description>Universal chat and TAB announcements with interactive links, clickable commands, HEX, MiniMessage, and all colors for Paper 1.20-1.21.x</description>
     <url>https://t.me/atomicsqd</url>
 
     <properties>

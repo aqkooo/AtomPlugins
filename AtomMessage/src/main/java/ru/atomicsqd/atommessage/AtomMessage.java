@@ -6,6 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import ru.atomicsqd.atommessage.command.AtomMessageCommand;
 import ru.atomicsqd.atommessage.config.ConfigManager;
 import ru.atomicsqd.atommessage.listener.PlayerListener;
+import ru.atomicsqd.atommessage.manager.ChatAnnouncementManager;
 import ru.atomicsqd.atommessage.manager.TabMessageManager;
 import ru.atomicsqd.atommessage.placeholder.AtomMessageExpansion;
 
@@ -14,6 +15,7 @@ public final class AtomMessage extends JavaPlugin {
 
     private ConfigManager configManager;
     private TabMessageManager tabMessageManager;
+    private ChatAnnouncementManager chatAnnouncementManager;
 
     public static AtomMessage getInstance() {
         return instance;
@@ -25,16 +27,20 @@ public final class AtomMessage extends JavaPlugin {
 
         getLogger().info("=========================================");
         getLogger().info(" AtomMessage v" + getDescription().getVersion() + " by " + String.join(", ", getDescription().getAuthors()));
-        getLogger().info(" Auto-messages in TAB for Paper 1.20-1.21.x");
+        getLogger().info(" Interactive chat broadcasts & TAB engine");
+        getLogger().info(" Paper / Purpur 1.20-1.21.x with MiniMessage");
         getLogger().info("=========================================");
 
         // 1. Load configurations
         configManager = new ConfigManager(this);
         configManager.load();
 
-        // 2. Initialize and start rotation manager
+        // 2. Initialize and start managers
         tabMessageManager = new TabMessageManager(this, configManager);
         tabMessageManager.start();
+
+        chatAnnouncementManager = new ChatAnnouncementManager(this, configManager);
+        chatAnnouncementManager.start();
 
         // 3. Register commands
         AtomMessageCommand command = new AtomMessageCommand(this);
@@ -50,7 +56,7 @@ public final class AtomMessage extends JavaPlugin {
         // 5. Register PlaceholderAPI expansion if available
         if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
             new AtomMessageExpansion(this).register();
-            getLogger().info("Registered PlaceholderAPI expansion: %atommessage_tab%, %atommessage_message%, etc.");
+            getLogger().info("Registered PlaceholderAPI expansion: %atommessage_tab%, %atommessage_chat%, etc.");
         }
 
         getLogger().info("AtomMessage enabled successfully!");
@@ -59,6 +65,7 @@ public final class AtomMessage extends JavaPlugin {
     public void reload() {
         configManager.load();
         tabMessageManager.start();
+        chatAnnouncementManager.start();
         getLogger().info("AtomMessage reloaded successfully!");
     }
 
@@ -66,6 +73,9 @@ public final class AtomMessage extends JavaPlugin {
     public void onDisable() {
         if (tabMessageManager != null) {
             tabMessageManager.stop();
+        }
+        if (chatAnnouncementManager != null) {
+            chatAnnouncementManager.stop();
         }
         getLogger().info("AtomMessage disabled.");
     }
@@ -76,5 +86,9 @@ public final class AtomMessage extends JavaPlugin {
 
     public TabMessageManager getTabMessageManager() {
         return tabMessageManager;
+    }
+
+    public ChatAnnouncementManager getChatAnnouncementManager() {
+        return chatAnnouncementManager;
     }
 }

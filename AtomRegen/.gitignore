@@ -1,0 +1,10 @@
+﻿target/
+build/
+*.iml
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+StickHWTituls-main.zip
+original_source/

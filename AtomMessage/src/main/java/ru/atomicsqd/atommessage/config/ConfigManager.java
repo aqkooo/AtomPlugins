@@ -7,6 +7,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import ru.atomicsqd.atommessage.model.ChatAnnouncement;
 import ru.atomicsqd.atommessage.model.RotationOrder;
 import ru.atomicsqd.atommessage.model.TabMessage;
 import ru.atomicsqd.atommessage.util.ColorUtil;
@@ -15,9 +16,7 @@ import java.io.File;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.logging.Level;
 
 public class ConfigManager {
@@ -26,6 +25,7 @@ public class ConfigManager {
     private FileConfiguration config;
     private FileConfiguration messages;
 
+    // Tab Settings
     private int defaultInterval;
     private RotationOrder rotationOrder;
     private boolean directTabListEnabled;
@@ -35,8 +35,16 @@ public class ConfigManager {
     private String globalSound;
     private float soundVolume;
     private float soundPitch;
-
     private final List<TabMessage> tabMessages = new ArrayList<>();
+
+    // Chat Announcements Settings
+    private boolean chatAnnouncementsEnabled;
+    private int chatDefaultInterval;
+    private RotationOrder chatRotationOrder;
+    private String chatGlobalSound;
+    private float chatGlobalSoundVolume;
+    private float chatGlobalSoundPitch;
+    private final Map<String, ChatAnnouncement> chatAnnouncements = new LinkedHashMap<>();
 
     public ConfigManager(@NotNull JavaPlugin plugin) {
         this.plugin = plugin;
@@ -46,6 +54,7 @@ public class ConfigManager {
         this.config = loadConfigFile("config.yml");
         this.messages = loadConfigFile("messages.yml");
 
+        // Load Tab settings
         this.defaultInterval = Math.max(1, config.getInt("settings.interval", 15));
         this.rotationOrder = RotationOrder.fromString(config.getString("settings.rotation-order", "SEQUENTIAL"));
 
@@ -58,10 +67,19 @@ public class ConfigManager {
         this.soundVolume = (float) config.getDouble("settings.sound-volume", 0.5);
         this.soundPitch = (float) config.getDouble("settings.sound-pitch", 1.0);
 
-        loadMessages();
+        // Load Chat Announcements settings
+        this.chatAnnouncementsEnabled = config.getBoolean("chat-announcements.enabled", true);
+        this.chatDefaultInterval = Math.max(1, config.getInt("chat-announcements.interval", 60));
+        this.chatRotationOrder = RotationOrder.fromString(config.getString("chat-announcements.rotation-order", "SEQUENTIAL"));
+        this.chatGlobalSound = config.getString("chat-announcements.global-sound", "ENTITY_EXPERIENCE_ORB_PICKUP");
+        this.chatGlobalSoundVolume = (float) config.getDouble("chat-announcements.sound-volume", 0.6);
+        this.chatGlobalSoundPitch = (float) config.getDouble("chat-announcements.sound-pitch", 1.2);
+
+        loadTabMessages();
+        loadChatAnnouncements();
     }
 
-    private void loadMessages() {
+    private void loadTabMessages() {
         tabMessages.clear();
         ConfigurationSection section = config.getConfigurationSection("messages");
         if (section == null) {
@@ -71,7 +89,6 @@ public class ConfigManager {
         for (String key : section.getKeys(false)) {
             ConfigurationSection msgSec = section.getConfigurationSection(key);
             if (msgSec == null) {
-                // If it's a simple string or string list directly under key
                 if (section.isList(key)) {
                     tabMessages.add(new TabMessage(key, section.getStringList(key), defaultInterval, null, null));
                 } else if (section.isString(key)) {
@@ -95,6 +112,73 @@ public class ConfigManager {
         }
 
         plugin.getLogger().info("Loaded " + tabMessages.size() + " tab messages from config.yml");
+    }
+
+    private void loadChatAnnouncements() {
+        chatAnnouncements.clear();
+        ConfigurationSection section = config.getConfigurationSection("chat-announcements.messages");
+        if (section == null) {
+            return;
+        }
+
+        for (String key : section.getKeys(false)) {
+            ConfigurationSection msgSec = section.getConfigurationSection(key);
+            if (msgSec == null) continue;
+
+            List<String> lines = msgSec.getStringList("lines");
+            if (lines.isEmpty() && msgSec.isString("text")) {
+                lines = Collections.singletonList(msgSec.getString("text"));
+            }
+
+            int interval = msgSec.getInt("interval", 0);
+            String permission = msgSec.getString("permission", null);
+            List<String> worlds = msgSec.getStringList("worlds");
+            String sound = msgSec.getString("sound", null);
+            float vol = (float) msgSec.getDouble("sound-volume", 0.0);
+            float pitch = (float) msgSec.getDouble("sound-pitch", 0.0);
+
+            // Title & Subtitle
+            String title = msgSec.getString("title", null);
+            String subtitle = msgSec.getString("subtitle", null);
+            int fadeIn = msgSec.getInt("title-fade-in", 10);
+            int stay = msgSec.getInt("title-stay", 50);
+            int fadeOut = msgSec.getInt("title-fade-out", 15);
+
+            // ActionBar
+            String actionbar = msgSec.getString("actionbar", null);
+
+            // BossBar
+            boolean bossbarEnabled = msgSec.getBoolean("bossbar.enabled", false);
+            String bossbarTitle = msgSec.getString("bossbar.title", null);
+            String bossbarColor = msgSec.getString("bossbar.color", "PURPLE");
+            String bossbarOverlay = msgSec.getString("bossbar.overlay", "PROGRESS");
+            int bossbarDuration = msgSec.getInt("bossbar.duration", 10);
+
+            ChatAnnouncement ann = new ChatAnnouncement(
+                    key,
+                    lines,
+                    interval,
+                    permission,
+                    worlds,
+                    sound,
+                    vol,
+                    pitch,
+                    title,
+                    subtitle,
+                    fadeIn,
+                    stay,
+                    fadeOut,
+                    actionbar,
+                    bossbarEnabled,
+                    bossbarTitle,
+                    bossbarColor,
+                    bossbarOverlay,
+                    bossbarDuration
+            );
+            chatAnnouncements.put(key.toLowerCase(), ann);
+        }
+
+        plugin.getLogger().info("Loaded " + chatAnnouncements.size() + " chat announcements from config.yml");
     }
 
     private FileConfiguration loadConfigFile(String name) {
@@ -186,5 +270,40 @@ public class ConfigManager {
     @NotNull
     public List<TabMessage> getTabMessages() {
         return Collections.unmodifiableList(tabMessages);
+    }
+
+    // Chat Announcements Getters
+    public boolean isChatAnnouncementsEnabled() {
+        return chatAnnouncementsEnabled;
+    }
+
+    public int getChatDefaultInterval() {
+        return chatDefaultInterval;
+    }
+
+    public RotationOrder getChatRotationOrder() {
+        return chatRotationOrder;
+    }
+
+    public String getChatGlobalSound() {
+        return chatGlobalSound;
+    }
+
+    public float getChatGlobalSoundVolume() {
+        return chatGlobalSoundVolume;
+    }
+
+    public float getChatGlobalSoundPitch() {
+        return chatGlobalSoundPitch;
+    }
+
+    @NotNull
+    public List<ChatAnnouncement> getChatAnnouncements() {
+        return new ArrayList<>(chatAnnouncements.values());
+    }
+
+    @Nullable
+    public ChatAnnouncement getChatAnnouncement(@NotNull String id) {
+        return chatAnnouncements.get(id.toLowerCase());
     }
 }

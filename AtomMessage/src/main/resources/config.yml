@@ -1,9 +1,13 @@
-# ==========================================================
-#                   AtomMessage Configuration
-#       Автоматические сообщения в TAB для Paper 1.20-1.21.x
+# ====================================================================
+#                      AtomMessage Configuration
+#       Универсальная система интерактивных объявлений и ТАБ ротации
+#             Поддержка Paper / Purpur / Spigot 1.20-1.21.x
 #             Авторы: ejyqyl, atomicsqd (t.me/atomicsqd)
-# ==========================================================
+# ====================================================================
 
+# --------------------------------------------------------------------
+# 1. НАСТРОЙКИ РОТАЦИИ В ТАБЕ (TabList Settings)
+# --------------------------------------------------------------------
 settings:
   # Интервал смены сообщений по умолчанию (в секундах)
   interval: 15
@@ -11,46 +15,146 @@ settings:
   # Порядок ротации: SEQUENTIAL (по очереди) или RANDOM (случайно)
   rotation-order: SEQUENTIAL
 
-  # Использовать ли прямой режим управления заголовком и подвалом таба.
+  # Прямой режим управления заголовком и подвалом таба.
   # Если true: AtomMessage напрямую отправляет TabList Header/Footer игрокам.
-  # Если false: вы можете вставить плейсхолдер %atommessage_tab% в конфиг
-  # вашего плагина таба (например TAB от NEZNALY в раздел footer).
+  # Если false: вы можете использовать плейсхолдер %atommessage_tab% в вашем плагине таба.
   direct-tablist:
     enabled: false
     # Частота обновления плейсхолдеров таба (в тиках, 20 тиков = 1 сек)
     update-ticks: 20
     header:
       - ' '
-      - '<gradient:#FDBF5F:#FF5D00><b>ᴀᴛᴏᴍɪᴄsᴍᴘ</b></gradient>'
+      - '<gradient:#00B5FD:#7670E5><b>ᴀᴛᴏᴍɪᴄsᴍᴘ</b></gradient>'
       - '<gradient:#FDBF5F:#FF5D00><shadow:#736855:1>Vanilla Anarchy</shadow></gradient>'
       - ' '
     footer:
       - ' '
-      - '<gradient:#FDBF5F:#FF5D00>онлайн:</gradient> &f%server_online% &8| <gradient:#FDBF5F:#FF5D00>пинг:</gradient> &f%player_ping%ms'
+      - '<gradient:#00B5FD:#7670E5>онлайн:</gradient> &f%server_online% &8| <gradient:#00B5FD:#7670E5>пинг:</gradient> &f%player_ping%ms'
       - ' '
       - '{atommessage}'
       - ' '
 
-  # Звук при смене сообщения для всех игроков (оставьте пустым или NONE для отключения)
-  # Примеры: UI_BUTTON_CLICK, ENTITY_EXPERIENCE_ORB_PICKUP, NONE
+  # Звук при смене сообщения в табе (оставьте NONE для отключения)
   global-sound: "NONE"
   sound-volume: 0.5
   sound-pitch: 1.0
 
-# Список сообщений для ротации в табе.
-# Поддерживаются:
-# - MiniMessage теги: <gradient:#HEX1:#HEX2>текст</gradient>, <rainbow>радуга</rainbow>, <b>, <i>, <underlined>
-# - Hex RGB цвета: &#RRGGBB
-# - Классические цвета: &a, &e, &c, &f, &l и т.д.
-# - PlaceholderAPI плейсхолдеры: %player_name%, %server_online% и любые другие.
-# - Многострочные сообщения (через список lines или \n).
+# --------------------------------------------------------------------
+# 2. МОДУЛЬ ЧАТ-ОБЪЯВЛЕНИЙ (Interactive Chat Announcements)
+# --------------------------------------------------------------------
+chat-announcements:
+  # Включен ли модуль периодических рассылок в чат
+  enabled: true
+
+  # Интервал отправки сообщений по умолчанию (в секундах)
+  interval: 60
+
+  # Порядок ротации: SEQUENTIAL (по очереди) или RANDOM (случайно)
+  rotation-order: SEQUENTIAL
+
+  # Глобальный звук при отправке анонса (NONE для выключения)
+  global-sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  sound-volume: 0.7
+  sound-pitch: 1.2
+
+  # Список объявлений для чата
+  # Поддерживаемые теги:
+  # 1. Ссылки:
+  #    - [url=https://site.com hover="Подсказка"]Текст[/url]
+  #    - <click:open_url:'https://site.com'><hover:show_text:'Подсказка'>Текст</hover></click>
+  # 2. Команды:
+  #    - [cmd=/command hover="Подсказка"]Текст кнопки[/cmd]
+  #    - <click:run_command:'/command'><hover:show_text:'Подсказка'>Текст</hover></click>
+  # 3. Подстановка команды:
+  #    - [suggest=/pay %player_name% 100 hover="Подсказка"]Текст[/suggest]
+  # 4. Копирование в буфер обмена:
+  #    - [copy=ТЕКСТ hover="Подсказка"]Текст[/copy]
+  # 5. Подсказка при наведении:
+  #    - [hover="Подсказка"]Текст[/hover]
+  # 6. Цвета:
+  #    - Все цвета Minecraft: &a, &e, &c, &f, &l, &o, &n, &k
+  #    - Spigot HEX: &#RRGGBB
+  #    - CMI/Essentials HEX: {#RRGGBB}
+  #    - MiniMessage HEX: <#RRGGBB>
+  #    - Градиенты: <gradient:#HEX1:#HEX2>текст</gradient>
+  #    - Радуга: <rainbow>текст</rainbow>
+  messages:
+    welcome:
+      interval: 60
+      sound: "ENTITY_PLAYER_LEVELUP"
+      sound-volume: 0.6
+      sound-pitch: 1.2
+      lines:
+        - " "
+        - "&8┏━━━━━━━━━━━━━━━━━ &f[ <gradient:#00B5FD:#7670E5><b>ATOMIC NETWORK</b></gradient> &f] &8━━━━━━━━━━━━━━━━━┓"
+        - "  &fДобро пожаловать на наш сервер, &e%player_name%&f!"
+        - "  &7Мы рады приветствовать вас в нашем ламповом сообществе."
+        - " "
+        - "  &8▶ [cmd=/rules hover='Нажмите, чтобы прочесть правила']<gradient:#FDBF5F:#FF5D00><b>[📜 ПРАВИЛА]</b></gradient>[/cmd]  [cmd=/menu hover='Открыть меню сервера']<gradient:#00B5FD:#7670E5><b>[🧭 МЕНЮ]</b></gradient>[/cmd]  [url=https://atomicsmp.fun hover='Перейти на наш сайт']<#2ECC71><b>[🌐 САЙТ]</b></#2ECC71>[/url]"
+        - "&8┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+        - " "
+
+    discord:
+      interval: 90
+      actionbar: "<gradient:#5865F2:#00B5FD>Присоединяйтесь к нашему Discord серверу!</gradient>"
+      lines:
+        - " "
+        - "&8┏━━━━━━━━━━━━━━━━━ &f[ <#5865F2><b>DISCORD СООБЩЕСТВО</b></#5865F2> &f] &8━━━━━━━━━━━━━━━━━┓"
+        - "  &7Общайтесь с игроками, участвуйте в конкурсах и узнавайте"
+        - "  &7все новости и промокоды первыми в нашем дискорде!"
+        - " "
+        - "  &8▶ [url=https://discord.gg/atomic hover='Кликни, чтобы получить ссылку-приглашение']<#5865F2><b>[💬 ВОЙТИ В DISCORD]</b></#5865F2>[/url]  &7или команда: &e/discord"
+        - "&8┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+        - " "
+
+    donate_promo:
+      interval: 120
+      sound: "UI_TOAST_CHALLENGE_COMPLETE"
+      sound-volume: 0.8
+      sound-pitch: 1.0
+      title: "<gradient:#FF512F:#DD2476><b>СКИДКИ 25%</b></gradient>"
+      subtitle: "<gray>Промокод: <yellow>ATOMIC2026</yellow></gray>"
+      title-fade-in: 10
+      title-stay: 60
+      title-fade-out: 20
+      bossbar:
+        enabled: true
+        title: "<gradient:#FF512F:#DD2476>Скидка 25% на донат по промокоду ATOMIC2026</gradient>"
+        color: "RED"
+        overlay: "PROGRESS"
+        duration: 12
+      lines:
+        - " "
+        - "&8┏━━━━━━━━━━━━━━━━━ &f[ <gradient:#FF512F:#DD2476><b>СКИДКИ НА ДОНАТ</b></gradient> &f] &8━━━━━━━━━━━━━━━━━┓"
+        - "  &fНа нашем сайте действуют специальные скидки &a-25%&f!"
+        - "  &7Используйте эксклюзивный промокод при оформлении:"
+        - " "
+        - "  &8▶ Промокод: [copy=ATOMIC2026 hover='Нажмите, чтобы скопировать промокод']<gradient:#FDBF5F:#FF5D00><b>ATOMIC2026</b></gradient> &8(&eкликните для копирования&8)[/copy]"
+        - "  &8▶ [url=https://atomicsmp.fun hover='Перейти в онлайн-магазин']<gradient:#FF512F:#DD2476><b>[🛒 ПЕРЕЙТИ В МАГАЗИН]</b></gradient>[/url]  [cmd=/donate hover='Открыть меню доната прямо в игре']&e[Посмотреть в игре][/cmd]"
+        - "&8┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+        - " "
+
+    telegram:
+      interval: 150
+      lines:
+        - " "
+        - "&8┏━━━━━━━━━━━━━━━━━ &f[ <#0088CC><b>TELEGRAM КАНАЛ</b></#0088CC> &f] &8━━━━━━━━━━━━━━━━━┓"
+        - "  &fСледите за техническими работами и обновлениями сервера:"
+        - "  &7Официальный Telegram канал разработчиков и администрации."
+        - " "
+        - "  &8▶ [url=https://t.me/atomicsqd hover='Перейти в Telegram канал @atomicsqd']<#0088CC><b>[✈ НАШ TELEGRAM: @atomicsqd]</b></#0088CC>[/url]"
+        - "&8┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+        - " "
+
+# --------------------------------------------------------------------
+# 3. СООБЩЕНИЯ ДЛЯ РОТАЦИИ В ТАБЕ (Tab Messages)
+# --------------------------------------------------------------------
 messages:
   donate:
-    # Длительность показа конкретного сообщения в секундах (необязательно, по умолчанию берётся из settings.interval)
     duration: 15
     lines:
-      - "<gradient:#FF512F:#DD2476><b>СКИДКИ НА ДОНАТ 20%</b></gradient> &7— промокод: &eATOMIC"
-      - "&7Наш сайт: <gradient:#FDBF5F:#FF5D00><b>atomicsmp.fun</b></gradient>"
+      - "<gradient:#FF512F:#DD2476><b>СКИДКИ НА ДОНАТ 25%</b></gradient> &7— промокод: &eATOMIC2026"
+      - "&7Наш сайт: <gradient:#00B5FD:#7670E5><b>atomicsmp.fun</b></gradient>"
 
   telegram:
     duration: 15
@@ -58,21 +162,11 @@ messages:
       - "<gradient:#0088CC:#00C6FF><b>Наш Telegram:</b></gradient> &f@atomicsqd &7(новости и промокоды)"
 
   rules:
-    duration: 12
-    lines:
-      - "&#00d2ffПравила сервера: &#3a7bd5<b>/rules</b> &8| &#00d2ffПомощь новичкам: &#3a7bd5<b>/help</b>"
-
-  report:
-    duration: 12
-    lines:
-      - "<gradient:#ED213A:#93291E>Заметили читера или баг?</gradient> &7Используйте &c/report"
-
-  clans:
     duration: 15
     lines:
-      - "<gradient:#8A2387:#E94057:#F27121>Вступайте в кланы и захватывайте аванпосты!</gradient> &7(&f/clan help&7)"
+      - "<gradient:#FDBF5F:#FF5D00><b>Правила сервера:</b></gradient> &f/rules &7| &fСоблюдайте порядок!"
 
-  tituls:
+  discord:
     duration: 15
     lines:
-      - "<gradient:#FDBF5F:#FF5D00>Уникальные титулы и кастомизация:</gradient> &e/tituls"
+      - "<#5865F2><b>Discord сообщество:</b></#5865F2> &fdiscord.gg/atomic &7(голосовые каналы)"
