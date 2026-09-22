@@ -26,11 +26,16 @@
 
 # Third-party decompile / anti-cheat / archives
 LPX-3.8.4/
+LPX*
 AtomTituls/original_source/
 AtomTituls/StickHWTituls-main.zip
 
 # Empty template folder
 AtomExample/
+
+# Non-plugin local files
+Gemini-3.8Flash-MCskills.md
+Настройки_бота.yml
 
 # OS specific
 .DS_Store
