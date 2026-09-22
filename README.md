@@ -53,4 +53,4 @@ mvn clean package
 ## 👤 Автор (Author)
 
 - **GitHub:** [@aqkooo](https://github.com/aqkooo)
-- **Telegram / Community:** `atomicsqd`, `glowdevv`
+- **Telegram:** `atomicsqd`, `glowdevv`, @ejyqyl
