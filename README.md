@@ -15,10 +15,7 @@ Collection of high-performance, production-ready Minecraft (Paper / Purpur / Spi
 
 | Плагин | Версия ядра | Описание |
 | :--- | :--- | :--- |
-| **[AtomBot](./AtomBot)** | `Paper 1.21+` | Enterprise NPC Training Bot с настраиваемыми механиками боя, экипировкой и пресетами сложности. |
-| **[AtomDuels](./AtomDuels)** | `Paper 1.16 - 1.21+` | Полноценная дуэльная система: выбор наборов (китов), арены, ставки, автоматический откат инвентаря. |
 | **[AtomMessage](./AtomMessage)** | `Paper/Spigot 1.16+` | Модуль автоматических объявлений, рассылок и форматированных уведомлений в чате с MiniMessage/HEX. |
-| **[AtomPvPbot](./AtomPvPbot)** | `Paper 1.21+` | Специализированный PvP-бот для серверов с тренировочными боями и симуляцией реального игрока. |
 | **[AtomReactor](./AtomReactor)** | `Paper/Spigot 1.16+` | Интерактивный чат-реактор: викторины, быстрая реакция на слова и математические примеры с наградами. |
 | **[AtomRegen](./AtomRegen)** | `Paper/Spigot 1.16+` | Система автоматической регенерации сломанных блоков (для шахт, автошахт и защиты спавна). |
 | **[AtomTituls](./AtomTituls)** | `Paper 1.16 - 1.21+` | GUI-система титулов и префиксов с поддержкой PlaceholderAPI, кастомными цветами и правами. |
@@ -42,7 +39,7 @@ Collection of high-performance, production-ready Minecraft (Paper / Purpur / Spi
 Для сборки отдельного плагина перейдите в его директорию и выполните:
 
 ```bash
-cd AtomBot
+cd GlowTrade
 mvn clean package
 ```
 

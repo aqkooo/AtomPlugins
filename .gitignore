@@ -24,6 +24,11 @@
 .settings/
 *.log
 
+# Excluded / removed plugins
+AtomBot/
+AtomDuels/
+AtomPvPbot/
+
 # Third-party decompile / anti-cheat / archives
 LPX-3.8.4/
 LPX*
