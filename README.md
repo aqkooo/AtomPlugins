@@ -52,3 +52,10 @@ mvn clean package
 
 - **GitHub:** [@aqkooo](https://github.com/aqkooo)
 - **Telegram:** `atomicsqd`, `glowdevv`, @ejyqyl
+
+---
+
+## 📄 Лицензия (License)
+
+Все плагины в данном репозитории распространяются под лицензией **Attribution Software License**.
+Использование, изменение и распространение разрешены **только с обязательным упоминанием автора ejyqyl** ([@aqkooo](https://github.com/aqkooo)). Подробнее см. в [LICENSE](./LICENSE).
