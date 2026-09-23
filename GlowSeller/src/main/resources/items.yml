@@ -1,0 +1,528 @@
+# ========================================================
+#                    GlowSeller Items
+# ========================================================
+# Items loaded for Seller & Auto-Seller (5 categories: mine, blocks, plants, mobs, misc)
+
+items:
+  NETHER_BRICK:
+    material: NETHER_BRICK
+    price: 1.0
+    points: 1
+    name: "&#FF7000Незерский кирпич"
+    category: "mine"
+  LAPIS_LAZULI:
+    material: LAPIS_LAZULI
+    price: 5.0
+    points: 2
+    name: "&#FF7000Лазурит"
+    category: "mine"
+  REDSTONE:
+    material: REDSTONE
+    price: 6.0
+    points: 2
+    name: "&#FF7000Редстоуновая пыль"
+    category: "mine"
+  QUARTZ:
+    material: QUARTZ
+    price: 10.0
+    points: 5
+    name: "&#FF7000Незерский кварц"
+    category: "mine"
+  COAL:
+    material: COAL
+    price: 10.0
+    points: 2
+    name: "&#FF7000Уголь"
+    category: "mine"
+  IRON_INGOT:
+    material: IRON_INGOT
+    price: 36.0
+    points: 10
+    name: "&#FF7000Железный слиток"
+    category: "mine"
+  GOLD_INGOT:
+    material: GOLD_INGOT
+    price: 43.0
+    points: 11
+    name: "&#FF7000Золотой слиток"
+    category: "mine"
+  DIAMOND:
+    material: DIAMOND
+    price: 74.0
+    points: 15
+    name: "&#FF7000Алмаз"
+    category: "mine"
+  EMERALD:
+    material: EMERALD
+    price: 733.0
+    points: 103
+    name: "&#FF7000Изумруд"
+    category: "mine"
+  NETHERITE_SCRAP:
+    material: NETHERITE_SCRAP
+    price: 1202.0
+    points: 147
+    name: "&#FF7000Незеритовый лом"
+    category: "mine"
+  NETHERITE_INGOT:
+    material: NETHERITE_INGOT
+    price: 4796.0
+    points: 346
+    name: "&#FF7000Незеритовый слиток"
+    category: "mine"
+  COBBLESTONE:
+    material: COBBLESTONE
+    price: 3.0
+    points: 1
+    name: "&#FF7000Булыжник"
+    category: "blocks"
+  END_STONE:
+    material: END_STONE
+    price: 3.0
+    points: 4
+    name: "&#FF7000Эндерняк"
+    category: "blocks"
+  GRASS_BLOCK:
+    material: GRASS_BLOCK
+    price: 13.0
+    points: 2
+    name: "&#FF7000Дёрн"
+    category: "blocks"
+  SAND:
+    material: SAND
+    price: 16.0
+    points: 2
+    name: "&#FF7000Песок"
+    category: "blocks"
+  OBSIDIAN:
+    material: OBSIDIAN
+    price: 29.0
+    points: 14
+    name: "&#FF7000Обсидиан"
+    category: "blocks"
+  DARK_OAK_LOG:
+    material: DARK_OAK_LOG
+    price: 46.0
+    points: 20
+    name: "&#FF7000Бревно тёмного дуба"
+    category: "blocks"
+  JUNGLE_LOG:
+    material: JUNGLE_LOG
+    price: 47.0
+    points: 38
+    name: "&#FF7000Бревно джунглевого дерева"
+    category: "blocks"
+  SOUL_SAND:
+    material: SOUL_SAND
+    price: 80.0
+    points: 22
+    name: "&#FF7000Песок душ"
+    category: "blocks"
+  PURPUR_BLOCK:
+    material: PURPUR_BLOCK
+    price: 92.0
+    points: 23
+    name: "&#FF7000Пурпур"
+    category: "blocks"
+  CRIMSON_STEM:
+    material: CRIMSON_STEM
+    price: 101.0
+    points: 36
+    name: "&#FF7000Багровая ножка"
+    category: "blocks"
+  OAK_LOG:
+    material: OAK_LOG
+    price: 117.0
+    points: 29
+    name: "&#FF7000Дубовое бревно"
+    category: "blocks"
+  BIRCH_LOG:
+    material: BIRCH_LOG
+    price: 118.0
+    points: 29
+    name: "&#FF7000Берёзовое бревно"
+    category: "blocks"
+  SPRUCE_LOG:
+    material: SPRUCE_LOG
+    price: 121.0
+    points: 40
+    name: "&#FF7000Еловое бревно"
+    category: "blocks"
+  ICE:
+    material: ICE
+    price: 161.0
+    points: 37
+    name: "&#FF7000Лёд"
+    category: "blocks"
+  MAGMA_BLOCK:
+    material: MAGMA_BLOCK
+    price: 161.0
+    points: 57
+    name: "&#FF7000Магма"
+    category: "blocks"
+  ACACIA_LOG:
+    material: ACACIA_LOG
+    price: 214.0
+    points: 97
+    name: "&#FF7000Акациевое бревно"
+    category: "blocks"
+  WARPED_STEM:
+    material: WARPED_STEM
+    price: 251.0
+    points: 67
+    name: "&#FF7000Искажённая ножка"
+    category: "blocks"
+  DRIED_KELP_BLOCK:
+    material: DRIED_KELP_BLOCK
+    price: 397.0
+    points: 67
+    name: "&#FF7000Блок сушёной ламинарии"
+    category: "blocks"
+  CRYING_OBSIDIAN:
+    material: CRYING_OBSIDIAN
+    price: 446.0
+    points: 101
+    name: "&#FF7000Плачущий обсидиан"
+    category: "blocks"
+  GLOWSTONE:
+    material: GLOWSTONE
+    price: 804.0
+    points: 122
+    name: "&#FF7000Светокамень"
+    category: "blocks"
+  SHROOMLIGHT:
+    material: SHROOMLIGHT
+    price: 1005.0
+    points: 147
+    name: "&#FF7000Грибосвет"
+    category: "blocks"
+  CHORUS_FLOWER:
+    material: CHORUS_FLOWER
+    price: 1608.0
+    points: 172
+    name: "&#FF7000Цветок хоруса"
+    category: "blocks"
+  ANCIENT_DEBRIS:
+    material: ANCIENT_DEBRIS
+    price: 2476.0
+    points: 197
+    name: "&#FF7000Древние обломки"
+    category: "blocks"
+  HONEY_BLOCK:
+    material: HONEY_BLOCK
+    price: 16080.0
+    points: 247
+    name: "&#FF7000Блок мёда"
+    category: "blocks"
+  SWEET_BERRIES:
+    material: SWEET_BERRIES
+    price: 3.0
+    points: 1
+    name: "&#FF7000Сладкие ягоды"
+    category: "plants"
+  COCOA_BEANS:
+    material: COCOA_BEANS
+    price: 6.0
+    points: 3
+    name: "&#FF7000Какао-бобы"
+    category: "plants"
+  CARROT:
+    material: CARROT
+    price: 6.0
+    points: 2
+    name: "&#FF7000Морковь"
+    category: "plants"
+  NETHER_WART:
+    material: NETHER_WART
+    price: 9.0
+    points: 3
+    name: "&#FF7000Незерский нарост"
+    category: "plants"
+  WARPED_ROOTS:
+    material: WARPED_ROOTS
+    price: 9.0
+    points: 3
+    name: "&#FF7000Искажённые корни"
+    category: "plants"
+  MELON_SLICE:
+    material: MELON_SLICE
+    price: 20.0
+    points: 12
+    name: "&#FF7000Ломтик арбуза"
+    category: "plants"
+  BAMBOO:
+    material: BAMBOO
+    price: 25.0
+    points: 6
+    name: "&#FF7000Бамбук"
+    category: "plants"
+  POTATO:
+    material: POTATO
+    price: 26.0
+    points: 8
+    name: "&#FF7000Картофель"
+    category: "plants"
+  TWISTING_VINES:
+    material: TWISTING_VINES
+    price: 27.0
+    points: 5
+    name: "&#FF7000Вьющаяся лоза"
+    category: "plants"
+  CACTUS:
+    material: CACTUS
+    price: 29.0
+    points: 11
+    name: "&#FF7000Кактус"
+    category: "plants"
+  WARPED_FUNGUS:
+    material: WARPED_FUNGUS
+    price: 35.0
+    points: 10
+    name: "&#FF7000Искажённый гриб"
+    category: "plants"
+  CRIMSON_ROOTS:
+    material: CRIMSON_ROOTS
+    price: 40.0
+    points: 17
+    name: "&#FF7000Багровые корни"
+    category: "plants"
+  KELP:
+    material: KELP
+    price: 46.0
+    points: 8
+    name: "&#FF7000Ламинария"
+    category: "plants"
+  SUGAR_CANE:
+    material: SUGAR_CANE
+    price: 58.0
+    points: 11
+    name: "&#FF7000Сахарный тростник"
+    category: "plants"
+  CHORUS_FRUIT:
+    material: CHORUS_FRUIT
+    price: 58.0
+    points: 22
+    name: "&#FF7000Плод хоруса"
+    category: "plants"
+  BROWN_MUSHROOM:
+    material: BROWN_MUSHROOM
+    price: 71.0
+    points: 32
+    name: "&#FF7000Коричневый гриб"
+    category: "plants"
+  WEEPING_VINES:
+    material: WEEPING_VINES
+    price: 80.0
+    points: 17
+    name: "&#FF7000Плакучая лоза"
+    category: "plants"
+  BEETROOT:
+    material: BEETROOT
+    price: 88.0
+    points: 39
+    name: "&#FF7000Свёкла"
+    category: "plants"
+  RED_MUSHROOM:
+    material: RED_MUSHROOM
+    price: 89.0
+    points: 32
+    name: "&#FF7000Красный гриб"
+    category: "plants"
+  CRIMSON_FUNGUS:
+    material: CRIMSON_FUNGUS
+    price: 94.0
+    points: 27
+    name: "&#FF7000Багровый гриб"
+    category: "plants"
+  MELON:
+    material: MELON
+    price: 128.0
+    points: 49
+    name: "&#FF7000Арбуз"
+    category: "plants"
+  WHEAT:
+    material: WHEAT
+    price: 128.0
+    points: 53
+    name: "&#FF7000Пшеница"
+    category: "plants"
+  PUMPKIN:
+    material: PUMPKIN
+    price: 170.0
+    points: 61
+    name: "&#FF7000Тыква"
+    category: "plants"
+  COOKED_BEEF:
+    material: COOKED_BEEF
+    price: 11.0
+    points: 2
+    name: "&#FF7000Стейк"
+    category: "mobs"
+  BONE:
+    material: BONE
+    price: 13.0
+    points: 5
+    name: "&#FF7000Кость"
+    category: "mobs"
+  ROTTEN_FLESH:
+    material: ROTTEN_FLESH
+    price: 17.0
+    points: 5
+    name: "&#FF7000Гнилая плоть"
+    category: "mobs"
+  ARROW:
+    material: ARROW
+    price: 18.0
+    points: 6
+    name: "&#FF7000Стрела"
+    category: "mobs"
+  STRING:
+    material: STRING
+    price: 20.0
+    points: 5
+    name: "&#FF7000Нить"
+    category: "mobs"
+  COOKED_PORKCHOP:
+    material: COOKED_PORKCHOP
+    price: 21.0
+    points: 6
+    name: "&#FF7000Жареная свинина"
+    category: "mobs"
+  ENDER_PEARL:
+    material: ENDER_PEARL
+    price: 28.0
+    points: 11
+    name: "&#FF7000Эндер-жемчуг"
+    category: "mobs"
+  LEATHER:
+    material: LEATHER
+    price: 30.0
+    points: 8
+    name: "&#FF7000Кожа"
+    category: "mobs"
+  MAGMA_CREAM:
+    material: MAGMA_CREAM
+    price: 40.0
+    points: 14
+    name: "&#FF7000Сгусток магмы"
+    category: "mobs"
+  SPIDER_EYE:
+    material: SPIDER_EYE
+    price: 43.0
+    points: 12
+    name: "&#FF7000Паучий глаз"
+    category: "mobs"
+  GUNPOWDER:
+    material: GUNPOWDER
+    price: 67.0
+    points: 53
+    name: "&#FF7000Порох"
+    category: "mobs"
+  SLIME_BALL:
+    material: SLIME_BALL
+    price: 80.0
+    points: 31
+    name: "&#FF7000Сгусток слизи"
+    category: "mobs"
+  FEATHER:
+    material: FEATHER
+    price: 80.0
+    points: 22
+    name: "&#FF7000Перо"
+    category: "mobs"
+  SUGAR:
+    material: SUGAR
+    price: 106.0
+    points: 21
+    name: "&#FF7000Сахар"
+    category: "mobs"
+  BLAZE_ROD:
+    material: BLAZE_ROD
+    price: 109.0
+    points: 28
+    name: "&#FF7000Огненный стержень"
+    category: "mobs"
+  WHITE_WOOL:
+    material: WHITE_WOOL
+    price: 129.0
+    points: 7
+    name: "&#FF7000Белая шерсть"
+    category: "mobs"
+  GHAST_TEAR:
+    material: GHAST_TEAR
+    price: 202.0
+    points: 41
+    name: "&#FF7000Слеза гаста"
+    category: "mobs"
+  WITHER_SKELETON_SKULL:
+    material: WITHER_SKELETON_SKULL
+    price: 1117.0
+    points: 134
+    name: "&#FF7000Череп визер-скелета"
+    category: "mobs"
+  DRIED_KELP:
+    material: DRIED_KELP
+    price: 87.0
+    points: 24
+    name: "&#FF7000Сушёная ламинария"
+    category: "misc"
+  END_ROD:
+    material: END_ROD
+    price: 268.0
+    points: 72
+    name: "&#FF7000Стержень Энда"
+    category: "misc"
+  POTION:
+    material: POTION
+    price: 482.0
+    points: 97
+    name: "&#FF7000Зелье"
+    category: "misc"
+  FERMENTED_SPIDER_EYE:
+    material: FERMENTED_SPIDER_EYE
+    price: 589.0
+    points: 72
+    name: "&#FF7000Маринованный паучий глаз"
+    category: "misc"
+  HONEY_BOTTLE:
+    material: HONEY_BOTTLE
+    price: 2010.0
+    points: 57
+    name: "&#FF7000Бутылочка мёда"
+    category: "misc"
+  END_CRYSTAL:
+    material: END_CRYSTAL
+    price: 2088.0
+    points: 272
+    name: "&#FF7000Кристалл Энда"
+    category: "misc"
+  COBWEB:
+    material: COBWEB
+    price: 2512.0
+    points: 247
+    name: "&#FF7000Паутина"
+    category: "misc"
+  TURTLE_EGG:
+    material: TURTLE_EGG
+    price: 4020.0
+    points: 297
+    name: "&#FF7000Черепашье яйцо"
+    category: "misc"
+  PUFFERFISH:
+    material: PUFFERFISH
+    price: 16000.0
+    points: 3
+    name: "&#FF7000Иглобрюх"
+    category: "misc"
+  NAUTILUS_SHELL:
+    material: NAUTILUS_SHELL
+    price: 24120.0
+    points: 447
+    name: "&#FF7000Раковина наутилуса"
+    category: "misc"
+  DRAGON_HEAD:
+    material: DRAGON_HEAD
+    price: 893333.0
+    points: 497
+    name: "&#FF7000Голова дракона"
+    category: "misc"

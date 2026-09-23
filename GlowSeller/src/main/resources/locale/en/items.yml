@@ -1,0 +1,36 @@
+items:
+  DIAMOND:
+    material: DIAMOND
+    price: 50.0
+    points: 2
+    name: "&#54A0F4Diamond"
+  DIAMOND_BLOCK:
+    material: DIAMOND_BLOCK
+    price: 450.0
+    points: 18
+    name: "&#54A0F4Diamond Block"
+  NETHERITE_INGOT:
+    material: NETHERITE_INGOT
+    price: 500.0
+    points: 20
+    name: "&#54A0F4Netherite Ingot"
+  EMERALD:
+    material: EMERALD
+    price: 30.0
+    points: 1
+    name: "&#54A0F4Emerald"
+  GOLD_INGOT:
+    material: GOLD_INGOT
+    price: 15.0
+    points: 1
+    name: "&#54A0F4Gold Ingot"
+  IRON_INGOT:
+    material: IRON_INGOT
+    price: 8.0
+    points: 0
+    name: "&#54A0F4Iron Ingot"
+  COAL:
+    material: COAL
+    price: 2.0
+    points: 0
+    name: "&#54A0F4Coal"

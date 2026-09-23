@@ -1,0 +1,46 @@
+# ========================================================
+#                    GlowSeller Config
+# ========================================================
+
+# Язык по умолчанию (папка locale/)
+locale: "ru"
+
+settings:
+  # Интервал автосохранения кэша игроков в базу данных (в секундах)
+  save_interval_seconds: 120
+
+# Провайдер экономики сервера (монеты):
+# VAULT - стандартная экономика через Vault (Essentials, XConomy и др.)
+# COINSENGINE - интеграция с CoinsEngine
+# PLAYERPOINTS - интеграция с PlayerPoints
+economy:
+  type: "VAULT"
+
+boosters:
+  # Поведение при попытке купить/получить временный бустер во время уже активного:
+  # EXTEND  - прибавить время действия к текущему
+  # REPLACE - заменить текущий бустер новым
+  # DENY    - запретить покупку, пока не истечет текущий бустер
+  stacking: "DENY"
+
+  # Перманентные бустеры по правам (из rSeller).
+  # Формула итогового множителя: perm + purchased - 1.0
+  permission_boosters:
+    vip:
+      permission: "glowseller.booster.vip"
+      multiplier: 1.2
+    premium:
+      permission: "glowseller.booster.premium"
+      multiplier: 1.5
+    sponsor:
+      permission: "glowseller.booster.sponsor"
+      multiplier: 2.0
+
+sounds:
+  sell: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  buy: "ENTITY_PLAYER_LEVELUP"
+  error: "ENTITY_VILLAGER_NO"
+  booster_expire: "BLOCK_ANVIL_LAND"
+
+messages:
+  actionbar_on_booster_expire: true

@@ -1,0 +1,38 @@
+# ========================================================
+#                    GlowSeller Messages
+# ========================================================
+
+prefix: "&#54A0F4&lGlowSeller &8» &f"
+
+commands:
+  no_permission: "%prefix%&cУ вас недостаточно прав для выполнения этой команды!"
+  reloaded: "%prefix%&aКонфигурация плагина успешно перезагружена!"
+  player_not_found: "%prefix%&cИгрок &e%player% &cне найден в сети!"
+  points_given: "%prefix%&aИгроку &e%player% &aвыдано &b%amount% &aочков."
+  points_taken: "%prefix%&aУ игрока &e%player% &aсписано &b%amount% &aочков."
+  points_received: "%prefix%&aВам начислено &b%amount% &aочков скупщика!"
+  booster_given: "%prefix%&aИгроку &e%player% &aвыдан бустер &b%booster% &aна &f%duration%&a."
+  booster_received: "%prefix%&aВам активирован бустер монет &e%booster% &7(x%multiplier%) &aна &f%duration%&a!"
+
+sell:
+  success: "%prefix%&aВы успешно продали предметы! Получено: &e+%coins%$ &7и &b+%points% очков &7(Бустер: &e%multiplier%x&7)."
+  no_items: "%prefix%&cВ вашем инвентаре нет предметов, которые можно продать скупщику!"
+  economy_error: "%prefix%&cПроизошла ошибка при начислении монет! Обратитесь к администрации."
+
+shop:
+  purchase_success: "%prefix%&aВы успешно приобрели &e%item% &aза &b%price% очков&a! Остаток: &b%points% очков&a."
+  not_enough_points: "%prefix%&cНедостаточно очков для покупки! Нужно еще: &b%need% очков&c."
+  booster_already_active: "%prefix%&cУ вас уже активен временный бустер! Дождитесь окончания его действия."
+  limit_reached: "%prefix%&cВы достигли лимита покупки этого товара!"
+  item_not_found: "%prefix%&cТовар не найден в магазине!"
+  no_permission: "%prefix%&cУ вас нет права на покупку этого товара!"
+
+booster:
+  expired: "%prefix%&cСрок действия вашего временного бустера монет истек!"
+  expired_actionbar: "&c⌛ Срок действия бустера монет истек!"
+
+gui:
+  main_title: "Скупщик предметов"
+  sell_title: "Положи предметы для продажи"
+  shop_title: "Магазин"
+  auto_sell_title: "Фильтр Авто-продаж"

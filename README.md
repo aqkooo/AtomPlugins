@@ -27,6 +27,7 @@ Collection of high-performance, production-ready Minecraft (Paper / Purpur / Spi
 | **[GlowCMD](./GlowCMD)** | `Paper/Spigot 1.16+` | Менеджер кастомных команд, алиасов, кулдаунов и прав с гибкой конфигурацией. |
 | **[GlowChatGame](./GlowChatGame)** | `Paper/Spigot 1.16+` | Набор мини-игр в чате: математика, анаграммы, разгадывание слов с системой наград. |
 | **[GlowCustomLoot](./GlowCustomLoot)** | `Folia / Paper 1.16+` | Внутриигровой визуальный GUI-редактор лут-таблиц с поддержкой ItemsAdder, Oraxen, MythicMobs. |
+| **[GlowSeller](./GlowSeller)** | `Paper/Spigot 1.16 - 1.21+` | Полноценная dupe-proof система скупщика предметов, очков, магазина бустеров и фонового авто-скупщика. |
 | **[GlowSnakeGame](./GlowSnakeGame)** | `Paper/Spigot 1.16+` | Классическая игра «Змейка», работающая прямо внутри сундучного инвентаря (Chest GUI) с управлением WASD. |
 | **[GlowTrade](./GlowTrade)** | `Paper/Spigot 1.16+` | Безопасный dupe-proof обмен предметами между игроками в стиле ReallyWorld с подтверждением сделки. |
 

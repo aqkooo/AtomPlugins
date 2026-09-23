@@ -1,0 +1,62 @@
+categories:
+  boosters:
+    name: "&#54A0F4Coin Boosters"
+    slot: 11
+    material: EXPERIENCE_BOTTLE
+    lore:
+      - "&7Temporary sell price multipliers"
+      - "&7purchasable with shop points."
+    items:
+      coin_x2_1h:
+        material: EXPERIENCE_BOTTLE
+        name: "&#54A0F4▶ Coin Booster x2 (1h)"
+        lore:
+          - "&7Boosts buyer sell income"
+          - "&7by &f2x &7for 1 hour"
+        slot: 11
+        price: 500
+        type: BOOSTER
+        multiplier: 2.0
+        duration: 3600
+      coin_x3_30m:
+        material: EXPERIENCE_BOTTLE
+        name: "&#54A0F4▶ Coin Booster x3 (30m)"
+        lore:
+          - "&7Boosts buyer sell income"
+          - "&7by &f3x &7for 30 minutes"
+        slot: 13
+        price: 800
+        type: BOOSTER
+        multiplier: 3.0
+        duration: 1800
+  items:
+    name: "&#54A0F4Items and Keys"
+    slot: 15
+    material: CHEST
+    lore:
+      - "&7Valuable in-game items and"
+      - "&7commands for earned points."
+    items:
+      case_key:
+        material: TRIPWIRE_HOOK
+        name: "&bCrate Key"
+        lore:
+          - "&7Key for opening crates at spawn"
+        slot: 11
+        price: 1000
+        type: COMMAND
+        commands:
+          - "crazycrates give %player% diamond_key 1"
+      xp_bottle:
+        material: EXPERIENCE_BOTTLE
+        name: "&aExperience Bottle x16"
+        lore:
+          - "&7Stack of experience bottles"
+        slot: 13
+        price: 200
+        type: ITEM
+        give-amount: 16
+
+decorate:
+  material: GRAY_STAINED_GLASS_PANE
+  slots: ["0-9", "17", "18-26"]

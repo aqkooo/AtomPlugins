@@ -1,0 +1,232 @@
+# ========================================================
+#                    GlowSeller Shop
+# ========================================================
+# Настройка предметов магазина скупщика.
+# Все предметы на 100% настраиваются здесь!
+#
+# Параметры предмета:
+#   material: Материал (LIME_CONCRETE, DIAMOND_SWORD и т.д.) или basehead-<хеш>
+#   slot: Номер слота в меню (0-53)
+#   name: Название предмета (поддерживает цвета &, &#HEX)
+#   lore: Описание предмета (список строк)
+#   price: Цена в очках скупщика (целое число)
+#   type: Тип награды:
+#         - BOOSTER (временный бустер множителя монет скупщика)
+#         - COMMAND (выполнение консольных команд, плейсхолдер %player%)
+#         - ITEM    (выдача самого предмета в инвентарь игрока)
+#   multiplier: Множитель (только для type: BOOSTER, например 1.25)
+#   duration: Длительность в секундах (для type: BOOSTER, например 3600 = 1 час)
+#   give-amount: Количество выдаваемых предметов (для type: ITEM)
+#   commands: Список команд для выполнения (для type: COMMAND)
+#   custom_model_data: Номер CustomModelData (число, опционально)
+#   permission: Необходимое право для покупки (опционально)
+#   limit: Лимит покупок: 'once' (один раз), 'daily' (раз в 24ч), число (например 1, 3), 'unlimited'
+
+menu_title: 'Магазин'
+size: 54
+
+items:
+  booster_15:
+    material: NETHERITE_INGOT
+    slot: 11
+    name: '&#00D8FFБустер скупщика &#FFAA00(+15% на 60 мин)'
+    lore:
+      - ''
+      - ' &#00D8FF&l&n▍&#E7E7E7 Увеличивает множитель'
+      - ' &#00D8FF&l▍&#E7E7E7 скупщика на &#FFAA0015% &#E7E7E7на 60 минут'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB00213 796&#05FB00 очков'
+    price: 213796
+    type: BOOSTER
+    multiplier: 1.15
+    duration: 3600
+
+  booster_25:
+    material: GOLD_INGOT
+    slot: 12
+    name: '&#00D8FFБустер скупщика &#FFAA00(+25% на 60 мин)'
+    lore:
+      - ''
+      - ' &#00D8FF&l&n▍&#E7E7E7 Увеличивает множитель'
+      - ' &#00D8FF&l▍&#E7E7E7 скупщика на &#FFAA0025% &#E7E7E7на 60 минут'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB00350 000&#05FB00 очков'
+    price: 350000
+    type: BOOSTER
+    multiplier: 1.25
+    duration: 3600
+
+  booster_50:
+    material: DIAMOND
+    slot: 13
+    name: '&#00D8FFБустер скупщика &#FFAA00(+50% на 60 мин)'
+    lore:
+      - ''
+      - ' &#00D8FF&l&n▍&#E7E7E7 Увеличивает множитель'
+      - ' &#00D8FF&l▍&#E7E7E7 скупщика на &#FFAA0050% &#E7E7E7на 60 минут'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB00650 000&#05FB00 очков'
+    price: 650000
+    type: BOOSTER
+    multiplier: 1.50
+    duration: 3600
+
+  booster_100:
+    material: NETHER_STAR
+    slot: 14
+    name: '&#00D8FFБустер скупщика &#FFAA00(x2.0 на 60 мин)'
+    lore:
+      - ''
+      - ' &#00D8FF&l&n▍&#E7E7E7 Увеличивает множитель'
+      - ' &#00D8FF&l▍&#E7E7E7 скупщика на &#FFAA00100% &#E7E7E7на 60 минут'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB001 200 000&#05FB00 очков'
+    price: 1200000
+    type: BOOSTER
+    multiplier: 2.0
+    duration: 3600
+
+  experience_bottle:
+    material: EXPERIENCE_BOTTLE
+    slot: 15
+    name: '&#55FF55Опыт &#AAAAAA(1500 единиц)'
+    lore:
+      - ''
+      - ' &#E7E7E7Выдает вам &#55FF551500 единиц&#E7E7E7 опыта.'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB0032 975&#05FB00 очков'
+    price: 32975
+    type: COMMAND
+    commands:
+      - "xp add %player% 1500 points"
+
+  booster_200:
+    material: SUNFLOWER
+    slot: 16
+    name: '&#00D8FFБустер скупщика &#FFAA00(x3.0 на 30 мин)'
+    lore:
+      - ''
+      - ' &#00D8FF&l&n▍&#E7E7E7 Увеличивает множитель'
+      - ' &#00D8FF&l▍&#E7E7E7 скупщика на &#FFAA00200% &#E7E7E7на 30 минут'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB002 000 000&#05FB00 очков'
+    price: 2000000
+    type: BOOSTER
+    multiplier: 3.0
+    duration: 1800
+
+  custom_item_1:
+    material: LIME_CONCRETE
+    slot: 20
+    name: '&#55FF55Ваш предмет'
+    lore:
+      - '&#777777Настройте этот предмет в конфиге'
+      - '&#777777plugins/GlowSeller/shop.yml'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB00100 000&#05FB00 очков'
+    price: 100000
+    type: COMMAND
+    commands:
+      - "give %player% diamond 1"
+      - "msg %player% &aВы успешно приобрели предмет!"
+
+  custom_item_2:
+    material: LIME_CONCRETE
+    slot: 21
+    name: '&#55FF55Ваш предмет'
+    lore:
+      - '&#777777Настройте этот предмет в конфиге'
+      - '&#777777plugins/GlowSeller/shop.yml'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB00200 000&#05FB00 очков'
+    price: 200000
+    type: COMMAND
+    commands:
+      - "give %player% emerald 10"
+      - "msg %player% &aВы успешно приобрели предмет!"
+
+  custom_item_3:
+    material: LIME_CONCRETE
+    slot: 22
+    name: '&#55FF55Ваш предмет'
+    lore:
+      - '&#777777Настройте этот предмет в конфиге'
+      - '&#777777plugins/GlowSeller/shop.yml'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB00300 000&#05FB00 очков'
+    price: 300000
+    type: COMMAND
+    commands:
+      - "give %player% netherite_ingot 1"
+      - "msg %player% &aВы успешно приобрели предмет!"
+
+  custom_item_4:
+    material: LIME_CONCRETE
+    slot: 23
+    name: '&#55FF55Ваш предмет'
+    lore:
+      - '&#777777Настройте этот предмет в конфиге'
+      - '&#777777plugins/GlowSeller/shop.yml'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB00400 000&#05FB00 очков'
+    price: 400000
+    type: COMMAND
+    commands:
+      - "give %player% golden_apple 5"
+      - "msg %player% &aВы успешно приобрели предмет!"
+
+  custom_item_5:
+    material: LIME_CONCRETE
+    slot: 24
+    name: '&#55FF55Ваш предмет'
+    lore:
+      - '&#777777Настройте этот предмет в конфиге'
+      - '&#777777plugins/GlowSeller/shop.yml'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB00500 000&#05FB00 очков'
+    price: 500000
+    type: COMMAND
+    commands:
+      - "msg %player% &aВы успешно приобрели предмет!"
+
+  custom_item_6:
+    material: LIME_CONCRETE
+    slot: 30
+    name: '&#55FF55Ваш предмет'
+    lore:
+      - '&#777777Настройте этот предмет в конфиге'
+      - '&#777777plugins/GlowSeller/shop.yml'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB00600 000&#05FB00 очков'
+    price: 600000
+    type: COMMAND
+    commands:
+      - "msg %player% &aВы успешно приобрели предмет!"
+
+  custom_item_7:
+    material: LIME_CONCRETE
+    slot: 31
+    name: '&#55FF55Ваш предмет'
+    lore:
+      - '&#777777Настройте этот предмет в конфиге'
+      - '&#777777plugins/GlowSeller/shop.yml'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB00700 000&#05FB00 очков'
+    price: 700000
+    type: COMMAND
+    commands:
+      - "msg %player% &aВы успешно приобрели предмет!"
+
+  custom_item_8:
+    material: LIME_CONCRETE
+    slot: 32
+    name: '&#55FF55Ваш предмет'
+    lore:
+      - '&#777777Настройте этот предмет в конфиге'
+      - '&#777777plugins/GlowSeller/shop.yml'
+      - ''
+      - ' &#00D8FF▶ &#FFFFFFКупить за &#05FB00800 000&#05FB00 очков'
+    price: 800000
+    type: COMMAND
+    commands:
+      - "msg %player% &aВы успешно приобрели предмет!"

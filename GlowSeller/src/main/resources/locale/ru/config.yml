@@ -1,0 +1,25 @@
+# GlowSeller RU Localization
+locale: "ru"
+settings:
+  save_interval_seconds: 120
+economy:
+  type: "VAULT"
+boosters:
+  stacking: "EXTEND"
+  permission_boosters:
+    vip:
+      permission: "glowseller.booster.vip"
+      multiplier: 1.2
+    premium:
+      permission: "glowseller.booster.premium"
+      multiplier: 1.5
+    sponsor:
+      permission: "glowseller.booster.sponsor"
+      multiplier: 2.0
+sounds:
+  sell: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  buy: "ENTITY_PLAYER_LEVELUP"
+  error: "ENTITY_VILLAGER_NO"
+  booster_expire: "BLOCK_ANVIL_LAND"
+messages:
+  actionbar_on_booster_expire: true

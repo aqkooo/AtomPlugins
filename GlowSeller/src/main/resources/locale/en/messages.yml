@@ -1,0 +1,33 @@
+prefix: "&#54A0F4&lGlowSeller &8» &f"
+
+commands:
+  no_permission: "%prefix%&cYou do not have permission to execute this command!"
+  reloaded: "%prefix%&aConfiguration has been successfully reloaded!"
+  player_not_found: "%prefix%&cPlayer &e%player% &cnot found online!"
+  points_given: "%prefix%&aGiven &b%amount% &apoints to player &e%player%&a."
+  points_taken: "%prefix%&aDeducted &b%amount% &apoints from player &e%player%&a."
+  points_received: "%prefix%&aYou received &b%amount% &abuyer shop points!"
+  booster_given: "%prefix%&aGave booster &b%booster% &ato player &e%player% &afor &f%duration%&a."
+  booster_received: "%prefix%&aCoin booster &e%booster% &7(x%multiplier%) &aactivated for &f%duration%&a!"
+
+sell:
+  success: "%prefix%&aItems sold successfully! Received: &e+%coins%$ &7and &b+%points% points &7(Booster: &e%multiplier%x&7)."
+  no_items: "%prefix%&cYou do not have any sellable items in your inventory!"
+  economy_error: "%prefix%&cAn error occurred while depositing coins! Contact an administrator."
+
+shop:
+  purchase_success: "%prefix%&aSuccessfully purchased &e%item% &afor &b%price% points&a! Remaining: &b%points% points&a."
+  not_enough_points: "%prefix%&cNot enough points! You still need: &b%need% points&c."
+  booster_already_active: "%prefix%&cYou already have an active booster! Please wait until it expires."
+  limit_reached: "%prefix%&cYou have reached the purchase limit for this item!"
+  item_not_found: "%prefix%&cItem not found in shop!"
+  no_permission: "%prefix%&cYou do not have permission to purchase this item!"
+
+booster:
+  expired: "%prefix%&cYour temporary coin booster has expired!"
+  expired_actionbar: "&c⌛ Your coin booster has expired!"
+
+gui:
+  main_title: "&#54A0F4&lGlowSeller Menu"
+  sell_title: "&#54A0F4&lItem Buyer"
+  shop_title: "&#54A0F4&lPoints Shop"

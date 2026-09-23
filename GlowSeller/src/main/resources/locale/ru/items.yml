@@ -1,0 +1,36 @@
+items:
+  DIAMOND:
+    material: DIAMOND
+    price: 50.0
+    points: 2
+    name: "&#54A0F4Алмаз"
+  DIAMOND_BLOCK:
+    material: DIAMOND_BLOCK
+    price: 450.0
+    points: 18
+    name: "&#54A0F4Алмазный блок"
+  NETHERITE_INGOT:
+    material: NETHERITE_INGOT
+    price: 500.0
+    points: 20
+    name: "&#54A0F4Незеритовый слиток"
+  EMERALD:
+    material: EMERALD
+    price: 30.0
+    points: 1
+    name: "&#54A0F4Изумруд"
+  GOLD_INGOT:
+    material: GOLD_INGOT
+    price: 15.0
+    points: 1
+    name: "&#54A0F4Золотой слиток"
+  IRON_INGOT:
+    material: IRON_INGOT
+    price: 8.0
+    points: 0
+    name: "&#54A0F4Железный слиток"
+  COAL:
+    material: COAL
+    price: 2.0
+    points: 0
+    name: "&#54A0F4Уголь"

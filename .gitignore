@@ -41,6 +41,7 @@ AtomExample/
 # Non-plugin local files
 Gemini-3.8Flash-MCskills.md
 Настройки_бота.yml
+Фильтр_Авто-продаж*.yml
 
 # OS specific
 .DS_Store

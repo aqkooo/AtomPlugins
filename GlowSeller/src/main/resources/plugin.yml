@@ -1,0 +1,39 @@
+name: GlowSeller
+version: '1.0.0'
+main: glowseller.Main
+api-version: '1.16'
+authors: [ejyqyl]
+description: Advanced item buyer plugin with internal points shop and coin boosters
+softdepend: [PlaceholderAPI, Vault, CoinsEngine, PlayerPoints]
+
+libraries:
+  - com.zaxxer:HikariCP:5.1.0
+  - com.mysql:mysql-connector-j:8.3.0
+  - org.postgresql:postgresql:42.7.2
+
+commands:
+  sell:
+    description: Открыть меню скупщика
+    aliases: [b, buyer, seller]
+    permission: glowseller.use
+  shop:
+    description: Открыть магазин за очки GlowSeller
+    aliases: [gshop]
+    permission: glowseller.shop
+  glowseller:
+    description: Главная и административная команда GlowSeller
+    permission: glowseller.admin
+
+permissions:
+  glowseller.use:
+    description: Право на использование скупщика предметов
+    default: true
+  glowseller.shop:
+    description: Право на использование магазина за очки
+    default: true
+  glowseller.admin:
+    description: Право на управление и перезагрузку GlowSeller
+    default: op
+  glowseller.booster.*:
+    description: Перманентные бустеры по правам
+    default: false
